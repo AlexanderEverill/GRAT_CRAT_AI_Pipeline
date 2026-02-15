@@ -75,4 +75,16 @@ def main():
     "artifact_path": str(out_path),
     "note": "Stub created; real allowlisted retrieval to be implemented next."
 })
+    
+def main():
+    print("MAIN FUNCTION EXECUTING")
+
+    client_profile, profile_hash = load_client_profile()
+
+    print("Stage 1 complete")
+    print(profile_hash)
+
+
+if __name__ == "__main__":
+    main()
 
