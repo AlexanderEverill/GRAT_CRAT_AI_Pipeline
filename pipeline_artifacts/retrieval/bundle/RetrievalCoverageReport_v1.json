@@ -1,0 +1,98 @@
+{
+  "bundle_version": "1.0",
+  "fail_closed_recommendation": "PASS",
+  "plan_version": "1.0",
+  "report_version": "1.0",
+  "summary": {
+    "green": 7,
+    "red": 0,
+    "topics_total": 7,
+    "yellow": 0
+  },
+  "topics": [
+    {
+      "expected_citable_outputs": [
+        "Definition of qualified interest",
+        "Requirements for fixed annuity amount",
+        "Valuation method for retained annuity interest",
+        "Consequences of non-qualified retained interest"
+      ],
+      "key_points_found": 16,
+      "min_key_points_required": 3,
+      "status": "GREEN",
+      "topic_id": "GRAT_core_mechanics",
+      "why_needed": "To explain the statutory authority, structure, annuity mechanics, and valuation framework for a Grantor Retained Annuity Trust (GRAT) in the client deliverable."
+    },
+    {
+      "expected_citable_outputs": [
+        "Definition of CRAT",
+        "Fixed annuity payout requirement",
+        "5% minimum payout rule",
+        "50% maximum present value rule for annuity interest",
+        "Requirement that remainder pass to qualified charity"
+      ],
+      "key_points_found": 17,
+      "min_key_points_required": 3,
+      "status": "GREEN",
+      "topic_id": "CRAT_core_mechanics",
+      "why_needed": "To define a Charitable Remainder Annuity Trust (CRAT), its fixed annuity structure, payout limits, and charitable remainder requirements."
+    },
+    {
+      "expected_citable_outputs": [
+        "General gift tax imposition rule",
+        "General estate inclusion rule",
+        "2015 estate tax exemption amounts and 40% rate confirmation"
+      ],
+      "key_points_found": 21,
+      "min_key_points_required": 3,
+      "status": "GREEN",
+      "topic_id": "gift_estate_tax_treatment",
+      "why_needed": "To compare how GRATs and CRATs affect gift and estate tax exposure for a married client with $16M liquidity and 2015 exemption thresholds."
+    },
+    {
+      "expected_citable_outputs": [
+        "Statutory authority for valuation using 7520 rate",
+        "Reference to mortality tables and valuation methodology"
+      ],
+      "key_points_found": 13,
+      "min_key_points_required": 3,
+      "status": "GREEN",
+      "topic_id": "section_7520_rate",
+      "why_needed": "To explain how the Section 7520 rate is used to value retained annuity interests and charitable remainder interests."
+    },
+    {
+      "expected_citable_outputs": [
+        "Order of taxation of distributions (tier system)",
+        "Definition of income categories within CRT framework"
+      ],
+      "key_points_found": 10,
+      "min_key_points_required": 3,
+      "status": "GREEN",
+      "topic_id": "CRT_taxation_basics",
+      "why_needed": "To explain income taxation of CRAT distributions (tier system) if supported by allowlisted sources."
+    },
+    {
+      "expected_citable_outputs": [
+        "Estate inclusion consequences if grantor dies during term",
+        "Actuarial compliance requirements for CRAT qualification",
+        "Administrative requirements stated in regulations"
+      ],
+      "key_points_found": 18,
+      "min_key_points_required": 3,
+      "status": "GREEN",
+      "topic_id": "risks_limitations",
+      "why_needed": "To document statutory and structural risks relevant to GRATs and CRATs for a 62-year-old client."
+    },
+    {
+      "expected_citable_outputs": [
+        "Official practice before IRS standards",
+        "Language governing written tax advice"
+      ],
+      "key_points_found": 16,
+      "min_key_points_required": 3,
+      "status": "GREEN",
+      "topic_id": "required_disclosures_limitations_language",
+      "why_needed": "To ensure deliverable includes appropriate technical and tax-law limitation language consistent with IRS authority."
+    }
+  ]
+}

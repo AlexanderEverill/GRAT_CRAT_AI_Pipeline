@@ -1,0 +1,40 @@
+{
+"metadata": {
+"profile_version": "1.0.0",
+"created_timestamp": "2026-02-14T00:00:00Z",
+"pipeline_stage": "Client Intake",
+"source_reference": "GDPval FinTech Trust Comparison Task"
+},
+"client_demographics": {
+"age": 62,
+"marital_status": "Married",
+"children": {
+"count": 2,
+"details": "Two adult children"
+}
+},
+"liquidity_event": {
+"event_type": "Sold advertising agency",
+"year": 2015,
+"gross_proceeds_usd": 16000000,
+"liquidity_type": "Cash"
+},
+"estate_tax_context_2015": {
+"individual_exemption_usd": 5430000,
+"married_exemption_usd": 10860000,
+"top_estate_tax_rate": 0.4
+},
+"client_objectives": {
+"minimise_estate_tax": true,
+"benefit_children": true,
+"philanthropic_interest": true
+},
+"engagement_context": {
+"estate_attorney_consulted": true,
+"analysis_requested": [
+"GRAT",
+"CRAT"
+],
+"deliverable_format": "PDF (≤12 pages)"
+}
+}
