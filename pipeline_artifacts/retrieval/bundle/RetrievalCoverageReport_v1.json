@@ -17,7 +17,7 @@
         "Valuation method for retained annuity interest",
         "Consequences of non-qualified retained interest"
       ],
-      "key_points_found": 16,
+      "key_points_found": 17,
       "min_key_points_required": 3,
       "status": "GREEN",
       "topic_id": "GRAT_core_mechanics",
@@ -31,7 +31,7 @@
         "50% maximum present value rule for annuity interest",
         "Requirement that remainder pass to qualified charity"
       ],
-      "key_points_found": 17,
+      "key_points_found": 14,
       "min_key_points_required": 3,
       "status": "GREEN",
       "topic_id": "CRAT_core_mechanics",
@@ -43,7 +43,7 @@
         "General estate inclusion rule",
         "2015 estate tax exemption amounts and 40% rate confirmation"
       ],
-      "key_points_found": 21,
+      "key_points_found": 20,
       "min_key_points_required": 3,
       "status": "GREEN",
       "topic_id": "gift_estate_tax_treatment",
@@ -65,7 +65,7 @@
         "Order of taxation of distributions (tier system)",
         "Definition of income categories within CRT framework"
       ],
-      "key_points_found": 10,
+      "key_points_found": 11,
       "min_key_points_required": 3,
       "status": "GREEN",
       "topic_id": "CRT_taxation_basics",
@@ -77,7 +77,7 @@
         "Actuarial compliance requirements for CRAT qualification",
         "Administrative requirements stated in regulations"
       ],
-      "key_points_found": 18,
+      "key_points_found": 22,
       "min_key_points_required": 3,
       "status": "GREEN",
       "topic_id": "risks_limitations",
@@ -88,7 +88,7 @@
         "Official practice before IRS standards",
         "Language governing written tax advice"
       ],
-      "key_points_found": 16,
+      "key_points_found": 13,
       "min_key_points_required": 3,
       "status": "GREEN",
       "topic_id": "required_disclosures_limitations_language",

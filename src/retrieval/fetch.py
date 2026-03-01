@@ -121,6 +121,42 @@ def fetch_one(
     )
 
 
+def _next_source_index(out_dir: Path) -> int:
+    """
+    Returns the next integer to use for a new source ID, based on the
+    highest S-prefixed meta.json already present in out_dir.
+    E.g. if S001–S007 exist, returns 8.
+    File names are like S001.meta.json; p.stem would be 'S001.meta',
+    so we split on '.' and take the first segment instead.
+    """
+    existing = [
+        int(p.name.split(".")[0][1:])
+        for p in out_dir.glob("S*.meta.json")
+        if p.name.split(".")[0][1:].isdigit()
+    ]
+    return max(existing, default=0) + 1
+
+
+def _already_fetched_urls(out_dir: Path) -> set:
+    """
+    Returns the set of original URLs already recorded in any S*.meta.json
+    under out_dir. Used to skip re-fetching.
+    """
+    fetched: set = set()
+    for meta_path in out_dir.glob("S*.meta.json"):
+        try:
+            meta = json.loads(meta_path.read_text(encoding="utf-8"))
+            url = meta.get("url")
+            if url:
+                fetched.add(url)
+            final_url = meta.get("final_url")
+            if final_url:
+                fetched.add(final_url)
+        except (json.JSONDecodeError, OSError):
+            continue
+    return fetched
+
+
 def fetch_many(
     urls: Iterable[str],
     out_dir: Path,
@@ -128,13 +164,26 @@ def fetch_many(
     sleep_s: float = 0.25,
 ) -> List[FetchResult]:
     """
-    Deterministically fetch URLs in the provided order.
+    Incrementally fetch URLs in the provided order.
+    - Skips any URL whose original or final URL already appears in an
+      existing S*.meta.json (idempotent re-runs are safe).
+    - Continues source ID numbering from the highest existing S-prefixed
+      file, so new sources are appended as S008, S009, … rather than
+      overwriting S001–S007.
     Writes raw + meta files under out_dir.
     """
+    already_fetched = _already_fetched_urls(out_dir)
+    next_index = _next_source_index(out_dir)
+
     results: List[FetchResult] = []
-    for i, url in enumerate(urls, start=1):
-        source_id = make_source_id(i)
+    for url in urls:
+        if url in already_fetched:
+            continue
+        source_id = make_source_id(next_index)
+        next_index += 1
         res = fetch_one(url=url, source_id=source_id, out_dir=out_dir, allowlist=allowlist)
+        already_fetched.add(res.url)
+        already_fetched.add(res.final_url)
         results.append(res)
         if sleep_s:
             time.sleep(sleep_s)
@@ -143,9 +192,11 @@ def fetch_many(
 
 def seed_urls_from_plan(plan: Dict[str, Any]) -> List[str]:
     """
-    Simple seeding strategy:
-    - take every topic's preferred_primary_urls
-    - de-duplicate while preserving order
+    Collects every concrete URL to fetch from the plan, in order:
+    - Each topic's preferred_primary_urls (explicit seed URLs)
+    - De-duplicated while preserving insertion order
+    To add new sources, add their URLs to preferred_primary_urls in the
+    relevant topic inside RetrievalPlan_v1.json and re-run the fetcher.
     """
     seen = set()
     urls: List[str] = []

@@ -33,7 +33,8 @@
 ],
       "preferred_primary_urls": [
   "https://www.law.cornell.edu/uscode/text/26/2702",
-  "https://www.law.cornell.edu/cfr/text/26/25.2702-3"
+  "https://www.law.cornell.edu/cfr/text/26/25.2702-3",
+  "https://www.law.cornell.edu/uscode/text/26/671"
 ],
 "preferred_primary_domains": [
   "law.cornell.edu",
@@ -79,7 +80,8 @@
 
       "preferred_primary_urls": [
   "https://www.law.cornell.edu/uscode/text/26/664",
-  "https://www.law.cornell.edu/cfr/text/26/1.664-2"
+  "https://www.law.cornell.edu/cfr/text/26/1.664-2",
+  "https://www.law.cornell.edu/uscode/text/26/170"
 ],
 "preferred_primary_domains": [
   "law.cornell.edu",
@@ -127,7 +129,8 @@
 
       "preferred_primary_urls": [
   "https://www.law.cornell.edu/uscode/text/26/2501",
-  "https://www.law.cornell.edu/uscode/text/26/2033"
+  "https://www.law.cornell.edu/uscode/text/26/2033",
+  "https://www.irs.gov/businesses/small-businesses-self-employed/estate-tax"
 ],
 "preferred_primary_domains": [
   "law.cornell.edu",
@@ -295,7 +298,10 @@
   }
 ],
 
-     "preferred_primary_domains": [
+     "preferred_primary_urls": [
+  "https://www.law.cornell.edu/cfr/text/31/part-10"
+],
+"preferred_primary_domains": [
   "irs.gov",
   "treasury.gov"
 ],
