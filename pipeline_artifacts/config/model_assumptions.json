@@ -1,0 +1,13 @@
+{
+  "description": "Default modeling assumptions for GRAT and CRAT deterministic calculations. All values are explicitly declared here and traceable. Modify only with documented justification.",
+  "grat": {
+    "growth_rate": 0.05,
+    "term_years": 10
+  },
+  "crat": {
+    "payout_rate": 0.05,
+    "growth_rate": 0.05,
+    "term_years": 20,
+    "deduction_growth_rate": 0.04
+  }
+}

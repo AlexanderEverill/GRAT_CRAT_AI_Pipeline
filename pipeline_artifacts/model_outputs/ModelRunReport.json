@@ -1,0 +1,18 @@
+{
+  "audit_trail": {
+    "pipeline_version": "1.0",
+    "stage": "3_deterministic_trust_modeler"
+  },
+  "generated_timestamp": "2026-03-06T14:42:57.527793+00:00",
+  "inputs": {
+    "client_profile_path": "C:\\Users\\Anish.DESKTOP-NNPG1FK\\Documents\\1fintech\\GenAI\\Group Project\\2\\GRAT_CRAT_AI_Pipeline-dev\\GRAT_CRAT_AI_Pipeline-dev\\pipeline_artifacts\\intake\\ClientProfile_v1.json",
+    "client_profile_sha256": "df6cf573c8fc0a8e358087ba6c05e1ddb4a3cfdced1a4ed94fa06ab1bf04f1c4"
+  },
+  "model_version": "1.0",
+  "section_7520_rate": 0.0196,
+  "section_7520_rate_source": {
+    "description": "Historical IRS Section 7520 rate lookup based on valuation year",
+    "lookup_method": "client profile valuation_date or liquidity_event year",
+    "source_reference": "S007 \u2014 IRC \u00a77520 (retrieved via RAG retrieval bundle)"
+  }
+}
