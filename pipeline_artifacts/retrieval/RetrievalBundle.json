@@ -1,0 +1,10 @@
+{
+  "metadata": {
+    "created_timestamp": "2026-03-06T14:40:17.485095+00:00",
+    "pipeline_stage": "RAG Retrieval (stub)",
+    "inputs": {
+      "client_profile_sha256": "df6cf573c8fc0a8e358087ba6c05e1ddb4a3cfdced1a4ed94fa06ab1bf04f1c4"
+    }
+  },
+  "items": []
+}
