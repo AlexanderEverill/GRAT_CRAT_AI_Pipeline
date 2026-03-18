@@ -1,0 +1,357 @@
+{
+  "retrieval_plan_version": "1.0",
+  "allowlist": {
+    "domains": ["irs.gov", "treasury.gov", "law.cornell.edu"],
+    "internal_collections": ["FirmKB"]
+  },
+  "topics": [
+    {
+      "topic_id": "GRAT_core_mechanics",
+      "why_needed": "To explain the statutory authority, structure, annuity mechanics, and valuation framework for a Grantor Retained Annuity Trust (GRAT) in the client deliverable.",
+      "queries": [
+  {
+    "q": "IRC 2702 grantor retained annuity trust requirements",
+    "k": 8,
+    "must_domains": ["law.cornell.edu"],
+    "priority": "high",
+    "resolves_open_question": null
+  },
+  {
+    "q": "26 CFR 25.2702-3 GRAT annuity interest valuation qualified interest",
+    "k": 8,
+    "must_domains": ["law.cornell.edu"],
+    "priority": "high",
+    "resolves_open_question": "OQ3"
+  },
+  {
+    "q": "IRC 2702 qualified interest definition fixed annuity amount requirements",
+    "k": 8,
+    "must_domains": ["law.cornell.edu"],
+    "priority": "high",
+    "resolves_open_question": null
+  }
+],
+      "preferred_primary_urls": [
+  "https://www.law.cornell.edu/uscode/text/26/2702",
+  "https://www.law.cornell.edu/cfr/text/26/25.2702-3",
+  "https://www.law.cornell.edu/uscode/text/26/671"
+],
+"preferred_primary_domains": [
+  "law.cornell.edu",
+  "treasury.gov"
+],
+      "exclusion_rules": [
+        "Exclude practitioner blogs or law firm summaries",
+        "Exclude estate planning marketing materials"
+      ],
+      "expected_citable_outputs": [
+        "Definition of qualified interest",
+        "Requirements for fixed annuity amount",
+        "Valuation method for retained annuity interest",
+        "Consequences of non-qualified retained interest"
+      ]
+    },
+    {
+      "topic_id": "CRAT_core_mechanics",
+      "why_needed": "To define a Charitable Remainder Annuity Trust (CRAT), its fixed annuity structure, payout limits, and charitable remainder requirements.",
+      "queries": [
+  {
+    "q": "IRC 664 charitable remainder annuity trust definition annuity trust",
+    "k": 8,
+    "must_domains": ["law.cornell.edu"],
+    "priority": "high",
+    "resolves_open_question": null
+  },
+  {
+    "q": "26 CFR 1.664-2 charitable remainder annuity trust requirements",
+    "k": 8,
+    "must_domains": ["law.cornell.edu"],
+    "priority": "high",
+    "resolves_open_question": null
+  },
+  {
+    "q": "IRC 664 5 percent minimum payout 50 percent maximum present value annuity interest",
+    "k": 8,
+    "must_domains": ["law.cornell.edu"],
+    "priority": "high",
+    "resolves_open_question": "OQ2"
+  }
+],
+
+      "preferred_primary_urls": [
+  "https://www.law.cornell.edu/uscode/text/26/664",
+  "https://www.law.cornell.edu/cfr/text/26/1.664-2",
+  "https://www.law.cornell.edu/uscode/text/26/170"
+],
+"preferred_primary_domains": [
+  "law.cornell.edu",
+  "irs.gov"
+],
+
+      "exclusion_rules": [
+        "Exclude fundraising organization summaries",
+        "Exclude donor marketing materials"
+      ],
+      "expected_citable_outputs": [
+        "Definition of CRAT",
+        "Fixed annuity payout requirement",
+        "5% minimum payout rule",
+        "50% maximum present value rule for annuity interest",
+        "Requirement that remainder pass to qualified charity"
+      ]
+    },
+    {
+      "topic_id": "gift_estate_tax_treatment",
+      "why_needed": "To compare how GRATs and CRATs affect gift and estate tax exposure for a married client with $16M liquidity and 2015 exemption thresholds.",
+      "queries": [
+  {
+    "q": "IRC 2501 gift tax imposed general rule",
+    "k": 8,
+    "must_domains": ["law.cornell.edu"],
+    "priority": "high",
+    "resolves_open_question": null
+  },
+  {
+    "q": "IRC 2033 gross estate includes property interests of decedent",
+    "k": 8,
+    "must_domains": ["law.cornell.edu"],
+    "priority": "high",
+    "resolves_open_question": null
+  },
+  {
+    "q": "2015 federal estate tax exemption amount 40 percent rate IRS",
+    "k": 8,
+    "must_domains": ["irs.gov"],
+    "priority": "high",
+    "resolves_open_question": "OQ1"
+  }
+],
+
+      "preferred_primary_urls": [
+  "https://www.law.cornell.edu/uscode/text/26/2501",
+  "https://www.law.cornell.edu/uscode/text/26/2033",
+  "https://www.irs.gov/businesses/small-businesses-self-employed/estate-tax"
+],
+"preferred_primary_domains": [
+  "law.cornell.edu",
+  "irs.gov"
+],
+
+      "exclusion_rules": [
+        "Exclude secondary commentary",
+        "Exclude outdated unofficial charts"
+      ],
+      "expected_citable_outputs": [
+        "General gift tax imposition rule",
+        "General estate inclusion rule",
+        "2015 estate tax exemption amounts and 40% rate confirmation"
+      ]
+    },
+    {
+      "topic_id": "section_7520_rate",
+      "why_needed": "To explain how the Section 7520 rate is used to value retained annuity interests and charitable remainder interests.",
+      "queries": [
+  {
+    "q": "IRC 7520 valuation tables",
+    "k": 8,
+    "must_domains": ["law.cornell.edu"],
+    "priority": "high",
+    "resolves_open_question": null
+  },
+  {
+    "q": "Section 7520 rate annuity valuation IRS",
+    "k": 8,
+    "must_domains": ["irs.gov"],
+    "priority": "high",
+    "resolves_open_question": null
+  },
+  {
+    "q": "Treasury regulations under 7520 annuity valuation",
+    "k": 8,
+    "must_domains": ["law.cornell.edu"],
+    "priority": "high",
+    "resolves_open_question": null
+  }
+],
+      "preferred_primary_urls": [
+  "https://www.law.cornell.edu/uscode/text/26/7520"
+],
+"preferred_primary_domains": [
+  "law.cornell.edu",
+  "irs.gov",
+  "treasury.gov"
+],
+
+      "exclusion_rules": [
+        "Exclude financial blog explanations",
+        "Exclude calculator websites"
+      ],
+      "expected_citable_outputs": [
+        "Statutory authority for valuation using 7520 rate",
+        "Reference to mortality tables and valuation methodology"
+      ]
+    },
+    {
+      "topic_id": "CRT_taxation_basics",
+      "why_needed": "To explain income taxation of CRAT distributions (tier system) if supported by allowlisted sources.",
+      "queries": [
+  {
+    "q": "IRC 664 taxation of charitable remainder trusts distributions character of income",
+    "k": 8,
+    "must_domains": ["law.cornell.edu"],
+    "priority": "high",
+    "resolves_open_question": null
+  },
+  {
+    "q": "IRS charitable remainder trust tier system ordinary income capital gain tax-exempt income return of principal",
+    "k": 8,
+    "must_domains": ["irs.gov"],
+    "priority": "high",
+    "resolves_open_question": null
+  }
+],
+
+     "preferred_primary_urls": [
+  "https://www.law.cornell.edu/uscode/text/26/664"
+],
+"preferred_primary_domains": [
+  "law.cornell.edu",
+  "irs.gov"
+],
+
+
+      "exclusion_rules": [
+        "Exclude academic commentary unless from IRS publications",
+        "Exclude nonprofit marketing guides"
+      ],
+      "expected_citable_outputs": [
+        "Order of taxation of distributions (tier system)",
+        "Definition of income categories within CRT framework"
+      ]
+    },
+    {
+      "topic_id": "risks_limitations",
+      "why_needed": "To document statutory and structural risks relevant to GRATs and CRATs for a 62-year-old client.",
+      "queries": [
+  {
+    "q": "GRAT grantor dies during term estate inclusion risk",
+    "k": 8,
+    "must_domains": ["law.cornell.edu"],
+    "priority": "high",
+    "resolves_open_question": "OQ3"
+  },
+  {
+    "q": "CRAT actuarial requirements fail qualification 10 percent remainder requirement",
+    "k": 8,
+    "must_domains": ["law.cornell.edu"],
+    "priority": "high",
+    "resolves_open_question": null
+  },
+  {
+    "q": "proposals to change IRC 2702 GRAT rules minimum term remainder requirement",
+    "k": 8,
+    "must_domains": ["treasury.gov", "irs.gov", "law.cornell.edu"],
+    "priority": "medium",
+    "resolves_open_question": "OQ4"
+  }
+],
+
+
+      "preferred_primary_urls": [
+  "https://www.law.cornell.edu/uscode/text/26/2702",
+  "https://www.law.cornell.edu/uscode/text/26/664"
+],
+"preferred_primary_domains": [
+  "law.cornell.edu"
+],
+"preferred_internal_collections": [
+  "FirmKB"
+],
+
+      "exclusion_rules": [
+        "Exclude speculative articles",
+        "Exclude opinion pieces"
+      ],
+      "expected_citable_outputs": [
+        "Estate inclusion consequences if grantor dies during term",
+        "Actuarial compliance requirements for CRAT qualification",
+        "Administrative requirements stated in regulations"
+      ]
+    },
+    {
+      "topic_id": "required_disclosures_limitations_language",
+      "why_needed": "To ensure deliverable includes appropriate technical and tax-law limitation language consistent with IRS authority.",
+      "queries": [
+  {
+    "q": "Circular 230 31 CFR Subtitle A Part 10 written advice standards disclaimer",
+    "k": 8,
+    "must_domains": ["law.cornell.edu"],
+    "priority": "high",
+    "resolves_open_question": null
+  },
+  {
+    "q": "IRS reliance disclaimer written tax advice Circular 230 guidance",
+    "k": 8,
+    "must_domains": ["irs.gov", "treasury.gov"],
+    "priority": "medium",
+    "resolves_open_question": null
+  }
+],
+
+     "preferred_primary_urls": [
+  "https://www.law.cornell.edu/cfr/text/31/part-10"
+],
+"preferred_primary_domains": [
+  "irs.gov",
+  "treasury.gov"
+],
+"preferred_internal_collections": [
+  "FirmKB"
+],
+      "exclusion_rules": [
+        "Exclude generic website disclaimers",
+        "Exclude non-authoritative templates"
+      ],
+      "expected_citable_outputs": [
+        "Official practice before IRS standards",
+        "Language governing written tax advice"
+      ]
+    }
+  ],
+  "global_exclusions": [
+  "blogs",
+  "marketing",
+  "fundraising",
+  "wikipedia",
+  "forums",
+  "social_media",
+  "calculator_sites",
+  "practitioner_advertorials"
+],
+  "open_questions": [
+    {
+      "id": "OQ1",
+      "question": "Confirm authoritative IRS source listing 2015 federal estate tax exemption and 40% rate.",
+      "impact_if_missing": "Cannot numerically anchor estate tax exposure discussion.",
+      "best_allowlisted_place_to_find": "irs.gov historical estate tax exemption tables"
+    },
+    {
+      "id": "OQ2",
+      "question": "Confirm exact statutory language for 5% minimum and 50% maximum CRAT payout limitations.",
+      "impact_if_missing": "Cannot safely describe CRAT qualification rules.",
+      "best_allowlisted_place_to_find": "law.cornell.edu/uscode/text/26/664"
+    },
+    {
+      "id": "OQ3",
+      "question": "Identify explicit regulation referencing estate inclusion if grantor dies during GRAT term.",
+      "impact_if_missing": "Risk analysis may lack statutory support.",
+      "best_allowlisted_place_to_find": "law.cornell.edu CFR under Section 2702 or estate inclusion provisions"
+    },
+    {
+  "id": "OQ4",
+  "question": "Identify an allowlisted primary source (irs.gov/treasury.gov/law.cornell.edu) discussing enacted legislative changes or authoritative proposals affecting GRAT rules under IRC 2702, if any are relevant to include as legislative risk.",
+  "impact_if_missing": "Legislative risk discussion must be minimized or removed to avoid unsupported claims.",
+  "best_allowlisted_place_to_find": "treasury.gov or irs.gov official releases; law.cornell.edu for enacted statutory text"
+}
+  ]
+}

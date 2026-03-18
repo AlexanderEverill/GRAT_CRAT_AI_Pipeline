@@ -1,0 +1,918 @@
+{
+  "citation_style": "inline-short-id",
+  "citations": [
+    {
+      "cite_key": "[S1]",
+      "loc": "html",
+      "source_id": "S002",
+      "url": "https://www.law.cornell.edu/cfr/text/26/25.2702-3"
+    },
+    {
+      "cite_key": "[S2]",
+      "loc": "html",
+      "source_id": "S004",
+      "url": "https://www.law.cornell.edu/cfr/text/26/1.664-2"
+    },
+    {
+      "cite_key": "[S3]",
+      "loc": "html",
+      "source_id": "S004",
+      "url": "https://www.law.cornell.edu/cfr/text/26/1.664-2"
+    },
+    {
+      "cite_key": "[S4]",
+      "loc": "html",
+      "source_id": "S002",
+      "url": "https://www.law.cornell.edu/cfr/text/26/25.2702-3"
+    },
+    {
+      "cite_key": "[S5]",
+      "loc": "html",
+      "source_id": "S002",
+      "url": "https://www.law.cornell.edu/cfr/text/26/25.2702-3"
+    },
+    {
+      "cite_key": "[S6]",
+      "loc": "html",
+      "source_id": "S002",
+      "url": "https://www.law.cornell.edu/cfr/text/26/25.2702-3"
+    },
+    {
+      "cite_key": "[S7]",
+      "loc": "html",
+      "source_id": "S004",
+      "url": "https://www.law.cornell.edu/cfr/text/26/1.664-2"
+    },
+    {
+      "cite_key": "[S8]",
+      "loc": "html",
+      "source_id": "S009",
+      "url": "https://www.law.cornell.edu/uscode/text/26/170"
+    },
+    {
+      "cite_key": "[S9]",
+      "loc": "html",
+      "source_id": "S002",
+      "url": "https://www.law.cornell.edu/cfr/text/26/25.2702-3"
+    },
+    {
+      "cite_key": "[S10]",
+      "loc": "html",
+      "source_id": "S002",
+      "url": "https://www.law.cornell.edu/cfr/text/26/25.2702-3"
+    },
+    {
+      "cite_key": "[S11]",
+      "loc": "html",
+      "source_id": "S002",
+      "url": "https://www.law.cornell.edu/cfr/text/26/25.2702-3"
+    },
+    {
+      "cite_key": "[S12]",
+      "loc": "html",
+      "source_id": "S002",
+      "url": "https://www.law.cornell.edu/cfr/text/26/25.2702-3"
+    },
+    {
+      "cite_key": "[S13]",
+      "loc": "html",
+      "source_id": "S002",
+      "url": "https://www.law.cornell.edu/cfr/text/26/25.2702-3"
+    },
+    {
+      "cite_key": "[S14]",
+      "loc": "html",
+      "source_id": "S002",
+      "url": "https://www.law.cornell.edu/cfr/text/26/25.2702-3"
+    },
+    {
+      "cite_key": "[S15]",
+      "loc": "html",
+      "source_id": "S004",
+      "url": "https://www.law.cornell.edu/cfr/text/26/1.664-2"
+    },
+    {
+      "cite_key": "[S16]",
+      "loc": "html",
+      "source_id": "S001",
+      "url": "https://www.law.cornell.edu/uscode/text/26/2702"
+    },
+    {
+      "cite_key": "[S17]",
+      "loc": "html",
+      "source_id": "S002",
+      "url": "https://www.law.cornell.edu/cfr/text/26/25.2702-3"
+    },
+    {
+      "cite_key": "[S18]",
+      "loc": "html",
+      "source_id": "S002",
+      "url": "https://www.law.cornell.edu/cfr/text/26/25.2702-3"
+    },
+    {
+      "cite_key": "[S19]",
+      "loc": "html",
+      "source_id": "S002",
+      "url": "https://www.law.cornell.edu/cfr/text/26/25.2702-3"
+    },
+    {
+      "cite_key": "[S20]",
+      "loc": "html",
+      "source_id": "S002",
+      "url": "https://www.law.cornell.edu/cfr/text/26/25.2702-3"
+    },
+    {
+      "cite_key": "[S21]",
+      "loc": "html",
+      "source_id": "S002",
+      "url": "https://www.law.cornell.edu/cfr/text/26/25.2702-3"
+    },
+    {
+      "cite_key": "[S22]",
+      "loc": "html",
+      "source_id": "S002",
+      "url": "https://www.law.cornell.edu/cfr/text/26/25.2702-3"
+    },
+    {
+      "cite_key": "[S23]",
+      "loc": "html",
+      "source_id": "S002",
+      "url": "https://www.law.cornell.edu/cfr/text/26/25.2702-3"
+    },
+    {
+      "cite_key": "[S24]",
+      "loc": "html",
+      "source_id": "S002",
+      "url": "https://www.law.cornell.edu/cfr/text/26/25.2702-3"
+    },
+    {
+      "cite_key": "[S25]",
+      "loc": "html",
+      "source_id": "S004",
+      "url": "https://www.law.cornell.edu/cfr/text/26/1.664-2"
+    },
+    {
+      "cite_key": "[S26]",
+      "loc": "html",
+      "source_id": "S004",
+      "url": "https://www.law.cornell.edu/cfr/text/26/1.664-2"
+    },
+    {
+      "cite_key": "[S27]",
+      "loc": "html",
+      "source_id": "S004",
+      "url": "https://www.law.cornell.edu/cfr/text/26/1.664-2"
+    },
+    {
+      "cite_key": "[S28]",
+      "loc": "html",
+      "source_id": "S004",
+      "url": "https://www.law.cornell.edu/cfr/text/26/1.664-2"
+    },
+    {
+      "cite_key": "[S29]",
+      "loc": "html",
+      "source_id": "S009",
+      "url": "https://www.law.cornell.edu/uscode/text/26/170"
+    },
+    {
+      "cite_key": "[S30]",
+      "loc": "html",
+      "source_id": "S004",
+      "url": "https://www.law.cornell.edu/cfr/text/26/1.664-2"
+    },
+    {
+      "cite_key": "[S31]",
+      "loc": "html",
+      "source_id": "S003",
+      "url": "https://www.law.cornell.edu/uscode/text/26/664"
+    },
+    {
+      "cite_key": "[S32]",
+      "loc": "html",
+      "source_id": "S003",
+      "url": "https://www.law.cornell.edu/uscode/text/26/664"
+    },
+    {
+      "cite_key": "[S33]",
+      "loc": "html",
+      "source_id": "S004",
+      "url": "https://www.law.cornell.edu/cfr/text/26/1.664-2"
+    },
+    {
+      "cite_key": "[S34]",
+      "loc": "html",
+      "source_id": "S004",
+      "url": "https://www.law.cornell.edu/cfr/text/26/1.664-2"
+    },
+    {
+      "cite_key": "[S35]",
+      "loc": "html",
+      "source_id": "S004",
+      "url": "https://www.law.cornell.edu/cfr/text/26/1.664-2"
+    },
+    {
+      "cite_key": "[S36]",
+      "loc": "html",
+      "source_id": "S004",
+      "url": "https://www.law.cornell.edu/cfr/text/26/1.664-2"
+    },
+    {
+      "cite_key": "[S37]",
+      "loc": "html",
+      "source_id": "S004",
+      "url": "https://www.law.cornell.edu/cfr/text/26/1.664-2"
+    },
+    {
+      "cite_key": "[S38]",
+      "loc": "html",
+      "source_id": "S004",
+      "url": "https://www.law.cornell.edu/cfr/text/26/1.664-2"
+    },
+    {
+      "cite_key": "[S39]",
+      "loc": "html",
+      "source_id": "S003",
+      "url": "https://www.law.cornell.edu/uscode/text/26/664"
+    },
+    {
+      "cite_key": "[S40]",
+      "loc": "html",
+      "source_id": "S009",
+      "url": "https://www.law.cornell.edu/uscode/text/26/170"
+    },
+    {
+      "cite_key": "[S41]",
+      "loc": "html",
+      "source_id": "S004",
+      "url": "https://www.law.cornell.edu/cfr/text/26/1.664-2"
+    },
+    {
+      "cite_key": "[S42]",
+      "loc": "html",
+      "source_id": "S004",
+      "url": "https://www.law.cornell.edu/cfr/text/26/1.664-2"
+    },
+    {
+      "cite_key": "[S43]",
+      "loc": "html",
+      "source_id": "S009",
+      "url": "https://www.law.cornell.edu/uscode/text/26/170"
+    },
+    {
+      "cite_key": "[S44]",
+      "loc": "html",
+      "source_id": "S004",
+      "url": "https://www.law.cornell.edu/cfr/text/26/1.664-2"
+    },
+    {
+      "cite_key": "[S45]",
+      "loc": "html",
+      "source_id": "S004",
+      "url": "https://www.law.cornell.edu/cfr/text/26/1.664-2"
+    },
+    {
+      "cite_key": "[S46]",
+      "loc": "html",
+      "source_id": "S004",
+      "url": "https://www.law.cornell.edu/cfr/text/26/1.664-2"
+    },
+    {
+      "cite_key": "[S47]",
+      "loc": "html",
+      "source_id": "S003",
+      "url": "https://www.law.cornell.edu/uscode/text/26/664"
+    },
+    {
+      "cite_key": "[S48]",
+      "loc": "html",
+      "source_id": "S004",
+      "url": "https://www.law.cornell.edu/cfr/text/26/1.664-2"
+    },
+    {
+      "cite_key": "[S49]",
+      "loc": "html",
+      "source_id": "S005",
+      "url": "https://www.law.cornell.edu/uscode/text/26/2501"
+    },
+    {
+      "cite_key": "[S50]",
+      "loc": "html",
+      "source_id": "S003",
+      "url": "https://www.law.cornell.edu/uscode/text/26/664"
+    },
+    {
+      "cite_key": "[S51]",
+      "loc": "html",
+      "source_id": "S010",
+      "url": "https://www.irs.gov/businesses/small-businesses-self-employed/estate-tax"
+    },
+    {
+      "cite_key": "[S52]",
+      "loc": "html",
+      "source_id": "S010",
+      "url": "https://www.irs.gov/businesses/small-businesses-self-employed/estate-tax"
+    },
+    {
+      "cite_key": "[S53]",
+      "loc": "html",
+      "source_id": "S003",
+      "url": "https://www.law.cornell.edu/uscode/text/26/664"
+    },
+    {
+      "cite_key": "[S54]",
+      "loc": "html",
+      "source_id": "S005",
+      "url": "https://www.law.cornell.edu/uscode/text/26/2501"
+    },
+    {
+      "cite_key": "[S55]",
+      "loc": "html",
+      "source_id": "S009",
+      "url": "https://www.law.cornell.edu/uscode/text/26/170"
+    },
+    {
+      "cite_key": "[S56]",
+      "loc": "html",
+      "source_id": "S005",
+      "url": "https://www.law.cornell.edu/uscode/text/26/2501"
+    },
+    {
+      "cite_key": "[S57]",
+      "loc": "html",
+      "source_id": "S010",
+      "url": "https://www.irs.gov/businesses/small-businesses-self-employed/estate-tax"
+    },
+    {
+      "cite_key": "[S58]",
+      "loc": "html",
+      "source_id": "S006",
+      "url": "https://www.law.cornell.edu/uscode/text/26/2033"
+    },
+    {
+      "cite_key": "[S59]",
+      "loc": "html",
+      "source_id": "S010",
+      "url": "https://www.irs.gov/businesses/small-businesses-self-employed/estate-tax"
+    },
+    {
+      "cite_key": "[S60]",
+      "loc": "html",
+      "source_id": "S006",
+      "url": "https://www.law.cornell.edu/uscode/text/26/2033"
+    },
+    {
+      "cite_key": "[S61]",
+      "loc": "html",
+      "source_id": "S010",
+      "url": "https://www.irs.gov/businesses/small-businesses-self-employed/estate-tax"
+    },
+    {
+      "cite_key": "[S62]",
+      "loc": "html",
+      "source_id": "S009",
+      "url": "https://www.law.cornell.edu/uscode/text/26/170"
+    },
+    {
+      "cite_key": "[S63]",
+      "loc": "html",
+      "source_id": "S009",
+      "url": "https://www.law.cornell.edu/uscode/text/26/170"
+    },
+    {
+      "cite_key": "[S64]",
+      "loc": "html",
+      "source_id": "S001",
+      "url": "https://www.law.cornell.edu/uscode/text/26/2702"
+    },
+    {
+      "cite_key": "[S65]",
+      "loc": "html",
+      "source_id": "S010",
+      "url": "https://www.irs.gov/businesses/small-businesses-self-employed/estate-tax"
+    },
+    {
+      "cite_key": "[S66]",
+      "loc": "html",
+      "source_id": "S007",
+      "url": "https://www.law.cornell.edu/uscode/text/26/7520"
+    },
+    {
+      "cite_key": "[S67]",
+      "loc": "html",
+      "source_id": "S010",
+      "url": "https://www.irs.gov/businesses/small-businesses-self-employed/estate-tax"
+    },
+    {
+      "cite_key": "[S68]",
+      "loc": "html",
+      "source_id": "S010",
+      "url": "https://www.irs.gov/businesses/small-businesses-self-employed/estate-tax"
+    },
+    {
+      "cite_key": "[S69]",
+      "loc": "html",
+      "source_id": "S004",
+      "url": "https://www.law.cornell.edu/cfr/text/26/1.664-2"
+    },
+    {
+      "cite_key": "[S70]",
+      "loc": "html",
+      "source_id": "S010",
+      "url": "https://www.irs.gov/businesses/small-businesses-self-employed/estate-tax"
+    },
+    {
+      "cite_key": "[S71]",
+      "loc": "html",
+      "source_id": "S009",
+      "url": "https://www.law.cornell.edu/uscode/text/26/170"
+    },
+    {
+      "cite_key": "[S72]",
+      "loc": "html",
+      "source_id": "S010",
+      "url": "https://www.irs.gov/businesses/small-businesses-self-employed/estate-tax"
+    },
+    {
+      "cite_key": "[S73]",
+      "loc": "html",
+      "source_id": "S007",
+      "url": "https://www.law.cornell.edu/uscode/text/26/7520"
+    },
+    {
+      "cite_key": "[S74]",
+      "loc": "html",
+      "source_id": "S007",
+      "url": "https://www.law.cornell.edu/uscode/text/26/7520"
+    },
+    {
+      "cite_key": "[S75]",
+      "loc": "html",
+      "source_id": "S004",
+      "url": "https://www.law.cornell.edu/cfr/text/26/1.664-2"
+    },
+    {
+      "cite_key": "[S76]",
+      "loc": "html",
+      "source_id": "S007",
+      "url": "https://www.law.cornell.edu/uscode/text/26/7520"
+    },
+    {
+      "cite_key": "[S77]",
+      "loc": "html",
+      "source_id": "S004",
+      "url": "https://www.law.cornell.edu/cfr/text/26/1.664-2"
+    },
+    {
+      "cite_key": "[S78]",
+      "loc": "html",
+      "source_id": "S007",
+      "url": "https://www.law.cornell.edu/uscode/text/26/7520"
+    },
+    {
+      "cite_key": "[S79]",
+      "loc": "html",
+      "source_id": "S007",
+      "url": "https://www.law.cornell.edu/uscode/text/26/7520"
+    },
+    {
+      "cite_key": "[S80]",
+      "loc": "html",
+      "source_id": "S004",
+      "url": "https://www.law.cornell.edu/cfr/text/26/1.664-2"
+    },
+    {
+      "cite_key": "[S81]",
+      "loc": "html",
+      "source_id": "S004",
+      "url": "https://www.law.cornell.edu/cfr/text/26/1.664-2"
+    },
+    {
+      "cite_key": "[S82]",
+      "loc": "html",
+      "source_id": "S004",
+      "url": "https://www.law.cornell.edu/cfr/text/26/1.664-2"
+    },
+    {
+      "cite_key": "[S83]",
+      "loc": "html",
+      "source_id": "S007",
+      "url": "https://www.law.cornell.edu/uscode/text/26/7520"
+    },
+    {
+      "cite_key": "[S84]",
+      "loc": "html",
+      "source_id": "S007",
+      "url": "https://www.law.cornell.edu/uscode/text/26/7520"
+    },
+    {
+      "cite_key": "[S85]",
+      "loc": "html",
+      "source_id": "S002",
+      "url": "https://www.law.cornell.edu/cfr/text/26/25.2702-3"
+    },
+    {
+      "cite_key": "[S86]",
+      "loc": "html",
+      "source_id": "S007",
+      "url": "https://www.law.cornell.edu/uscode/text/26/7520"
+    },
+    {
+      "cite_key": "[S87]",
+      "loc": "html",
+      "source_id": "S002",
+      "url": "https://www.law.cornell.edu/cfr/text/26/25.2702-3"
+    },
+    {
+      "cite_key": "[S88]",
+      "loc": "html",
+      "source_id": "S004",
+      "url": "https://www.law.cornell.edu/cfr/text/26/1.664-2"
+    },
+    {
+      "cite_key": "[S89]",
+      "loc": "html",
+      "source_id": "S004",
+      "url": "https://www.law.cornell.edu/cfr/text/26/1.664-2"
+    },
+    {
+      "cite_key": "[S90]",
+      "loc": "html",
+      "source_id": "S004",
+      "url": "https://www.law.cornell.edu/cfr/text/26/1.664-2"
+    },
+    {
+      "cite_key": "[S91]",
+      "loc": "html",
+      "source_id": "S002",
+      "url": "https://www.law.cornell.edu/cfr/text/26/25.2702-3"
+    },
+    {
+      "cite_key": "[S92]",
+      "loc": "html",
+      "source_id": "S004",
+      "url": "https://www.law.cornell.edu/cfr/text/26/1.664-2"
+    },
+    {
+      "cite_key": "[S93]",
+      "loc": "html",
+      "source_id": "S002",
+      "url": "https://www.law.cornell.edu/cfr/text/26/25.2702-3"
+    },
+    {
+      "cite_key": "[S94]",
+      "loc": "html",
+      "source_id": "S007",
+      "url": "https://www.law.cornell.edu/uscode/text/26/7520"
+    },
+    {
+      "cite_key": "[S95]",
+      "loc": "html",
+      "source_id": "S002",
+      "url": "https://www.law.cornell.edu/cfr/text/26/25.2702-3"
+    },
+    {
+      "cite_key": "[S96]",
+      "loc": "html",
+      "source_id": "S002",
+      "url": "https://www.law.cornell.edu/cfr/text/26/25.2702-3"
+    },
+    {
+      "cite_key": "[S97]",
+      "loc": "html",
+      "source_id": "S004",
+      "url": "https://www.law.cornell.edu/cfr/text/26/1.664-2"
+    },
+    {
+      "cite_key": "[S98]",
+      "loc": "html",
+      "source_id": "S003",
+      "url": "https://www.law.cornell.edu/uscode/text/26/664"
+    },
+    {
+      "cite_key": "[S99]",
+      "loc": "html",
+      "source_id": "S003",
+      "url": "https://www.law.cornell.edu/uscode/text/26/664"
+    },
+    {
+      "cite_key": "[S100]",
+      "loc": "html",
+      "source_id": "S003",
+      "url": "https://www.law.cornell.edu/uscode/text/26/664"
+    },
+    {
+      "cite_key": "[S101]",
+      "loc": "html",
+      "source_id": "S004",
+      "url": "https://www.law.cornell.edu/cfr/text/26/1.664-2"
+    },
+    {
+      "cite_key": "[S102]",
+      "loc": "html",
+      "source_id": "S003",
+      "url": "https://www.law.cornell.edu/uscode/text/26/664"
+    },
+    {
+      "cite_key": "[S103]",
+      "loc": "html",
+      "source_id": "S004",
+      "url": "https://www.law.cornell.edu/cfr/text/26/1.664-2"
+    },
+    {
+      "cite_key": "[S104]",
+      "loc": "html",
+      "source_id": "S004",
+      "url": "https://www.law.cornell.edu/cfr/text/26/1.664-2"
+    },
+    {
+      "cite_key": "[S105]",
+      "loc": "html",
+      "source_id": "S004",
+      "url": "https://www.law.cornell.edu/cfr/text/26/1.664-2"
+    },
+    {
+      "cite_key": "[S106]",
+      "loc": "html",
+      "source_id": "S004",
+      "url": "https://www.law.cornell.edu/cfr/text/26/1.664-2"
+    },
+    {
+      "cite_key": "[S107]",
+      "loc": "html",
+      "source_id": "S003",
+      "url": "https://www.law.cornell.edu/uscode/text/26/664"
+    },
+    {
+      "cite_key": "[S108]",
+      "loc": "html",
+      "source_id": "S003",
+      "url": "https://www.law.cornell.edu/uscode/text/26/664"
+    },
+    {
+      "cite_key": "[S109]",
+      "loc": "html",
+      "source_id": "S004",
+      "url": "https://www.law.cornell.edu/cfr/text/26/1.664-2"
+    },
+    {
+      "cite_key": "[S110]",
+      "loc": "html",
+      "source_id": "S009",
+      "url": "https://www.law.cornell.edu/uscode/text/26/170"
+    },
+    {
+      "cite_key": "[S111]",
+      "loc": "html",
+      "source_id": "S004",
+      "url": "https://www.law.cornell.edu/cfr/text/26/1.664-2"
+    },
+    {
+      "cite_key": "[S112]",
+      "loc": "html",
+      "source_id": "S009",
+      "url": "https://www.law.cornell.edu/uscode/text/26/170"
+    },
+    {
+      "cite_key": "[S113]",
+      "loc": "html",
+      "source_id": "S010",
+      "url": "https://www.irs.gov/businesses/small-businesses-self-employed/estate-tax"
+    },
+    {
+      "cite_key": "[S114]",
+      "loc": "html",
+      "source_id": "S002",
+      "url": "https://www.law.cornell.edu/cfr/text/26/25.2702-3"
+    },
+    {
+      "cite_key": "[S115]",
+      "loc": "html",
+      "source_id": "S002",
+      "url": "https://www.law.cornell.edu/cfr/text/26/25.2702-3"
+    },
+    {
+      "cite_key": "[S116]",
+      "loc": "html",
+      "source_id": "S010",
+      "url": "https://www.irs.gov/businesses/small-businesses-self-employed/estate-tax"
+    },
+    {
+      "cite_key": "[S117]",
+      "loc": "html",
+      "source_id": "S001",
+      "url": "https://www.law.cornell.edu/uscode/text/26/2702"
+    },
+    {
+      "cite_key": "[S118]",
+      "loc": "html",
+      "source_id": "S004",
+      "url": "https://www.law.cornell.edu/cfr/text/26/1.664-2"
+    },
+    {
+      "cite_key": "[S119]",
+      "loc": "html",
+      "source_id": "S010",
+      "url": "https://www.irs.gov/businesses/small-businesses-self-employed/estate-tax"
+    },
+    {
+      "cite_key": "[S120]",
+      "loc": "html",
+      "source_id": "S004",
+      "url": "https://www.law.cornell.edu/cfr/text/26/1.664-2"
+    },
+    {
+      "cite_key": "[S121]",
+      "loc": "html",
+      "source_id": "S003",
+      "url": "https://www.law.cornell.edu/uscode/text/26/664"
+    },
+    {
+      "cite_key": "[S122]",
+      "loc": "html",
+      "source_id": "S002",
+      "url": "https://www.law.cornell.edu/cfr/text/26/25.2702-3"
+    },
+    {
+      "cite_key": "[S123]",
+      "loc": "html",
+      "source_id": "S002",
+      "url": "https://www.law.cornell.edu/cfr/text/26/25.2702-3"
+    },
+    {
+      "cite_key": "[S124]",
+      "loc": "html",
+      "source_id": "S002",
+      "url": "https://www.law.cornell.edu/cfr/text/26/25.2702-3"
+    },
+    {
+      "cite_key": "[S125]",
+      "loc": "html",
+      "source_id": "S004",
+      "url": "https://www.law.cornell.edu/cfr/text/26/1.664-2"
+    },
+    {
+      "cite_key": "[S126]",
+      "loc": "html",
+      "source_id": "S003",
+      "url": "https://www.law.cornell.edu/uscode/text/26/664"
+    },
+    {
+      "cite_key": "[S127]",
+      "loc": "html",
+      "source_id": "S011",
+      "url": "https://www.law.cornell.edu/cfr/text/31/part-10"
+    },
+    {
+      "cite_key": "[S128]",
+      "loc": "html",
+      "source_id": "S003",
+      "url": "https://www.law.cornell.edu/uscode/text/26/664"
+    },
+    {
+      "cite_key": "[S129]",
+      "loc": "html",
+      "source_id": "S001",
+      "url": "https://www.law.cornell.edu/uscode/text/26/2702"
+    },
+    {
+      "cite_key": "[S130]",
+      "loc": "html",
+      "source_id": "S002",
+      "url": "https://www.law.cornell.edu/cfr/text/26/25.2702-3"
+    },
+    {
+      "cite_key": "[S131]",
+      "loc": "html",
+      "source_id": "S002",
+      "url": "https://www.law.cornell.edu/cfr/text/26/25.2702-3"
+    },
+    {
+      "cite_key": "[S132]",
+      "loc": "html",
+      "source_id": "S002",
+      "url": "https://www.law.cornell.edu/cfr/text/26/25.2702-3"
+    },
+    {
+      "cite_key": "[S133]",
+      "loc": "html",
+      "source_id": "S009",
+      "url": "https://www.law.cornell.edu/uscode/text/26/170"
+    },
+    {
+      "cite_key": "[S134]",
+      "loc": "html",
+      "source_id": "S002",
+      "url": "https://www.law.cornell.edu/cfr/text/26/25.2702-3"
+    },
+    {
+      "cite_key": "[S135]",
+      "loc": "html",
+      "source_id": "S001",
+      "url": "https://www.law.cornell.edu/uscode/text/26/2702"
+    },
+    {
+      "cite_key": "[S136]",
+      "loc": "html",
+      "source_id": "S004",
+      "url": "https://www.law.cornell.edu/cfr/text/26/1.664-2"
+    },
+    {
+      "cite_key": "[S137]",
+      "loc": "html",
+      "source_id": "S011",
+      "url": "https://www.law.cornell.edu/cfr/text/31/part-10"
+    },
+    {
+      "cite_key": "[S138]",
+      "loc": "html",
+      "source_id": "S011",
+      "url": "https://www.law.cornell.edu/cfr/text/31/part-10"
+    },
+    {
+      "cite_key": "[S139]",
+      "loc": "html",
+      "source_id": "S011",
+      "url": "https://www.law.cornell.edu/cfr/text/31/part-10"
+    },
+    {
+      "cite_key": "[S140]",
+      "loc": "html",
+      "source_id": "S010",
+      "url": "https://www.irs.gov/businesses/small-businesses-self-employed/estate-tax"
+    },
+    {
+      "cite_key": "[S141]",
+      "loc": "html",
+      "source_id": "S010",
+      "url": "https://www.irs.gov/businesses/small-businesses-self-employed/estate-tax"
+    },
+    {
+      "cite_key": "[S142]",
+      "loc": "html",
+      "source_id": "S009",
+      "url": "https://www.law.cornell.edu/uscode/text/26/170"
+    },
+    {
+      "cite_key": "[S143]",
+      "loc": "html",
+      "source_id": "S009",
+      "url": "https://www.law.cornell.edu/uscode/text/26/170"
+    },
+    {
+      "cite_key": "[S144]",
+      "loc": "html",
+      "source_id": "S002",
+      "url": "https://www.law.cornell.edu/cfr/text/26/25.2702-3"
+    },
+    {
+      "cite_key": "[S145]",
+      "loc": "html",
+      "source_id": "S010",
+      "url": "https://www.irs.gov/businesses/small-businesses-self-employed/estate-tax"
+    },
+    {
+      "cite_key": "[S146]",
+      "loc": "html",
+      "source_id": "S010",
+      "url": "https://www.irs.gov/businesses/small-businesses-self-employed/estate-tax"
+    },
+    {
+      "cite_key": "[S147]",
+      "loc": "html",
+      "source_id": "S010",
+      "url": "https://www.irs.gov/businesses/small-businesses-self-employed/estate-tax"
+    },
+    {
+      "cite_key": "[S148]",
+      "loc": "html",
+      "source_id": "S010",
+      "url": "https://www.irs.gov/businesses/small-businesses-self-employed/estate-tax"
+    },
+    {
+      "cite_key": "[S149]",
+      "loc": "html",
+      "source_id": "S011",
+      "url": "https://www.law.cornell.edu/cfr/text/31/part-10"
+    },
+    {
+      "cite_key": "[S150]",
+      "loc": "html",
+      "source_id": "S010",
+      "url": "https://www.irs.gov/businesses/small-businesses-self-employed/estate-tax"
+    },
+    {
+      "cite_key": "[S151]",
+      "loc": "html",
+      "source_id": "S010",
+      "url": "https://www.irs.gov/businesses/small-businesses-self-employed/estate-tax"
+    },
+    {
+      "cite_key": "[S152]",
+      "loc": "html",
+      "source_id": "S009",
+      "url": "https://www.law.cornell.edu/uscode/text/26/170"
+    }
+  ],
+  "manifest_version": "1.0"
+}

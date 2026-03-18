@@ -1,0 +1,145 @@
+{
+  "version": "v1",
+  "sections": [
+    {
+      "id": "client_overview",
+      "title": "1. Client Overview",
+      "content_type": "narrative",
+      "purpose": "Present the client profile: age, marital status, children, liquidity event, and primary planning objectives.",
+      "expected_placeholders": [
+        {"placeholder": "{{taxable_estate_before_usd}}", "model_key": "taxable_estate_before_usd", "source": "forecasts", "format": "currency"},
+        {"placeholder": "{{estate_tax_rate}}", "model_key": "estate_tax_rate", "source": "risk_metrics", "format": "percent"}
+      ],
+      "required_inputs": ["ClientProfile", "ModelOutputs"]
+    },
+    {
+      "id": "executive_summary",
+      "title": "2. Executive Summary",
+      "content_type": "narrative",
+      "purpose": "Concise 5-8 sentence overview: problem statement, key GRAT vs CRAT differences, and bottom-line recommendation.",
+      "expected_placeholders": [
+        {"placeholder": "{{estate_tax_rate}}", "model_key": "estate_tax_rate", "source": "risk_metrics", "format": "percent"},
+        {"placeholder": "{{section_7520_rate_bps}}", "model_key": "section_7520_rate", "source": "risk_metrics", "format": "bps"},
+        {"placeholder": "{{estate_tax_saved_by_grat_usd}}", "model_key": "estate_tax_saved_by_grat_usd", "source": "forecasts", "format": "currency"},
+        {"placeholder": "{{estate_tax_saved_by_crat_usd}}", "model_key": "estate_tax_saved_by_crat_usd", "source": "forecasts", "format": "currency"},
+        {"placeholder": "{{taxable_estate_before_usd}}", "model_key": "taxable_estate_before_usd", "source": "forecasts", "format": "currency"}
+      ],
+      "required_inputs": ["ClientProfile", "ModelOutputs"]
+    },
+    {
+      "id": "planning_objectives",
+      "title": "3. Planning Objectives and Constraints",
+      "content_type": "narrative",
+      "purpose": "Explain estate tax exposure (40% above exemption), family goals, philanthropic intent, and time-horizon considerations.",
+      "expected_placeholders": [
+        {"placeholder": "{{estate_tax_rate}}", "model_key": "estate_tax_rate", "source": "risk_metrics", "format": "percent"},
+        {"placeholder": "{{taxable_estate_before_usd}}", "model_key": "taxable_estate_before_usd", "source": "forecasts", "format": "currency"}
+      ],
+      "required_inputs": ["ClientProfile", "ModelOutputs"]
+    },
+    {
+      "id": "grat_analysis",
+      "title": "4. Grantor Retained Annuity Trust (GRAT)",
+      "content_type": "narrative",
+      "purpose": "Cover GRAT purpose/structure, key mechanics (funding, annuity, duration), tax treatment (estate and gift tax), advantages (wealth transfer efficiency, low gift valuation), and risks/limitations (mortality risk, interest rate sensitivity).",
+      "expected_placeholders": [
+        {"placeholder": "{{grat_trust_corpus_usd}}", "model_key": "grat_trust_corpus_usd", "source": "forecasts", "format": "currency"},
+        {"placeholder": "{{grat_term_years}}", "model_key": "grat_term_years", "source": "forecasts", "format": "number"},
+        {"placeholder": "{{grat_annuity_payment_annual_usd}}", "model_key": "grat_annuity_payment_annual_usd", "source": "forecasts", "format": "currency"},
+        {"placeholder": "{{grat_total_annuity_paid_usd}}", "model_key": "grat_total_annuity_paid_usd", "source": "forecasts", "format": "currency"},
+        {"placeholder": "{{grat_projected_remainder_usd}}", "model_key": "grat_projected_remainder_to_children_usd", "source": "forecasts", "format": "currency"},
+        {"placeholder": "{{grat_taxable_gift_usd}}", "model_key": "grat_taxable_gift_usd", "source": "forecasts", "format": "currency"},
+        {"placeholder": "{{grat_estate_tax_saved_usd}}", "model_key": "grat_estate_tax_saved_usd", "source": "forecasts", "format": "currency"},
+        {"placeholder": "{{grat_growth_rate}}", "model_key": "grat_growth_rate", "source": "risk_metrics", "format": "percent"},
+        {"placeholder": "{{section_7520_rate_bps}}", "model_key": "section_7520_rate", "source": "risk_metrics", "format": "bps"},
+        {"placeholder": "{{taxable_estate_after_grat_usd}}", "source": "forecasts", "format": "currency"},
+        {"placeholder": "{{wealth_to_children_grat_usd}}", "source": "forecasts", "format": "currency"}
+      ],
+      "required_inputs": ["ClientProfile", "RetrievalBundle", "ModelOutputs"]
+    },
+    {
+      "id": "crat_analysis",
+      "title": "5. Charitable Remainder Annuity Trust (CRAT)",
+      "content_type": "narrative",
+      "purpose": "Cover CRAT purpose/structure, key mechanics, tax treatment (income tax deduction, capital gains deferral, estate implications), advantages (philanthropic alignment, tax efficiency), and risks/limitations (irrevocability, reduced inheritance).",
+      "expected_placeholders": [
+        {"placeholder": "{{crat_trust_corpus_usd}}", "model_key": "crat_trust_corpus_usd", "source": "forecasts", "format": "currency"},
+        {"placeholder": "{{crat_annual_annuity_usd}}", "model_key": "crat_annual_annuity_usd", "source": "forecasts", "format": "currency"},
+        {"placeholder": "{{crat_total_annuity_paid_usd}}", "model_key": "crat_total_annuity_paid_usd", "source": "forecasts", "format": "currency"},
+        {"placeholder": "{{crat_charitable_deduction_usd}}", "model_key": "crat_charitable_deduction_estimate_usd", "source": "forecasts", "format": "currency"},
+        {"placeholder": "{{crat_remainder_to_charity_usd}}", "model_key": "crat_remainder_to_charity_usd", "source": "forecasts", "format": "currency"},
+        {"placeholder": "{{crat_estate_tax_saved_usd}}", "model_key": "crat_estate_tax_saved_usd", "source": "forecasts", "format": "currency"},
+        {"placeholder": "{{crat_payout_rate}}", "model_key": "crat_growth_rate", "source": "risk_metrics", "format": "percent"},
+        {"placeholder": "{{taxable_estate_after_crat_usd}}", "source": "forecasts", "format": "currency"},
+        {"placeholder": "{{wealth_to_children_crat_usd}}", "source": "forecasts", "format": "currency"}
+      ],
+      "required_inputs": ["ClientProfile", "RetrievalBundle", "ModelOutputs"]
+    },
+    {
+      "id": "comparative_analysis",
+      "title": "6. Comparative Analysis",
+      "content_type": "table",
+      "purpose": "Side-by-side comparison table of GRAT vs CRAT on primary goal, estate tax impact, income stream, flexibility, and beneficiaries.",
+      "expected_placeholders": [
+        {"placeholder": "{{taxable_estate_before_usd}}", "model_key": "taxable_estate_before_usd", "source": "forecasts", "format": "currency"},
+        {"placeholder": "{{taxable_estate_after_grat_usd}}", "source": "forecasts", "format": "currency"},
+        {"placeholder": "{{taxable_estate_after_crat_usd}}", "source": "forecasts", "format": "currency"},
+        {"placeholder": "{{estate_tax_saved_by_grat_usd}}", "model_key": "estate_tax_saved_by_grat_usd", "source": "forecasts", "format": "currency"},
+        {"placeholder": "{{estate_tax_saved_by_crat_usd}}", "model_key": "estate_tax_saved_by_crat_usd", "source": "forecasts", "format": "currency"},
+        {"placeholder": "{{wealth_to_children_grat_usd}}", "source": "forecasts", "format": "currency"},
+        {"placeholder": "{{wealth_to_children_crat_usd}}", "source": "forecasts", "format": "currency"}
+      ],
+      "required_inputs": ["ClientProfile", "RetrievalBundle", "ModelOutputs"]
+    },
+    {
+      "id": "scenario_illustration",
+      "title": "7. Scenario Illustration",
+      "content_type": "narrative",
+      "purpose": "Walk through a concrete scenario using the $16M investment, expected returns, and what happens under GRAT vs CRAT over the trust terms.",
+      "expected_placeholders": [
+        {"placeholder": "{{grat_trust_corpus_usd}}", "model_key": "grat_trust_corpus_usd", "source": "forecasts", "format": "currency"},
+        {"placeholder": "{{grat_term_years}}", "model_key": "grat_term_years", "source": "forecasts", "format": "number"},
+        {"placeholder": "{{grat_annuity_payment_annual_usd}}", "model_key": "grat_annuity_payment_annual_usd", "source": "forecasts", "format": "currency"},
+        {"placeholder": "{{grat_projected_remainder_usd}}", "model_key": "grat_projected_remainder_to_children_usd", "source": "forecasts", "format": "currency"},
+        {"placeholder": "{{grat_growth_rate}}", "model_key": "grat_growth_rate", "source": "risk_metrics", "format": "percent"},
+        {"placeholder": "{{section_7520_rate_bps}}", "model_key": "section_7520_rate", "source": "risk_metrics", "format": "bps"},
+        {"placeholder": "{{crat_annual_annuity_usd}}", "model_key": "crat_annual_annuity_usd", "source": "forecasts", "format": "currency"},
+        {"placeholder": "{{crat_remainder_to_charity_usd}}", "model_key": "crat_remainder_to_charity_usd", "source": "forecasts", "format": "currency"},
+        {"placeholder": "{{crat_charitable_deduction_usd}}", "model_key": "crat_charitable_deduction_estimate_usd", "source": "forecasts", "format": "currency"}
+      ],
+      "required_inputs": ["ClientProfile", "ModelOutputs"]
+    },
+    {
+      "id": "recommendation",
+      "title": "8. Recommendation",
+      "content_type": "narrative",
+      "purpose": "Clear, decisive recommendation: which structure better fits the client and why, tied back to stated goals. Include conditions (e.g., if philanthropic intent is strong).",
+      "expected_placeholders": [
+        {"placeholder": "{{estate_tax_saved_by_grat_usd}}", "model_key": "estate_tax_saved_by_grat_usd", "source": "forecasts", "format": "currency"},
+        {"placeholder": "{{estate_tax_saved_by_crat_usd}}", "model_key": "estate_tax_saved_by_crat_usd", "source": "forecasts", "format": "currency"},
+        {"placeholder": "{{wealth_to_children_grat_usd}}", "source": "forecasts", "format": "currency"},
+        {"placeholder": "{{grat_allocation_weight}}", "model_key": "grat", "source": "allocation_weights", "format": "percent"},
+        {"placeholder": "{{crat_allocation_weight}}", "model_key": "crat", "source": "allocation_weights", "format": "percent"}
+      ],
+      "required_inputs": ["ClientProfile", "ModelOutputs"]
+    },
+    {
+      "id": "risks_considerations",
+      "title": "9. Key Risks and Considerations",
+      "content_type": "narrative",
+      "purpose": "Discuss legislative risk, market risk, longevity risk, and execution complexity for both strategies.",
+      "expected_placeholders": [
+        {"placeholder": "{{grat_term_years}}", "model_key": "grat_term_years", "source": "forecasts", "format": "number"},
+        {"placeholder": "{{section_7520_rate_bps}}", "model_key": "section_7520_rate", "source": "risk_metrics", "format": "bps"}
+      ],
+      "required_inputs": ["ClientProfile", "RetrievalBundle", "ModelOutputs"]
+    },
+    {
+      "id": "next_steps",
+      "title": "10. Next Steps",
+      "content_type": "narrative",
+      "purpose": "Actionable next steps: consult estate attorney, model exact trust parameters, implement chosen structure. Include Circular 230 disclosure.",
+      "required_inputs": ["RetrievalBundle"]
+    }
+  ]
+}

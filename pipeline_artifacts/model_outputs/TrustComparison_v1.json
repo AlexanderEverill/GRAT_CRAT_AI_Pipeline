@@ -1,0 +1,64 @@
+{
+  "assumptions": {
+    "crat_deduction_growth_rate": 0.04,
+    "crat_growth_rate": 0.05,
+    "crat_payout_rate": 0.05,
+    "crat_term_years": 20,
+    "grat_growth_rate": 0.05,
+    "grat_term_years": 10,
+    "section_7520_rate": 0.0196
+  },
+  "client_age": 62,
+  "comparison": {
+    "charitable_component_crat_usd": 16000000.0,
+    "charitable_component_difference_usd": 16000000.0,
+    "charitable_component_grat_usd": 0.0,
+    "estate_tax_saved_by_crat_usd": 3048289.06,
+    "estate_tax_saved_by_grat_usd": 1482050.71,
+    "estate_tax_saving_difference_usd": -1566238.35,
+    "taxable_estate_after_crat_usd": 8379277.36,
+    "taxable_estate_after_grat_usd": 12294873.22,
+    "taxable_estate_before_usd": 16000000.0,
+    "wealth_to_children_crat_usd": 0.0,
+    "wealth_to_children_difference_usd": 3705126.78,
+    "wealth_to_children_grat_usd": 3705126.78
+  },
+  "crat": {
+    "annual_annuity_usd": 800000.0,
+    "charitable_deduction_estimate_usd": 7620722.64,
+    "estate_reduction_usd": 7620722.64,
+    "estate_tax_saved_usd": 3048289.06,
+    "growth_rate": 0.05,
+    "payout_rate": 0.05,
+    "remainder_to_charity_usd": 16000000.0,
+    "total_annuity_paid_usd": 16000000.0,
+    "trust_corpus_usd": 16000000.0
+  },
+  "grat": {
+    "annuity_payment_annual_usd": 1777498.67,
+    "estate_reduction_usd": 3705126.78,
+    "estate_tax_saved_usd": 1482050.71,
+    "growth_rate": 0.05,
+    "projected_remainder_to_children_usd": 3705126.78,
+    "section_7520_rate": 0.0196,
+    "taxable_gift_usd": 0.0,
+    "term_years": 10,
+    "total_annuity_paid_usd": 17774986.7,
+    "trust_corpus_usd": 16000000.0
+  },
+  "inputs": {
+    "age": 62,
+    "estate_tax_rate": 0.4,
+    "individual_exemption_usd": 5430000.0,
+    "liquidity_event_amount_usd": 16000000.0,
+    "marital_status": "Married",
+    "married_exemption_usd": 10860000.0
+  },
+  "marital_status": "Married",
+  "metadata": {
+    "generated_timestamp": "2026-03-17T16:19:32.047489+00:00",
+    "model_version": "1.0",
+    "pipeline_stage": "Stage 3 \u2014 Deterministic Trust Modeler"
+  },
+  "model_version": "1.0"
+}

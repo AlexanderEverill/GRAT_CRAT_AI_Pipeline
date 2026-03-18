@@ -1,0 +1,431 @@
+================================================================================
+DETERMINISTIC TRUST MODEL - COMPLETE ASSUMPTIONS & CONSTRAINTS
+================================================================================
+
+This document lists all assumptions, parameters, and constraints encoded in the
+deterministic trust modeling layer (Stage 3).
+
+Last updated: March 5, 2026
+Model version: 1.0
+
+================================================================================
+1. CLIENT INPUT ASSUMPTIONS & CONSTRAINTS
+================================================================================
+
+SOURCE: pipeline_artifacts/intake/ClientProfile_v1.json
+
+ASSUMED CLIENT PROFILE:
+  Age: 62
+  Marital status: Married
+  Liquidity event: Sold advertising agency in 2015
+  Gross proceeds: $16,000,000
+  Estate tax context: 2015 rates
+    - Individual exemption: $5,430,000
+    - Married exemption: $10,860,000
+    - Top estate tax rate: 40%
+
+VALIDATION CONSTRAINTS:
+  - Age must be > 0 and < 150
+  - Marital status: must be present (no validation on value)
+  - Liquidity amount: must be >= 0
+  - Estate tax rate: must be 0 < rate <= 1.0
+  - Exemptions: must be >= 0
+  - All required fields must be present in JSON
+
+INPUT IMMUTABILITY:
+  - ClientInput is a frozen dataclass (immutable)
+  - Once extracted, client data cannot be modified in memory
+  - All downstream calculations read from the same immutable instance
+
+================================================================================
+2. SECTION 7520 RATE - ASSUMPTIONS & TREATMENT
+================================================================================
+
+DEFAULT RATE: 4.2% (0.042)
+  - IRS Section 7520 hurdle rate used for valuation
+  - Determined by month and year from IRS tables
+  - Default 4.2% is mid-range historical rate (2015-2026 average)
+  - Source: pipeline_artifacts/retrieval/parsed/S007.txt (IRC §7520)
+
+RATE VALIDATION:
+  - Must be > 0 and <= 20% (0.20)
+  - Configurable when calling run_deterministic_model(section_7520_rate=X)
+  - Used to calculate:
+    * GRAT annuity payment (present value of annuity formula)
+    * CRAT charitable deduction (present value discount factor)
+
+RATE LOCKDOWN:
+  - Once model runs, the rates used are embedded in output JSON
+  - Rates are NOT extracted from S007 chunks on each run
+  - User must explicitly specify rate or use default
+  - This ensures determinism and traceability
+
+================================================================================
+3. GRAT - GRANTOR RETAINED ANNUITY TRUST ASSUMPTIONS
+================================================================================
+
+INITIAL CONTRIBUTION:
+  Amount: $16,000,000 (from liquidity event)
+  Tax treatment: No gift tax (zeroed-out GRAT model)
+  Deposited into: Irrevocable trust with qualified annuity interest
+
+TERM LENGTH:
+  Assumption: 10 years (fixed)
+  Rationale: Standard GRAT term; minimizes mortality risk while enabling growth
+  IRC reference: §2702 (qualified interest)
+
+ANNUITY CALCULATION:
+  Formula: PV of Annuity = Contribution / [(1 - (1+r)^-n) / r]
+    Where:
+      r = section_7520_rate (4.2%)
+      n = term_years (10)
+      Contribution = $16,000,000
+  
+  Computed annuity: $1,992,344.36 per year
+  Total paid to grantor over 10 years: $19,923,443.60
+  
+  Assumption: Grantor survives the full 10-year term
+    - If grantor dies during term, full trust corpus is included in estate
+    - This is a standard GRAT mortality risk (not hedged in model)
+  
+  Assumption: Annuity payments are made annually on a fixed date
+    - Not semi-annual or other intervals
+    - Grantor must survive each payment date to receive
+  
+  Assumption: Annuity is NOT adjusted for inflation
+    - Fixed payment amount for entire term
+    - This differs from some GRAT structures that adjust for CPI
+
+TRUST GROWTH ASSUMPTION:
+  Expected annual growth rate: 5% (0.05, fixed)
+  Rationale: Moderate mid-range assumption for diversified portfolio
+  Treatment: Applied year-over-year to trust value
+  
+  Alternative scenarios NOT modeled:
+    - Negative/recession growth
+    - Market-conditional growth
+    - Asset-specific growth rates
+  
+  Simulation algorithm:
+    Value_start_of_year = previous_value × (1.05)
+    Value_end_of_year = (value_start_of_year - $1,992,344.36) × max to $0
+    
+    This order matters: growth is applied BEFORE annuity payment
+
+REMAINDER AT TERM:
+  Projected value: $1,002,820.77 (at 5% growth)
+  Passes to: Children named as remainder beneficiaries
+  Treatment: Removed from grantor's taxable estate (no §2033 inclusion)
+  
+  Assumptions embedded in remainder:
+    - Children survive the grantor (required for bequest)
+    - Trust assets appreciate as projected
+    - No extraordinary trust expenses deplete corpus
+    - Trustee makes standard investment decisions
+
+GIFT TAX TREATMENT:
+  Taxable gift: $0.00 (zeroed-out GRAT)
+  Assumption: Annuity PV ≈ Remainder PV at inception
+  IRC basis: §2702(a)(2)(A) - qualified annuity interest exemption
+  
+  Why zero gift tax?
+    - The grantor's retained annuity interest is excluded from gift value
+    - Using §7520 rate ensures the retained interest value = initial corpus
+    - Therefore, taxable gift = corpus - retained interest value = $0
+
+ESTATE TAX SAVINGS:
+  Amount removed from estate: $1,002,820.77 (remainder only)
+  Estate tax rate: 40% (from 2015 context)
+  Estate tax saved: $401,128.31
+  
+  This assumes:
+    - Grantor is subject to federal estate tax (estate > exemptions)
+    - 40% marginal estate tax rate applies (2015 law)
+    - No state-level estate taxes considered
+    - Remainder is not re-gifted by children
+
+================================================================================
+4. CRAT - CHARITABLE REMAINDER ANNUITY TRUST ASSUMPTIONS
+================================================================================
+
+INITIAL CONTRIBUTION:
+  Amount: $16,000,000 (from liquidity event)
+  Tax treatment: Assets removed from grantor's ownership
+  Deposited into: Irrevocable trust with charitable remainder interest
+
+TERM LENGTH:
+  Assumption: 20 years (fixed)
+  Rationale: Longer than GRAT to accrue substantial remainder for charity
+  IRC reference: §664(a) - minimum 20% charitable remainder at end of term
+
+ANNUITY CALCULATION:
+  Payout rate: 5% of initial corpus (fixed)
+  Annual payment: $16,000,000 × 0.05 = $800,000
+  Total paid to grantor over 20 years: $16,000,000
+  
+  Assumptions:
+    - Payout is fixed dollar amount (not percentage of current value)
+    - Grantor (or named income beneficiary) receives payment each year
+    - Payout must be at least 5% (IRS minimum for CRT status) ✓
+    - Payout must be no more than 50% (IRS maximum for CRT)
+    - Grantor survives to receive payments (no death assumption)
+
+INCOME TAX TREATMENT (DONOR):
+  Upfront charitable deduction: $4,934,444.99 (estimated)
+  
+  Calculation method:
+    1. Project remainder at 4% growth (conservative for deduction)
+    2. Discount back using §7520 rate (4.2%) for 20 years
+    3. Result represents PV of charitable interest
+  
+  Assumptions:
+    - Donor is subject to federal income tax
+    - Deduction is limited to 50% of AGI (cash contributions)
+    - Donor can carry forward excess deduction for 5 years
+    - This model does NOT account for income tax complexity
+    - This is an ESTIMATE; actual deduction requires IRS valuation tables
+
+TRUST GROWTH ASSUMPTION:
+  Expected annual growth rate: 5% (0.05, fixed)
+  Rationale: Same as GRAT for comparison fairness
+  Treatment: Applied year-over-year to trust value
+  
+  Simulation algorithm (same as GRAT):
+    Value_start_of_year = previous_value × (1.05)
+    Value_end_of_year = (value_start_of_year - $800,000) × max to $0
+    
+    At 5% growth = annual growth amount, and 5% payout = fixed amount:
+    Growth and payout nearly offset each other.
+
+REMAINDER AT TERM:
+  Projected value: $16,000,000.00 (essentially unchanged)
+  Passes to: Designated charitable beneficiary
+  Treatment: Removed from grantor's taxable estate
+  
+  Assumptions:
+    - Charity designated upfront and cannot be changed
+    - Charity must be qualified (IRC §501(c)(3) or equivalent)
+    - Trustee allocates all remaining assets to charity
+    - No portion reverts to grantor or family
+
+ESTATE TAX TREATMENT - CRITICAL CHANGE (FIXED MARCH 5, 2026):
+  
+  PREVIOUS INCORRECT ASSUMPTION:
+    - Estate reduction: $16,000,000 (incorrect)
+    - Estate tax saved: $6,400,000 (incorrect)
+    - Rationale: "Full corpus removed from estate"
+  
+  CORRECTED ASSUMPTION (IRC §2036):
+    - Estate reduction: $4,934,444.99 (PV of charitable deduction)
+    - Estate tax saved: $1,973,777.97 (deduction × 40%)
+    - Rationale: Under IRC §2036, grantor's retained income interest
+                 means FULL CORPUS is INCLUDED in estate at death.
+                 Only the present value of the charitable remainder
+                 (= charitable deduction) reduces the taxable estate.
+  
+  IRC §2036 Logic:
+    - If grantor retains any income interest → assets included in estate
+    - CRAT donor retains annuity payments for 20 years → included in estate
+    - BUT: Charitable deduction offsets the included amount
+    - Net estate reduction = only the deduction amount
+    - This is why CRAT saves LESS estate tax than GRAT (which has no inclusion)
+
+ASSUMPTION CRITICAL TO ALL COMPARISONS:
+  - GRAT removes remainder from estate (IRC §2036 does not apply - qualified interest)
+  - CRAT includes full corpus but deducts charitable portion
+  - This difference drives all downstream comparison results
+
+================================================================================
+5. COMPARISON & DIFFERENTIAL ASSUMPTIONS
+================================================================================
+
+BASELINE TAXABLE ESTATE (BEFORE EITHER TRUST):
+  Amount: $16,000,000
+  Assumption: Entire liquidity event is added to grantor's estate
+  Not assumed:
+    - Other assets or liabilities
+    - Prior gifts
+    - Gifting to non-spouse
+
+ESTATE TAX RATES APPLIED:
+  Marginal rate: 40% (from 2015 context)
+  Assumption: Estate will be large enough to incur estate tax
+  Not considered:
+    - Generation-skipping tax (GST rate = 40% in 2015)
+    - State estate taxes
+    - Future changes to federal rates
+
+WEALTH TO CHILDREN - GRAT vs CRAT:
+  GRAT assumption: Children inherit remainder ($1,002,820.77)
+                   Plus receives annuity payments ($19,923,443.60) during term
+  CRAT assumption: Children receive $0 from CRAT
+                   (Charitable remainder goes to charity instead)
+  
+  This comparison assumes:
+    - Same grantor makes same initial contribution
+    - Different beneficiary choices (children vs charity)
+    - Both investments grow at 5% identically
+
+CHARITABLE COMPONENT:
+  GRAT charitable value: $0.00
+  CRAT charitable value: $16,000,000 (projected remainder to charity)
+  
+  Assumptions:
+    - GRAT donors have NO charitable intent (remainder all to children)
+    - CRAT donors have FULL charitable intent (all remainder to charity)
+    - Both are valid and appropriate for different clients
+
+================================================================================
+6. MODEL OUTPUT CONSTRAINTS & GUARANTEES
+================================================================================
+
+NUMERIC PRECISION:
+  - All monetary values rounded to 2 decimal places
+  - No value has more than 2 decimals in output JSON
+  - Rounding errors are minimized by rounding at output time, not mid-calculation
+
+NON-NEGATIVITY GUARANTEES:
+  - All output values >= 0.00
+  - Trust remainder values: max(computed_value, 0) - eliminates negative growth
+  - Estate tax values: always positive or zero
+  - Annuity values: always positive (by definition)
+
+IMMUTABILITY OF OUTPUT:
+  - TrustComparisonModel is a frozen dataclass
+  - Output JSON cannot be modified after write
+  - Supports auditability and compliance requirements
+
+METADATA RECORDED:
+  - Timestamp (UTC ISO format)
+  - Model version (1.0)
+  - Pipeline stage ("Stage 3 — Deterministic Trust Modeler")
+  - Section 7520 rate used
+  - All assumption parameters
+  - All input client data
+
+================================================================================
+7. DETERMINISM GUARANTEES & REPRODUCIBILITY
+================================================================================
+
+DETERMINISTIC EXECUTION:
+  - Same inputs → Same outputs (guaranteed)
+  - No random number generation
+  - No external API calls that vary
+  - No system time dependencies (except metadata timestamp)
+  - All calculations are purely mathematical
+
+REPRODUCIBILITY:
+  - Input file (ClientProfile_v1.json) + rate parameter → identical output
+  - Test suite verifies determinism (test_model_integration.py)
+  - Multiple model runs with same parameters produce identical financial figures
+  - Only metadata timestamp changes between runs
+
+VERSIONING:
+  - Output file: TrustComparison_v1.json (version 1.0)
+  - Schema is locked (changes would require v2)
+  - Any schema change requires explicit version increment
+  - Backward compatibility is maintained
+
+================================================================================
+8. WHAT IS NOT MODELED (OUT OF SCOPE)
+================================================================================
+
+MODEL LIMITATIONS:
+
+  Tax Complexity:
+    - Grantor trust income tax treatment (IRC §671-683) - not modeled
+    - Ordinary income, capital gains, and AMT computations - not modeled
+    - State income or estate taxes - not modeled
+    - Generation-skipping transfer tax (GST) - not modeled
+  
+  Trust Administration:
+    - Annual trustee fees and expenses - not modeled
+    - Trust distribution requirements - not modeled
+    - Trustee discretion in distributions - not modeled
+    - Trust protector provisions - not modeled
+  
+  Market Scenarios:
+    - Volatility or downside risk - not modeled
+    - Recession/negative growth scenarios - not modeled
+    - Inflation impact on fixed annuities - not modeled
+    - Asset-class-specific returns - not modeled
+  
+  Mortality & Life Events:
+    - Grantor mortality during term (critical for GRATs) - not modeled
+    - Beneficiary mortality - not modeled
+    - Divorce or family changes - not modeled
+    - Incapacity/guardianship - not modeled
+  
+  Legal & Regulatory:
+    - Changes to tax law post-2015 - not modeled
+    - State law variations - not modeled
+    - Non-charitable trust restriction rules - not modeled
+    - IRS audit outcomes or adjustments - not modeled
+  
+  Integration:
+    - Interaction with other estate planning (powers of appointment, etc.) - not modeled
+    - Coordination with life insurance - not modeled
+    - Qualified personal residence trust (QPRT) - not modeled
+    - Charitable lead trusts (CLT) - not modeled
+
+================================================================================
+9. CHANGELOG & KEY CORRECTIONS
+================================================================================
+
+MARCH 5, 2026 - ESTATE TAX LOGIC CORRECTION:
+
+  Issue Found:
+    CRAT estate tax calculation assumed full corpus escapes the estate.
+    This violates IRC §2036 (grantor trust inclusion).
+  
+  Root Cause:
+    Model did not account for grantor's retained income interest.
+    Under §2036, when grantor retains annuity payments, full corpus is
+    included in the grantor's taxable estate at death.
+  
+  Correction Applied:
+    CRAT estate reduction changed from: $16,000,000 (full corpus)
+    CRAT estate reduction changed to: $4,934,444.99 (deduction value only)
+    
+    CRAT estate tax saved changed from: $6,400,000
+    CRAT estate tax saved changed to: $1,973,777.97
+    
+    Files modified:
+      - src/model/crat.py: calculate_crat() function
+      - src/model/compare.py: comment clarification
+    
+    Why this matters:
+      GRAT removes remainder from taxable estate (qualified interest under §2702)
+      CRAT includes full corpus but deducts charitable portion under §2036
+      These have DIFFERENT estate tax impacts - GRAT is more effective at
+      estate removal (despite lower total estate tax benefit).
+  
+  Test Updates:
+    Models rerun to generate correct TrustComparison_v1.json
+    All numerical relationships verified
+
+================================================================================
+10. QUESTIONS & CONTACT
+================================================================================
+
+For questions about assumptions or constraints:
+  - Consult this file (assumptions.txt) first
+  - Review DETERMINISTIC_LAYER_WALKTHROUGH.txt for detailed explanations
+  - Check test_model_integration.py for usage examples
+  - Examine actual output TrustComparison_v1.json for concrete values
+
+For code changes:
+  - Update assumptions.txt whenever model logic changes
+  - Document in CHANGELOG section above
+  - Update test suite to match new assumptions
+  - Re-run integration tests to verify determinism
+
+For compliance:
+  - All assumptions are documented (this file)
+  - All calculations are auditable (JSON output)
+  - All code is version-controlled
+  - All outputs are deterministic and reproducible
+
+================================================================================
+END OF ASSUMPTIONS DOCUMENT
+================================================================================
