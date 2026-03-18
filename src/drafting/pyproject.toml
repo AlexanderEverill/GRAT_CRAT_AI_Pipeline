@@ -1,0 +1,38 @@
+[project]
+name = "grat-crat-drafting"
+version = "0.1.0"
+description = "Stage 4 drafting groundwork for GRAT/CRAT pipeline"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+	"openai>=2.28.0,<3",
+	"requests>=2.32.5,<3",
+	"scikit-learn>=1.8.0,<2",
+]
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+package-dir = {"" = "."}
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = [
+	"context*",
+	"drafting*",
+	"llm*",
+	"loaders*",
+	"output*",
+	"pipeline*",
+	"postprocessing*",
+	"prompts*",
+	"utils*",
+]
+
+[tool.pytest.ini_options]
+minversion = "7.0"
+addopts = "-q"
+testpaths = ["tests"]
+pythonpath = ["."]

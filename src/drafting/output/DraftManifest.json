@@ -1,0 +1,685 @@
+{
+  "manifest_version": "v1",
+  "generated_at_utc": "2026-03-18T14:02:55Z",
+  "client": {
+    "client_id": "CLIENT-2015-001",
+    "risk_tolerance": "moderate",
+    "horizon": 10,
+    "goals": [
+      "Minimize estate tax exposure",
+      "Transfer wealth to children",
+      "Support charitable giving goals"
+    ]
+  },
+  "inputs": {
+    "section_count": 10,
+    "retrieval_chunk_count": 35,
+    "retrieval_citation_key_count": 10,
+    "forecast_metric_count": 20,
+    "risk_metric_count": 4,
+    "allocation_weight_count": 2
+  },
+  "sections": [
+    {
+      "section_id": "client_overview",
+      "title": "1. Client Overview",
+      "content_type": "narrative",
+      "written": true,
+      "citations_used": {
+        "src_tags": [
+          "[SRC-1]"
+        ],
+        "citation_keys": [
+          "[S16]",
+          "[S1]",
+          "[S2]",
+          "[S31]",
+          "[S66]"
+        ]
+      },
+      "numerics_bound": [
+        {
+          "placeholder": "{{taxable_estate_before_usd}}",
+          "bound_value": "$16,000,000.00",
+          "is_bound": true
+        },
+        {
+          "placeholder": "{{estate_tax_rate}}",
+          "bound_value": "40.00%",
+          "is_bound": true
+        }
+      ],
+      "validation": {
+        "is_valid": true,
+        "warnings": [],
+        "unresolved_placeholders": [],
+        "dangling_citations": [],
+        "measured_length": 195,
+        "min_length": null,
+        "max_length": null,
+        "length_unit": "words"
+      },
+      "token_usage": {
+        "source": "estimated",
+        "input_tokens": 1388,
+        "output_tokens": 279,
+        "total_tokens": 1667
+      }
+    },
+    {
+      "section_id": "executive_summary",
+      "title": "2. Executive Summary",
+      "content_type": "narrative",
+      "written": true,
+      "citations_used": {
+        "src_tags": [
+          "[SRC-1]"
+        ],
+        "citation_keys": [
+          "[S16]",
+          "[S1]",
+          "[S2]",
+          "[S31]",
+          "[S66]"
+        ]
+      },
+      "numerics_bound": [
+        {
+          "placeholder": "{{estate_tax_rate}}",
+          "bound_value": "40.00%",
+          "is_bound": true
+        },
+        {
+          "placeholder": "{{section_7520_rate_bps}}",
+          "bound_value": "196 bps",
+          "is_bound": true
+        },
+        {
+          "placeholder": "{{estate_tax_saved_by_grat_usd}}",
+          "bound_value": "$1,482,050.71",
+          "is_bound": true
+        },
+        {
+          "placeholder": "{{estate_tax_saved_by_crat_usd}}",
+          "bound_value": "$3,048,289.06",
+          "is_bound": true
+        },
+        {
+          "placeholder": "{{taxable_estate_before_usd}}",
+          "bound_value": "$16,000,000.00",
+          "is_bound": true
+        }
+      ],
+      "validation": {
+        "is_valid": true,
+        "warnings": [],
+        "unresolved_placeholders": [],
+        "dangling_citations": [],
+        "measured_length": 267,
+        "min_length": null,
+        "max_length": null,
+        "length_unit": "words"
+      },
+      "token_usage": {
+        "source": "estimated",
+        "input_tokens": 1389,
+        "output_tokens": 398,
+        "total_tokens": 1787
+      }
+    },
+    {
+      "section_id": "planning_objectives",
+      "title": "3. Planning Objectives and Constraints",
+      "content_type": "narrative",
+      "written": true,
+      "citations_used": {
+        "src_tags": [
+          "[SRC-1]"
+        ],
+        "citation_keys": [
+          "[S49]",
+          "[S51]",
+          "[S58]",
+          "[S66]"
+        ]
+      },
+      "numerics_bound": [
+        {
+          "placeholder": "{{estate_tax_rate}}",
+          "bound_value": "40.00%",
+          "is_bound": true
+        },
+        {
+          "placeholder": "{{taxable_estate_before_usd}}",
+          "bound_value": "$16,000,000.00",
+          "is_bound": true
+        }
+      ],
+      "validation": {
+        "is_valid": true,
+        "warnings": [],
+        "unresolved_placeholders": [],
+        "dangling_citations": [],
+        "measured_length": 269,
+        "min_length": null,
+        "max_length": null,
+        "length_unit": "words"
+      },
+      "token_usage": {
+        "source": "estimated",
+        "input_tokens": 1115,
+        "output_tokens": 411,
+        "total_tokens": 1526
+      }
+    },
+    {
+      "section_id": "grat_analysis",
+      "title": "4. Grantor Retained Annuity Trust (GRAT)",
+      "content_type": "narrative",
+      "written": true,
+      "citations_used": {
+        "src_tags": [
+          "[SRC-1]",
+          "[SRC-2]"
+        ],
+        "citation_keys": [
+          "[S16]",
+          "[S1]",
+          "[S2]",
+          "[S31]",
+          "[S49]",
+          "[S51]",
+          "[S58]",
+          "[S66]"
+        ]
+      },
+      "numerics_bound": [
+        {
+          "placeholder": "{{grat_trust_corpus_usd}}",
+          "bound_value": "$16,000,000.00",
+          "is_bound": true
+        },
+        {
+          "placeholder": "{{grat_term_years}}",
+          "bound_value": "10",
+          "is_bound": true
+        },
+        {
+          "placeholder": "{{grat_annuity_payment_annual_usd}}",
+          "bound_value": "$1,777,498.67",
+          "is_bound": true
+        },
+        {
+          "placeholder": "{{grat_total_annuity_paid_usd}}",
+          "bound_value": "$17,774,986.70",
+          "is_bound": true
+        },
+        {
+          "placeholder": "{{grat_projected_remainder_usd}}",
+          "bound_value": "$3,705,126.78",
+          "is_bound": true
+        },
+        {
+          "placeholder": "{{grat_taxable_gift_usd}}",
+          "bound_value": "$0.00",
+          "is_bound": true
+        },
+        {
+          "placeholder": "{{grat_estate_tax_saved_usd}}",
+          "bound_value": "$1,482,050.71",
+          "is_bound": true
+        },
+        {
+          "placeholder": "{{grat_growth_rate}}",
+          "bound_value": "5.00%",
+          "is_bound": true
+        },
+        {
+          "placeholder": "{{section_7520_rate_bps}}",
+          "bound_value": "196 bps",
+          "is_bound": true
+        },
+        {
+          "placeholder": "{{taxable_estate_after_grat_usd}}",
+          "bound_value": "$12,294,873.22",
+          "is_bound": true
+        },
+        {
+          "placeholder": "{{wealth_to_children_grat_usd}}",
+          "bound_value": "$3,705,126.78",
+          "is_bound": true
+        }
+      ],
+      "validation": {
+        "is_valid": true,
+        "warnings": [],
+        "unresolved_placeholders": [],
+        "dangling_citations": [],
+        "measured_length": 741,
+        "min_length": null,
+        "max_length": null,
+        "length_unit": "words"
+      },
+      "token_usage": {
+        "source": "estimated",
+        "input_tokens": 1452,
+        "output_tokens": 1003,
+        "total_tokens": 2455
+      }
+    },
+    {
+      "section_id": "crat_analysis",
+      "title": "5. Charitable Remainder Annuity Trust (CRAT)",
+      "content_type": "narrative",
+      "written": true,
+      "citations_used": {
+        "src_tags": [
+          "[SRC-1]",
+          "[SRC-2]"
+        ],
+        "citation_keys": [
+          "[S16]",
+          "[S1]",
+          "[S2]",
+          "[S31]",
+          "[S49]",
+          "[S51]",
+          "[S58]",
+          "[S8]"
+        ]
+      },
+      "numerics_bound": [
+        {
+          "placeholder": "{{crat_trust_corpus_usd}}",
+          "bound_value": "$16,000,000.00",
+          "is_bound": true
+        },
+        {
+          "placeholder": "{{crat_annual_annuity_usd}}",
+          "bound_value": "$800,000.00",
+          "is_bound": true
+        },
+        {
+          "placeholder": "{{crat_total_annuity_paid_usd}}",
+          "bound_value": "$16,000,000.00",
+          "is_bound": true
+        },
+        {
+          "placeholder": "{{crat_charitable_deduction_usd}}",
+          "bound_value": "$7,620,722.64",
+          "is_bound": true
+        },
+        {
+          "placeholder": "{{crat_remainder_to_charity_usd}}",
+          "bound_value": "$16,000,000.00",
+          "is_bound": true
+        },
+        {
+          "placeholder": "{{crat_estate_tax_saved_usd}}",
+          "bound_value": "$3,048,289.06",
+          "is_bound": true
+        },
+        {
+          "placeholder": "{{crat_payout_rate}}",
+          "bound_value": "5.00%",
+          "is_bound": true
+        },
+        {
+          "placeholder": "{{taxable_estate_after_crat_usd}}",
+          "bound_value": "$8,379,277.36",
+          "is_bound": true
+        },
+        {
+          "placeholder": "{{wealth_to_children_crat_usd}}",
+          "bound_value": "$0.00",
+          "is_bound": true
+        }
+      ],
+      "validation": {
+        "is_valid": true,
+        "warnings": [],
+        "unresolved_placeholders": [],
+        "dangling_citations": [],
+        "measured_length": 776,
+        "min_length": null,
+        "max_length": null,
+        "length_unit": "words"
+      },
+      "token_usage": {
+        "source": "estimated",
+        "input_tokens": 1455,
+        "output_tokens": 1060,
+        "total_tokens": 2515
+      }
+    },
+    {
+      "section_id": "comparative_analysis",
+      "title": "6. Comparative Analysis",
+      "content_type": "table",
+      "written": true,
+      "citations_used": {
+        "src_tags": [
+          "[SRC-1]"
+        ],
+        "citation_keys": [
+          "[S16]",
+          "[S1]",
+          "[S2]",
+          "[S31]",
+          "[S49]",
+          "[S51]",
+          "[S58]"
+        ]
+      },
+      "numerics_bound": [
+        {
+          "placeholder": "{{taxable_estate_before_usd}}",
+          "bound_value": "$16,000,000.00",
+          "is_bound": true
+        },
+        {
+          "placeholder": "{{taxable_estate_after_grat_usd}}",
+          "bound_value": "$12,294,873.22",
+          "is_bound": true
+        },
+        {
+          "placeholder": "{{taxable_estate_after_crat_usd}}",
+          "bound_value": "$8,379,277.36",
+          "is_bound": true
+        },
+        {
+          "placeholder": "{{estate_tax_saved_by_grat_usd}}",
+          "bound_value": "$1,482,050.71",
+          "is_bound": true
+        },
+        {
+          "placeholder": "{{estate_tax_saved_by_crat_usd}}",
+          "bound_value": "$3,048,289.06",
+          "is_bound": true
+        },
+        {
+          "placeholder": "{{wealth_to_children_grat_usd}}",
+          "bound_value": "$3,705,126.78",
+          "is_bound": true
+        },
+        {
+          "placeholder": "{{wealth_to_children_crat_usd}}",
+          "bound_value": "$0.00",
+          "is_bound": true
+        }
+      ],
+      "validation": {
+        "is_valid": true,
+        "warnings": [],
+        "unresolved_placeholders": [],
+        "dangling_citations": [],
+        "measured_length": 247,
+        "min_length": null,
+        "max_length": null,
+        "length_unit": "words"
+      },
+      "token_usage": {
+        "source": "estimated",
+        "input_tokens": 1123,
+        "output_tokens": 376,
+        "total_tokens": 1499
+      }
+    },
+    {
+      "section_id": "scenario_illustration",
+      "title": "7. Scenario Illustration",
+      "content_type": "narrative",
+      "written": true,
+      "citations_used": {
+        "src_tags": [
+          "[SRC-1]",
+          "[SRC-2]"
+        ],
+        "citation_keys": [
+          "[S16]",
+          "[S1]",
+          "[S2]",
+          "[S31]",
+          "[S49]",
+          "[S51]",
+          "[S58]",
+          "[S66]",
+          "[S8]"
+        ]
+      },
+      "numerics_bound": [
+        {
+          "placeholder": "{{grat_trust_corpus_usd}}",
+          "bound_value": "$16,000,000.00",
+          "is_bound": true
+        },
+        {
+          "placeholder": "{{grat_term_years}}",
+          "bound_value": "10",
+          "is_bound": true
+        },
+        {
+          "placeholder": "{{grat_annuity_payment_annual_usd}}",
+          "bound_value": "$1,777,498.67",
+          "is_bound": true
+        },
+        {
+          "placeholder": "{{grat_projected_remainder_usd}}",
+          "bound_value": "$3,705,126.78",
+          "is_bound": true
+        },
+        {
+          "placeholder": "{{grat_growth_rate}}",
+          "bound_value": "5.00%",
+          "is_bound": true
+        },
+        {
+          "placeholder": "{{section_7520_rate_bps}}",
+          "bound_value": "196 bps",
+          "is_bound": true
+        },
+        {
+          "placeholder": "{{crat_annual_annuity_usd}}",
+          "bound_value": "$800,000.00",
+          "is_bound": true
+        },
+        {
+          "placeholder": "{{crat_remainder_to_charity_usd}}",
+          "bound_value": "$16,000,000.00",
+          "is_bound": true
+        },
+        {
+          "placeholder": "{{crat_charitable_deduction_usd}}",
+          "bound_value": "$7,620,722.64",
+          "is_bound": true
+        }
+      ],
+      "validation": {
+        "is_valid": true,
+        "warnings": [],
+        "unresolved_placeholders": [],
+        "dangling_citations": [],
+        "measured_length": 426,
+        "min_length": null,
+        "max_length": null,
+        "length_unit": "words"
+      },
+      "token_usage": {
+        "source": "estimated",
+        "input_tokens": 1492,
+        "output_tokens": 543,
+        "total_tokens": 2035
+      }
+    },
+    {
+      "section_id": "recommendation",
+      "title": "8. Recommendation",
+      "content_type": "narrative",
+      "written": true,
+      "citations_used": {
+        "src_tags": [
+          "[SRC-1]"
+        ],
+        "citation_keys": [
+          "[S16]",
+          "[S1]",
+          "[S2]",
+          "[S31]",
+          "[S49]",
+          "[S51]",
+          "[S58]"
+        ]
+      },
+      "numerics_bound": [
+        {
+          "placeholder": "{{estate_tax_saved_by_grat_usd}}",
+          "bound_value": "$1,482,050.71",
+          "is_bound": true
+        },
+        {
+          "placeholder": "{{estate_tax_saved_by_crat_usd}}",
+          "bound_value": "$3,048,289.06",
+          "is_bound": true
+        },
+        {
+          "placeholder": "{{wealth_to_children_grat_usd}}",
+          "bound_value": "$3,705,126.78",
+          "is_bound": true
+        },
+        {
+          "placeholder": "{{grat_allocation_weight}}",
+          "bound_value": "60.00%",
+          "is_bound": true
+        },
+        {
+          "placeholder": "{{crat_allocation_weight}}",
+          "bound_value": "40.00%",
+          "is_bound": true
+        }
+      ],
+      "validation": {
+        "is_valid": true,
+        "warnings": [],
+        "unresolved_placeholders": [],
+        "dangling_citations": [],
+        "measured_length": 280,
+        "min_length": null,
+        "max_length": null,
+        "length_unit": "words"
+      },
+      "token_usage": {
+        "source": "estimated",
+        "input_tokens": 1131,
+        "output_tokens": 403,
+        "total_tokens": 1534
+      }
+    },
+    {
+      "section_id": "risks_considerations",
+      "title": "9. Key Risks and Considerations",
+      "content_type": "narrative",
+      "written": true,
+      "citations_used": {
+        "src_tags": [
+          "[SRC-1]",
+          "[SRC-2]"
+        ],
+        "citation_keys": [
+          "[S127]",
+          "[S16]",
+          "[S1]",
+          "[S2]",
+          "[S31]"
+        ]
+      },
+      "numerics_bound": [
+        {
+          "placeholder": "{{grat_term_years}}",
+          "bound_value": "10",
+          "is_bound": true
+        },
+        {
+          "placeholder": "{{section_7520_rate_bps}}",
+          "bound_value": "196 bps",
+          "is_bound": true
+        }
+      ],
+      "validation": {
+        "is_valid": true,
+        "warnings": [],
+        "unresolved_placeholders": [],
+        "dangling_citations": [],
+        "measured_length": 378,
+        "min_length": null,
+        "max_length": null,
+        "length_unit": "words"
+      },
+      "token_usage": {
+        "source": "estimated",
+        "input_tokens": 1097,
+        "output_tokens": 565,
+        "total_tokens": 1662
+      }
+    },
+    {
+      "section_id": "next_steps",
+      "title": "10. Next Steps",
+      "content_type": "narrative",
+      "written": true,
+      "citations_used": {
+        "src_tags": [
+          "[SRC-1]"
+        ],
+        "citation_keys": [
+          "[S127]"
+        ]
+      },
+      "numerics_bound": [],
+      "validation": {
+        "is_valid": true,
+        "warnings": [],
+        "unresolved_placeholders": [],
+        "dangling_citations": [],
+        "measured_length": 327,
+        "min_length": null,
+        "max_length": null,
+        "length_unit": "words"
+      },
+      "token_usage": {
+        "source": "estimated",
+        "input_tokens": 804,
+        "output_tokens": 489,
+        "total_tokens": 1293
+      }
+    }
+  ],
+  "summary": {
+    "sections_written": 10,
+    "src_tags_used": [
+      "[SRC-1]",
+      "[SRC-2]"
+    ],
+    "citation_keys_used": [
+      "[S127]",
+      "[S16]",
+      "[S1]",
+      "[S2]",
+      "[S31]",
+      "[S49]",
+      "[S51]",
+      "[S58]",
+      "[S66]",
+      "[S8]"
+    ],
+    "numeric_placeholders": {
+      "total": 52,
+      "bound": 52
+    },
+    "validation_warnings": 0,
+    "token_usage_totals": {
+      "input_tokens": 12446,
+      "output_tokens": 5527,
+      "total_tokens": 17973
+    }
+  }
+}
