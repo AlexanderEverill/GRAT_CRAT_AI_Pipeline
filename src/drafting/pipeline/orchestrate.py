@@ -25,6 +25,7 @@ from output import (
 )
 from postprocessing import (
     ValidationResult,
+    check_citation_relevance,
     insert_citations,
     substitute_numerics,
     validate_section_output,
@@ -178,9 +179,31 @@ def drafting_pipeline(
     for section in outline.sections:
         section_id = section.section_id
         try:
+            # Semantic relevance check on raw markdown (before [SXXX] tags
+            # are resolved by the citation inserter).
+            relevance_errors = check_citation_relevance(raw_sections[section_id])
+
             annotated = insert_citations(raw_sections[section_id], citation_manifest)
             finalized = substitute_numerics(annotated, numeric_substitutions)
             validation = validate_section_output(finalized, section)
+
+            # Merge semantic relevance failures into the validation result.
+            if relevance_errors:
+                combined_errors = list(validation.errors) + [
+                    f"Citation relevance: {m}" for m in relevance_errors
+                ]
+                validation = ValidationResult(
+                    is_valid=False,
+                    errors=combined_errors,
+                    warnings=list(validation.warnings),
+                    unresolved_placeholders=list(validation.unresolved_placeholders),
+                    dangling_citations=list(validation.dangling_citations),
+                    mismatched_citations=relevance_errors,
+                    measured_length=validation.measured_length,
+                    min_length=validation.min_length,
+                    max_length=validation.max_length,
+                    length_unit=validation.length_unit,
+                )
         except Exception as exc:
             raise DraftingError(f"Postprocessing failed for section '{section_id}'") from exc
 

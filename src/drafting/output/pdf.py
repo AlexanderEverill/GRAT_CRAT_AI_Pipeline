@@ -226,19 +226,22 @@ _SUPERSCRIPT_DIGITS = "\u2070\u00b9\u00b2\u00b3\u2074\u2075\u2076\u2077\u2078\u2
 def _to_superscript(n: int) -> str:
     if n < 0:
         return str(n)
-    return "".join(_SUPERSCRIPT_DIGITS[int(d)] for d in str(n))
+    # Use bracketed format — Unicode superscripts beyond 1-3 are not in
+    # Latin-1 and would render as '?' in the PDF stream.
+    return f"[{n}]"
 
 
 def _extract_footnotes(text: str, footnotes: dict[str, int]) -> tuple[str, dict[str, int]]:
     """Remove inline citations, assign footnote numbers, return cleaned text."""
-    cite_re = re.compile(r"\s*\((S\d{3}),\s*https?://[^,]+,\s*n\.d\.\)")
+    # Match [S001]-style cite keys kept inline by the citation inserter.
+    cite_re = re.compile(r"\[S(\d{3})\]")
     for m in cite_re.finditer(text):
-        source_id = m.group(1)
+        source_id = f"S{m.group(1)}"
         if source_id not in footnotes:
             footnotes[source_id] = len(footnotes) + 1
 
     def _replacer(m: re.Match) -> str:
-        source_id = m.group(1)
+        source_id = f"S{m.group(1)}"
         idx = footnotes[source_id]
         return _to_superscript(idx)
     result = cite_re.sub(_replacer, text)
@@ -250,6 +253,7 @@ def _extract_report_sections(markdown: str) -> tuple[list[ReportSection], list[s
     references: list[str] = []
     current_title: str | None = None
     current_lines: list[str] = []
+    saw_divider = True  # treat start-of-document as a divider context
 
     def flush() -> None:
         nonlocal current_title, current_lines, references
@@ -284,11 +288,27 @@ def _extract_report_sections(markdown: str) -> tuple[list[ReportSection], list[s
         current_lines = []
 
     for line in markdown.splitlines():
-        if line.startswith("## "):
-            flush()
-            current_title = _strip_inline_markdown(line[3:].strip())
-            current_lines = []
+        stripped = line.strip()
+        # Track --- dividers: only ## after a divider starts a new top-level section.
+        if stripped == "---":
+            saw_divider = True
             continue
+        if line.startswith("## "):
+            if saw_divider:
+                # This is a top-level outline section heading.
+                flush()
+                current_title = _strip_inline_markdown(line[3:].strip())
+                current_lines = []
+                saw_divider = False
+                continue
+            else:
+                # Internal ## heading within section — demote to ### for rendering.
+                line = "### " + line[3:]
+        elif line.startswith("# ") and not line.startswith("## "):
+            # Demote standalone # headings inside sections to ###
+            line = "### " + line[2:]
+        if stripped and stripped != "---":
+            saw_divider = False
         if current_title is None:
             continue
         current_lines.append(line)
@@ -675,7 +695,13 @@ def _render_cover_page(
     canvas.y = scope_box_y + scope_box_h + 16
 
 
-def _render_contents_page(canvas: _PdfCanvas, section_titles: list[str], *, first_section_page: int = 3) -> None:
+def _render_contents_page(
+    canvas: _PdfCanvas,
+    section_titles: list[str],
+    *,
+    page_numbers: list[int] | None = None,
+    first_section_page: int = 3,
+) -> None:
     canvas.add_page()
     canvas.rect(0, 0, PAGE_WIDTH, 86, fill=(245, 247, 251))
     canvas.rect(MARGIN_X, 64, 72, 6, fill=COLOR_GOLD)
@@ -684,7 +710,10 @@ def _render_contents_page(canvas: _PdfCanvas, section_titles: list[str], *, firs
     right_edge = PAGE_WIDTH - MARGIN_X
     for index, title in enumerate(section_titles):
         canvas.ensure_space(24)
-        page_num = first_section_page + index
+        if page_numbers is not None and index < len(page_numbers):
+            page_num = page_numbers[index]
+        else:
+            page_num = first_section_page + index
         canvas.text(MARGIN_X, canvas.y, title, font="F2", size=12, color=COLOR_INK)
         canvas.text(right_edge - 30, canvas.y, str(page_num), font="F1", size=11, color=COLOR_MUTED, align="right", width=30)
         canvas.line(MARGIN_X, canvas.y + 8, right_edge, canvas.y + 8, color=COLOR_RULE, line_width=0.6)
@@ -697,22 +726,18 @@ _NEW_PAGE_SECTIONS = {
 }
 
 
-def _render_section_page(canvas: _PdfCanvas, section: ReportSection) -> None:
-    # Detect sections that need compact layout to fit on one page
-    compact = ("Grantor Retained Annuity Trust" in section.title
-               or "Charitable Remainder Annuity Trust" in section.title)
+def _render_section_page(canvas: _PdfCanvas, section: ReportSection, compaction_level: int = 0) -> None:
+    # Compaction levels: 0 = comfortable, 1 = compact, 2 = tight, 3 = minimal
+    level = min(max(compaction_level, 0), 3)
 
-    # Spacing parameters — compact mode tightens spacing but keeps text readable
-    para_size = 10.2 if compact else 10.5
-    para_leading = 12.5 if compact else 14.0
-    para_trail = 1.0 if compact else 3.0
-    sub_size = 11.0 if compact else 11.5
-    sub_trail = 16.0 if compact else 18.0
-    bullet_size = 10.0 if compact else 10.0
-    bullet_spacing = 11.5 if compact else 13.0
-    blank_gap = 5.0 if compact else 5.0
-    fn_size = 7.0 if compact else 7.5
-    fn_spacing = 9.0 if compact else 11.0
+    # Spacing presets by compaction level: (para_size, para_leading, para_trail, sub_size, sub_trail, bullet_size, bullet_spacing, blank_gap, fn_size, fn_spacing)
+    _PRESETS = [
+        (10.5, 14.0, 3.0, 11.5, 18.0, 10.0, 13.0, 5.0, 7.5, 11.0),  # 0: comfortable
+        (10.2, 12.5, 1.0, 11.0, 16.0, 10.0, 11.5, 5.0, 7.0, 9.0),   # 1: compact
+        (9.8, 11.5, 0.5, 10.5, 14.0, 9.5, 10.5, 3.0, 6.5, 8.0),     # 2: tight
+        (9.2, 10.5, 0.0, 10.0, 12.0, 9.0, 9.5, 2.0, 6.0, 7.0),      # 3: minimal
+    ]
+    para_size, para_leading, para_trail, sub_size, sub_trail, bullet_size, bullet_spacing, blank_gap, fn_size, fn_spacing = _PRESETS[level]
 
     canvas.add_page()
     canvas.rect(0, 0, PAGE_WIDTH, 86, fill=(245, 247, 251))
@@ -809,7 +834,7 @@ def write_draft_pdf(
     *,
     client_profile: ClientProfile,
     draft_manifest: Mapping[str, Any] | None = None,
-    max_pages: int = 15,
+    max_pages: int = 12,
 ) -> Path:
     """Write a styled client-facing PDF from assembled markdown."""
     if not isinstance(final_assembled_markdown, str) or not final_assembled_markdown.strip():
@@ -825,18 +850,41 @@ def write_draft_pdf(
     sections = [s for s in sections if "Next Steps" not in s.title]
     section_titles = [section.title for section in sections]
 
-    canvas = _PdfCanvas(title="Client Advisory Report — GRAT / CRAT")
-    _render_cover_page(canvas, client_profile, section_titles, draft_manifest)
-    _render_contents_page(canvas, section_titles)
-    for section in sections:
-        _render_section_page(canvas, section)
+    # Try progressively tighter compaction until within page budget.
+    # Level 0 = comfortable, 1 = compact, 2 = tight, 3 = minimal.
+    MAX_COMPACTION = 3
+    canvas = None
+    page_count = 0
+    for compaction_level in range(MAX_COMPACTION + 1):
+        canvas = _PdfCanvas(title="Client Advisory Report — GRAT / CRAT")
+        _render_cover_page(canvas, client_profile, section_titles, draft_manifest)
+        _render_contents_page(canvas, section_titles)  # placeholder — page numbers patched below
+        canvas._finalize_page()  # flush contents into _pages so index is correct
+        contents_page_index = len(canvas._pages) - 1
 
-    pdf_bytes = canvas.render()
-    page_count = len(canvas._pages)
+        section_start_pages: list[int] = []
+        for section in sections:
+            section_start_pages.append(canvas.page_number + 1)  # next add_page() will be this number
+            _render_section_page(canvas, section, compaction_level=compaction_level)
+
+        # Re-render the contents page with actual section start pages.
+        toc_canvas = _PdfCanvas(title=canvas.title)
+        toc_canvas.page_number = 1  # so add_page() increments to 2 → footer renders
+        _render_contents_page(toc_canvas, section_titles, page_numbers=section_start_pages)
+        toc_canvas._finalize_page()
+        canvas._pages[contents_page_index] = toc_canvas._pages[0]
+
+        page_count = len(canvas._pages)
+        if page_count <= max_pages:
+            break
+
     if page_count > max_pages:
         raise ValueError(
-            f"Rendered PDF exceeds page budget: {page_count} pages > {max_pages}"
+            f"Rendered PDF exceeds page budget: {page_count} pages > {max_pages} "
+            f"(even at maximum compaction level {MAX_COMPACTION})"
         )
+
+    pdf_bytes = canvas.render()
 
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_bytes(pdf_bytes)

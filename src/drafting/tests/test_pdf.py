@@ -43,8 +43,12 @@ This report compares a GRAT and a CRAT for the current client facts.
 ### References
 - [SRC-1] Internal Source. Test. (2026).
 
+---
+
 ## Global References
 - [SRC-1] Internal Source. Test. (2026).
+
+---
 
 ## Generation Metadata
 - model_used: gpt-test

@@ -42,7 +42,7 @@ def assemble_draft(
             "Missing finalized markdown for section IDs: " + ", ".join(missing)
         )
 
-    parts: list[str] = [_build_toc(outline)]
+    parts: list[str] = []
     for section in outline.sections:
         raw_markdown = section_markdown_map[section.section_id]
         if not isinstance(raw_markdown, str) or not raw_markdown.strip():
@@ -51,8 +51,20 @@ def assemble_draft(
             )
 
         body = raw_markdown.strip()
+        
+        # Strip any leading markdown heading (# or ##) from the body
+        # The assembler will always use ## for consistency
+        lines = body.split("\n")
+        if lines and lines[0].strip().startswith("# "):
+            # Remove the heading line and any blank lines after it
+            lines = lines[1:]
+            while lines and not lines[0].strip():
+                lines.pop(0)
+            body = "\n".join(lines).strip()
+        
         heading_line = f"## {section.title}"
         if body.startswith("## "):
+            # Body already has ## heading (unlikely after stripping above, but handle it)
             block = body
         else:
             block = f"{heading_line}\n\n{body}"

@@ -1,0 +1,9 @@
+{
+  "decision": "approved",
+  "draft_sha256": "13e99c564ff4c57d470a8f4007baee83a5b6a453d0636502e8fceb661d4e8c2c",
+  "notes": "Manually approved after review.",
+  "reviewer": "Alexander Everill",
+  "reviewer_role": "Pipeline Engineer",
+  "timestamp": "2026-03-19T09:06:54.441839+00:00",
+  "validation_report_sha256": "e2a4d44d23a28fec6c77bf8e0ec987d8fc17c9f0a5998b0e8cd710ddee953037"
+}

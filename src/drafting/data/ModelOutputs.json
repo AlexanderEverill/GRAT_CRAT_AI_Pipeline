@@ -19,13 +19,17 @@
     "crat_total_annuity_paid_usd": 16000000.0,
     "crat_charitable_deduction_estimate_usd": 7620722.64,
     "crat_remainder_to_charity_usd": 16000000.0,
-    "crat_estate_tax_saved_usd": 3048289.06
+    "crat_estate_tax_saved_usd": 3048289.06,
+    "crat_term_years": 20,
+    "crat_payout_rate": 0.05,
+    "client_age": 62
   },
   "risk_metrics": {
     "estate_tax_rate": 0.4,
     "section_7520_rate": 0.0196,
     "grat_growth_rate": 0.05,
-    "crat_growth_rate": 0.05
+    "crat_growth_rate": 0.05,
+    "crat_payout_rate": 0.05
   },
   "allocation_weights": {
     "grat": 0.6,

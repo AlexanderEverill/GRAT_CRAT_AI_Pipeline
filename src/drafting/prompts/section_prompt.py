@@ -60,7 +60,8 @@ def section_draft_prompt_builder(
         raise ValueError("token_budget must be a positive integer")
 
     header = (
-        "Draft the requested section using only supplied context and evidence.\n\n"
+        "Draft the requested section using only supplied context and evidence.\n"
+        "Target 350-450 words. Do NOT include a References subsection.\n\n"
         f"Section ID: {section.section_id}\n"
         f"Section Title: {section.title}\n"
         f"Section Content Type: {section.content_type}\n"

@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import re
 from concurrent.futures import Future, ThreadPoolExecutor
 import logging
 from typing import Callable, Mapping
@@ -13,6 +14,54 @@ from .section_drafter import draft_section
 
 
 logger = logging.getLogger(__name__)
+
+# Section IDs that must share a consistent recommendation.
+_EXEC_SUMMARY_ID = "executive_summary"
+_COMPARISON_REC_ID = "comparison_recommendation"
+
+
+def _extract_recommendation_block(executive_summary_md: str) -> str | None:
+    """Return the recommendation paragraph(s) from the executive summary.
+
+    Looks for a ### Recommendation heading or the last paragraph that contains
+    the word "recommended" / "primary" / "complementary".  Returns *None* if
+    no recommendation text can be identified.
+    """
+    # Try heading-delimited block first.
+    match = re.search(
+        r"(?:^|\n)###?\s*Recommendation\s*\n(.*?)(?=\n###?\s|\Z)",
+        executive_summary_md,
+        re.DOTALL | re.IGNORECASE,
+    )
+    if match:
+        block = match.group(1).strip()
+        if block:
+            return block
+
+    # Fallback: find paragraphs containing recommendation keywords.
+    paragraphs = executive_summary_md.split("\n\n")
+    for para in reversed(paragraphs):
+        if re.search(r"\b(recommended|primary|complementary)\b", para, re.IGNORECASE):
+            return para.strip()
+
+    return None
+
+
+def _inject_recommendation_anchor(
+    prompt: str, recommendation_block: str
+) -> str:
+    """Prepend a consistency anchor to a section prompt."""
+    anchor = (
+        "IMPORTANT — Recommendation consistency requirement:\n"
+        "The executive summary has already been drafted and contains the "
+        "following recommendation. Your recommendation MUST use the same "
+        "primary/complementary ordering and consistent language. Do NOT "
+        "reverse which strategy is primary and which is complementary.\n\n"
+        "--- Executive Summary Recommendation ---\n"
+        f"{recommendation_block}\n"
+        "--- End Executive Summary Recommendation ---\n\n"
+    )
+    return anchor + prompt
 
 
 def _draft_one_section(
@@ -66,11 +115,29 @@ def draft_all_sections(
     total = len(outline.sections)
     if not parallel:
         result: dict[str, str] = {}
+        recommendation_anchor: str | None = None
         for ordinal, section in enumerate(outline.sections, start=1):
+            effective_prompt = section_prompts[section.section_id]
+
+            # Inject the executive-summary recommendation into the
+            # comparison/recommendation prompt so the LLM aligns its
+            # primary/complementary framing with the earlier section.
+            if (
+                section.section_id == _COMPARISON_REC_ID
+                and recommendation_anchor is not None
+            ):
+                effective_prompt = _inject_recommendation_anchor(
+                    effective_prompt, recommendation_anchor
+                )
+                logger.info(
+                    "injected recommendation anchor into '%s' prompt",
+                    _COMPARISON_REC_ID,
+                )
+
             try:
-                result[section.section_id] = _draft_one_section(
+                drafted = _draft_one_section(
                     section=section,
-                    section_prompt=section_prompts[section.section_id],
+                    section_prompt=effective_prompt,
                     llm_client=llm_client,
                     enable_self_critique=enable_self_critique,
                     ordinal=ordinal,
@@ -80,6 +147,25 @@ def draft_all_sections(
                 raise DraftingError(
                     f"Failed drafting section '{section.section_id}'"
                 ) from exc
+
+            result[section.section_id] = drafted
+
+            # After drafting the executive summary, extract its
+            # recommendation so later sections can be anchored to it.
+            if section.section_id == _EXEC_SUMMARY_ID:
+                recommendation_anchor = _extract_recommendation_block(drafted)
+                if recommendation_anchor:
+                    logger.info(
+                        "extracted recommendation anchor from '%s' (%d chars)",
+                        _EXEC_SUMMARY_ID,
+                        len(recommendation_anchor),
+                    )
+                else:
+                    logger.warning(
+                        "could not extract recommendation from '%s'; "
+                        "consistency anchor will not be injected",
+                        _EXEC_SUMMARY_ID,
+                    )
         return result
 
     futures_by_section_id: dict[str, Future[str]] = {}

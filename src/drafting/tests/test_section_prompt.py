@@ -34,7 +34,7 @@ def test_section_draft_prompt_builder_injects_all_required_blocks() -> None:
         token_budget=1400,
     )
 
-    assert "Section Title: 4. Grantor Retained Annuity Trust (GRAT)" in prompt
+    assert "Section Title: GRAT Analysis" in prompt
     assert "Section Purpose:" in prompt
     assert "Client Context:" in prompt
     assert "Relevant Retrieved Chunks:" in prompt

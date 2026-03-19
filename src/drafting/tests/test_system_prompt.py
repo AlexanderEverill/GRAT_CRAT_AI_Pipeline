@@ -10,4 +10,4 @@ def test_system_prompt_template_contains_required_contract() -> None:
     assert "citation" in prompt.lower()
     assert "do not hallucinate" in prompt.lower()
     assert "markdown section headings" in prompt.lower()
-    assert "[SRC-N]" in prompt
+    assert "[SXXX]" in prompt or "[S001]" in prompt

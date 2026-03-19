@@ -17,7 +17,7 @@ from postprocessing.validator import ValidationResult
 from utils.token_budget import estimate_tokens
 
 
-SRC_TAG_PATTERN = re.compile(r"\[SRC-\d+\]")
+SRC_TAG_PATTERN = re.compile(r"\[S\d{3}\]")
 
 
 def _utc_timestamp() -> str:

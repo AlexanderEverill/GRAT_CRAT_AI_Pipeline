@@ -24,7 +24,7 @@ class ModelConfig:
     provider: Literal["openai", "anthropic"]
     model: str
     temperature: float = 0.2
-    max_tokens: int = 1200
+    max_tokens: int = 1000
     max_prompt_tokens: int | None = None
     reserved_output_tokens: int = 0
     max_retries: int = 3

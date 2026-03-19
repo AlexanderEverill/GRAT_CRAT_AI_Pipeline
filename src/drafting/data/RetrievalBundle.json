@@ -11,63 +11,102 @@
     "citation_style": "inline-short-id",
     "citations": [
       {
-        "cite_key": "[S1]",
+        "cite_key": "[S001]",
+        "date_accessed": "2026-02-16T14:37:38+00:00",
         "loc": "html",
-        "source_id": "S002",
-        "url": "https://www.law.cornell.edu/cfr/text/26/25.2702-3"
-      },
-      {
-        "cite_key": "[S2]",
-        "loc": "html",
-        "source_id": "S004",
-        "url": "https://www.law.cornell.edu/cfr/text/26/1.664-2"
-      },
-      {
-        "cite_key": "[S8]",
-        "loc": "html",
-        "source_id": "S009",
-        "url": "https://www.law.cornell.edu/uscode/text/26/170"
-      },
-      {
-        "cite_key": "[S16]",
-        "loc": "html",
+        "publisher_domain": "law.cornell.edu",
         "source_id": "S001",
+        "title": "IRC §2702 — Special Valuation Rules (GRAT Core Statute)",
         "url": "https://www.law.cornell.edu/uscode/text/26/2702"
       },
       {
-        "cite_key": "[S31]",
+        "cite_key": "[S002]",
+        "date_accessed": "2026-02-16T14:37:39+00:00",
         "loc": "html",
+        "publisher_domain": "law.cornell.edu",
+        "source_id": "S002",
+        "title": "26 CFR §25.2702-3 — Qualified Interests (GRAT Regulations)",
+        "url": "https://www.law.cornell.edu/cfr/text/26/25.2702-3"
+      },
+      {
+        "cite_key": "[S003]",
+        "date_accessed": "2026-02-16T14:37:39+00:00",
+        "loc": "html",
+        "publisher_domain": "law.cornell.edu",
         "source_id": "S003",
+        "title": "IRC §664 — Charitable Remainder Trusts (CRAT Core Statute)",
         "url": "https://www.law.cornell.edu/uscode/text/26/664"
       },
       {
-        "cite_key": "[S49]",
+        "cite_key": "[S004]",
+        "date_accessed": "2026-02-16T14:37:40+00:00",
         "loc": "html",
+        "publisher_domain": "law.cornell.edu",
+        "source_id": "S004",
+        "title": "26 CFR §1.664-2 — Charitable Remainder Annuity Trust Regulations",
+        "url": "https://www.law.cornell.edu/cfr/text/26/1.664-2"
+      },
+      {
+        "cite_key": "[S005]",
+        "date_accessed": "2026-02-16T14:37:40+00:00",
+        "loc": "html",
+        "publisher_domain": "law.cornell.edu",
         "source_id": "S005",
+        "title": "IRC §2501 — Imposition of Gift Tax",
         "url": "https://www.law.cornell.edu/uscode/text/26/2501"
       },
       {
-        "cite_key": "[S51]",
+        "cite_key": "[S006]",
+        "date_accessed": "2026-02-16T14:37:41+00:00",
         "loc": "html",
-        "source_id": "S010",
-        "url": "https://www.irs.gov/businesses/small-businesses-self-employed/estate-tax"
-      },
-      {
-        "cite_key": "[S58]",
-        "loc": "html",
+        "publisher_domain": "law.cornell.edu",
         "source_id": "S006",
+        "title": "IRC §2033 — Property Included in Gross Estate",
         "url": "https://www.law.cornell.edu/uscode/text/26/2033"
       },
       {
-        "cite_key": "[S66]",
+        "cite_key": "[S007]",
+        "date_accessed": "2026-02-16T14:37:41+00:00",
         "loc": "html",
+        "publisher_domain": "law.cornell.edu",
         "source_id": "S007",
+        "title": "IRC §7520 — Valuation Tables (Section 7520 Hurdle Rate)",
         "url": "https://www.law.cornell.edu/uscode/text/26/7520"
       },
       {
-        "cite_key": "[S127]",
+        "cite_key": "[S008]",
+        "date_accessed": "2026-03-01T12:31:47+00:00",
         "loc": "html",
+        "publisher_domain": "law.cornell.edu",
+        "source_id": "S008",
+        "title": "IRC §671 — Grantor Trust Income Tax Rules",
+        "url": "https://www.law.cornell.edu/uscode/text/26/671"
+      },
+      {
+        "cite_key": "[S009]",
+        "date_accessed": "2026-03-01T12:31:48+00:00",
+        "loc": "html",
+        "publisher_domain": "law.cornell.edu",
+        "source_id": "S009",
+        "title": "IRC §170 — Charitable Contributions and Gifts (Income Tax Deduction)",
+        "url": "https://www.law.cornell.edu/uscode/text/26/170"
+      },
+      {
+        "cite_key": "[S010]",
+        "date_accessed": "2026-03-01T12:31:49+00:00",
+        "loc": "html",
+        "publisher_domain": "irs.gov",
+        "source_id": "S010",
+        "title": "IRS Estate Tax — Exemptions, Rates, and Filing Requirements",
+        "url": "https://www.irs.gov/businesses/small-businesses-self-employed/estate-tax"
+      },
+      {
+        "cite_key": "[S011]",
+        "date_accessed": "2026-03-01T12:31:49+00:00",
+        "loc": "html",
+        "publisher_domain": "law.cornell.edu",
         "source_id": "S011",
+        "title": "31 CFR Part 10 — Treasury Department Circular 230 (Tax Practice Standards)",
         "url": "https://www.law.cornell.edu/cfr/text/31/part-10"
       }
     ]
@@ -76,13 +115,11 @@
     {
       "source_id": "S001",
       "score": 0.95,
-      "text": "ansfers for which the valuation date is before June 1, 2023. See, however, \u00a7\u00a7 20.2031-7(d)(3) and 25.2512-5(d)(3) (transition rules) and 1.7520-3(b) (relating to exceptions to",
-      "citation_key": "[S16]",
+      "text": "- Federal Rules of Bankruptcy Procedure - U.C.C. - Law by jurisdiction - State law - Uniform laws - Federal law - World law -",
+      "citation_key": "[S001]",
       "section_tags": [
-        "client_overview",
-        "executive_summary",
         "grat_analysis",
-        "scenario_illustration"
+        "executive_summary"
       ],
       "topic": "GRAT_core_mechanics"
     },
@@ -90,161 +127,244 @@
       "source_id": "S002",
       "score": 0.93,
       "text": "ther debt instrument, option, or other similar financial arrangement, directly or indirectly, in satisfaction of the annuity amount does not constitute payment of the annuity",
-      "citation_key": "[S1]",
+      "citation_key": "[S002]",
       "section_tags": [
-        "client_overview",
-        "executive_summary",
         "grat_analysis",
-        "scenario_illustration"
+        "executive_summary"
       ],
       "topic": "GRAT_core_mechanics"
     },
     {
-      "source_id": "S001",
+      "source_id": "S004",
       "score": 0.91,
-      "text": "- - CHAPTER I\u2014INTERNAL REVENUE SERVICE, DEPARTMENT OF THE TREASURY > SUBCHAPTER B\u2014ESTATE AND GIFT TAXES > PART 25\u2014GIFT TAX; GIFTS MADE AFTER DECEMBER 31,",
-      "citation_key": "[S16]",
+      "text": "ansfers for which the valuation date is before June 1, 2023. See, however, §§ 20.2031-7(d)(3) and 25.2512-5(d)(3) (transition rules) and 1.7520-3(b) (relating to exceptions to",
+      "citation_key": "[S004]",
       "section_tags": [
-        "client_overview",
-        "executive_summary",
         "grat_analysis",
-        "scenario_illustration"
+        "executive_summary"
+      ],
+      "topic": "GRAT_core_mechanics"
+    },
+    {
+      "source_id": "S009",
+      "score": 0.89,
+      "text": "(1) In general No deduction shall be allowed under this section for a contribution to or for the use of an organization or trust described",
+      "citation_key": "[S009]",
+      "section_tags": [
+        "grat_analysis",
+        "executive_summary"
       ],
       "topic": "GRAT_core_mechanics"
     },
     {
       "source_id": "S002",
-      "score": 0.89,
-      "text": "ederal Rules of Appellate Procedure - Federal Rules of Civil Procedure - Federal Rules of Criminal Procedure - Federal Rules of Evidence - Federal Rules",
-      "citation_key": "[S1]",
+      "score": 0.87,
+      "text": "- - CHAPTER I—INTERNAL REVENUE SERVICE, DEPARTMENT OF THE TREASURY > SUBCHAPTER B—ESTATE AND GIFT TAXES > PART 25—GIFT TAX; GIFTS MADE AFTER DECEMBER 31,",
+      "citation_key": "[S002]",
       "section_tags": [
-        "client_overview",
-        "executive_summary",
         "grat_analysis",
-        "scenario_illustration"
+        "executive_summary"
       ],
       "topic": "GRAT_core_mechanics"
+    },
+    {
+      "source_id": "S004",
+      "score": 0.85,
+      "text": "ederal Rules of Appellate Procedure - Federal Rules of Civil Procedure - Federal Rules of Criminal Procedure - Federal Rules of Evidence - Federal Rules",
+      "citation_key": "[S004]",
+      "section_tags": [
+        "grat_analysis",
+        "executive_summary"
+      ],
+      "topic": "GRAT_core_mechanics"
+    },
+    {
+      "source_id": "S004",
+      "score": 0.83,
+      "text": "Credits - § 1.664-2 Charitable remainder annuity trust. 26 CFR § 1.664-2 - Charitable remainder annuity trust. - CFR prev | next § 1.664-2 Charitable",
+      "citation_key": "[S004]",
+      "section_tags": [
+        "grat_analysis",
+        "executive_summary"
+      ],
+      "topic": "GRAT_core_mechanics"
+    },
+    {
+      "source_id": "S002",
+      "score": 0.81,
+      "text": "al Rules - Federal Rules of Appellate Procedure - Federal Rules of Civil Procedure - Federal Rules of Criminal Procedure - Federal Rules of Evidence",
+      "citation_key": "[S002]",
+      "section_tags": [
+        "grat_analysis",
+        "executive_summary"
+      ],
+      "topic": "GRAT_core_mechanics"
+    },
+    {
+      "source_id": "S002",
+      "score": 0.79,
+      "text": "GIFTS MADE AFTER DECEMBER 31, 1954 - Special Valuation Rules - § 25.2702-3 Qualified interests. 26 CFR § 25.2702-3 - Qualified interests. - CFR -",
+      "citation_key": "[S002]",
+      "section_tags": [
+        "grat_analysis",
+        "executive_summary"
+      ],
+      "topic": "GRAT_core_mechanics"
+    },
+    {
+      "source_id": "S002",
+      "score": 0.77,
+      "text": "wever, B's interest does not meet the requirements of paragraph (d) of this section. The term of B's annuity is not fixed and ascertainable at",
+      "citation_key": "[S002]",
+      "section_tags": [
+        "grat_analysis",
+        "executive_summary"
+      ],
+      "topic": "GRAT_core_mechanics"
+    },
+    {
+      "source_id": "S003",
+      "score": 0.95,
+      "text": "standing any other provision of this subchapter, the provisions of this section shall, in accordance with regulations prescribed by the Secretary, apply in the case",
+      "citation_key": "[S003]",
+      "section_tags": [
+        "crat_analysis",
+        "executive_summary"
+      ],
+      "topic": "CRAT_core_mechanics"
+    },
+    {
+      "source_id": "S004",
+      "score": 0.93,
+      "text": "ansfers for which the valuation date is before June 1, 2023. See, however, §§ 20.2031-7(d)(3) and 25.2512-5(d)(3) (transition rules) and 1.7520-3(b) (relating to exceptions to",
+      "citation_key": "[S004]",
+      "section_tags": [
+        "crat_analysis",
+        "executive_summary"
+      ],
+      "topic": "CRAT_core_mechanics"
+    },
+    {
+      "source_id": "S009",
+      "score": 0.91,
+      "text": "ch contributions does not exceed 50 percent of the taxpayer’s contribution base for the taxable year. (B) Other contributionsAny charitable contribution other than a charitable",
+      "citation_key": "[S009]",
+      "section_tags": [
+        "crat_analysis",
+        "executive_summary"
+      ],
+      "topic": "CRAT_core_mechanics"
+    },
+    {
+      "source_id": "S004",
+      "score": 0.89,
+      "text": "onsidered one contribution. (c) Calculation of the fair market value of the remainder interest of a charitable remainder annuity trust. For purposes of sections 170,",
+      "citation_key": "[S004]",
+      "section_tags": [
+        "crat_analysis",
+        "executive_summary"
+      ],
+      "topic": "CRAT_core_mechanics"
+    },
+    {
+      "source_id": "S004",
+      "score": 0.87,
+      "text": "- - CHAPTER I—INTERNAL REVENUE SERVICE, DEPARTMENT OF THE TREASURY > SUBCHAPTER A—INCOME TAX > PART 1—INCOME TAXES > General Business Credits > § 1.664-2",
+      "citation_key": "[S004]",
+      "section_tags": [
+        "crat_analysis",
+        "executive_summary"
+      ],
+      "topic": "CRAT_core_mechanics"
+    },
+    {
+      "source_id": "S004",
+      "score": 0.85,
+      "text": ". See subparagraph (5) of this paragraph for a special rule allowing termination of payment of the annuity amount with the regular payment next preceding",
+      "citation_key": "[S004]",
+      "section_tags": [
+        "crat_analysis",
+        "executive_summary"
+      ],
+      "topic": "CRAT_core_mechanics"
+    },
+    {
+      "source_id": "S004",
+      "score": 0.83,
+      "text": "ederal Rules of Appellate Procedure - Federal Rules of Civil Procedure - Federal Rules of Criminal Procedure - Federal Rules of Evidence - Federal Rules",
+      "citation_key": "[S004]",
+      "section_tags": [
+        "crat_analysis",
+        "executive_summary"
+      ],
+      "topic": "CRAT_core_mechanics"
+    },
+    {
+      "source_id": "S004",
+      "score": 0.81,
+      "text": "Credits - § 1.664-2 Charitable remainder annuity trust. 26 CFR § 1.664-2 - Charitable remainder annuity trust. - CFR prev | next § 1.664-2 Charitable",
+      "citation_key": "[S004]",
+      "section_tags": [
+        "crat_analysis",
+        "executive_summary"
+      ],
+      "topic": "CRAT_core_mechanics"
+    },
+    {
+      "source_id": "S003",
+      "score": 0.79,
+      "text": "subparagraph (A) and other than qualified gratuitous transfers described in subparagraph (C) may be paid to or for the use of any person other than",
+      "citation_key": "[S003]",
+      "section_tags": [
+        "crat_analysis",
+        "executive_summary"
+      ],
+      "topic": "CRAT_core_mechanics"
+    },
+    {
+      "source_id": "S009",
+      "score": 0.77,
+      "text": "(1) In general No deduction shall be allowed under this section for a contribution to or for the use of an organization or trust described",
+      "citation_key": "[S009]",
+      "section_tags": [
+        "crat_analysis",
+        "executive_summary"
+      ],
+      "topic": "CRAT_core_mechanics"
     },
     {
       "source_id": "S001",
-      "score": 0.87,
-      "text": "Credits - \u00a7 1.664-2 Charitable remainder annuity trust. 26 CFR \u00a7 1.664-2 - Charitable remainder annuity trust. - CFR prev | next \u00a7 1.664-2 Charitable",
-      "citation_key": "[S16]",
-      "section_tags": [
-        "client_overview",
-        "executive_summary",
-        "grat_analysis",
-        "scenario_illustration"
-      ],
-      "topic": "GRAT_core_mechanics"
-    },
-    {
-      "source_id": "S003",
       "score": 0.95,
-      "text": "ch contributions does not exceed 50 percent of the taxpayer\u2019s contribution base for the taxable year. (B) Other contributionsAny charitable contribution other than a charitable",
-      "citation_key": "[S31]",
+      "text": "ct to which there is 1 or more term interests shall be treated as a transfer of an interest in a trust. (2) Joint purchases",
+      "citation_key": "[S001]",
       "section_tags": [
-        "client_overview",
-        "crat_analysis",
-        "executive_summary",
-        "scenario_illustration"
-      ],
-      "topic": "CRAT_core_mechanics"
-    },
-    {
-      "source_id": "S004",
-      "score": 0.93,
-      "text": "ansfers for which the valuation date is before June 1, 2023. See, however, \u00a7\u00a7 20.2031-7(d)(3) and 25.2512-5(d)(3) (transition rules) and 1.7520-3(b) (relating to exceptions to",
-      "citation_key": "[S2]",
-      "section_tags": [
-        "client_overview",
-        "crat_analysis",
-        "executive_summary",
-        "scenario_illustration"
-      ],
-      "topic": "CRAT_core_mechanics"
-    },
-    {
-      "source_id": "S003",
-      "score": 0.91,
-      "text": "onsidered one contribution. (c) Calculation of the fair market value of the remainder interest of a charitable remainder annuity trust. For purposes of sections 170,",
-      "citation_key": "[S31]",
-      "section_tags": [
-        "client_overview",
-        "crat_analysis",
-        "executive_summary",
-        "scenario_illustration"
-      ],
-      "topic": "CRAT_core_mechanics"
-    },
-    {
-      "source_id": "S004",
-      "score": 0.89,
-      "text": "standing any other provision of this subchapter, the provisions of this section shall, in accordance with regulations prescribed by the Secretary, apply in the case",
-      "citation_key": "[S2]",
-      "section_tags": [
-        "client_overview",
-        "crat_analysis",
-        "executive_summary",
-        "scenario_illustration"
-      ],
-      "topic": "CRAT_core_mechanics"
-    },
-    {
-      "source_id": "S003",
-      "score": 0.87,
-      "text": "- - CHAPTER I\u2014INTERNAL REVENUE SERVICE, DEPARTMENT OF THE TREASURY > SUBCHAPTER A\u2014INCOME TAX > PART 1\u2014INCOME TAXES > General Business Credits > \u00a7 1.664-2",
-      "citation_key": "[S31]",
-      "section_tags": [
-        "client_overview",
-        "crat_analysis",
-        "executive_summary",
-        "scenario_illustration"
-      ],
-      "topic": "CRAT_core_mechanics"
-    },
-    {
-      "source_id": "S005",
-      "score": 0.95,
-      "text": "apply and no deduction shall be allowed under subsection (a) for such contribution unless the taxpayer substantiates the contribution by a contemporaneous written acknowledgement of",
-      "citation_key": "[S49]",
-      "section_tags": [
-        "comparative_analysis",
-        "crat_analysis",
         "grat_analysis",
-        "planning_objectives",
-        "recommendation",
-        "scenario_illustration"
+        "crat_analysis",
+        "comparison_recommendation"
       ],
       "topic": "gift_estate_tax_treatment"
     },
     {
-      "source_id": "S006",
+      "source_id": "S003",
       "score": 0.93,
-      "text": "Letter Penalties What&#039;s new \u2014 Estate and gift tax Related international topics Estate tax for nonresidents not citizens of the United States Frequently asked questions",
-      "citation_key": "[S58]",
+      "text": "ation which is a member of the same controlled group of corporations (within the meaning of section 409(l)(4)) as such corporation. For purposes of the",
+      "citation_key": "[S003]",
       "section_tags": [
-        "comparative_analysis",
-        "crat_analysis",
         "grat_analysis",
-        "planning_objectives",
-        "recommendation",
-        "scenario_illustration"
+        "crat_analysis",
+        "comparison_recommendation"
       ],
       "topic": "gift_estate_tax_treatment"
     },
     {
-      "source_id": "S010",
+      "source_id": "S004",
       "score": 0.91,
-      "text": "$12,060,000 2023 $12,920,000 2024 $13,610,000 2025 $13,990,000 2026 $15,000,000 Beginning January 1, 2011, estates of decedents survived by a spouse may elect to pass any",
-      "citation_key": "[S51]",
+      "text": "mined for Federal tax purposes may be illustrated by the following example: Example. The will of X provides for the transfer of one-half of his",
+      "citation_key": "[S004]",
       "section_tags": [
-        "comparative_analysis",
-        "crat_analysis",
         "grat_analysis",
-        "planning_objectives",
-        "recommendation",
-        "scenario_illustration"
+        "crat_analysis",
+        "comparison_recommendation"
       ],
       "topic": "gift_estate_tax_treatment"
     },
@@ -252,284 +372,513 @@
       "source_id": "S005",
       "score": 0.89,
       "text": "the transfer of property by gift during such calendar year by any individual resident or nonresident. (2) Transfers of intangible property Except as provided in",
-      "citation_key": "[S49]",
+      "citation_key": "[S005]",
       "section_tags": [
-        "comparative_analysis",
-        "crat_analysis",
         "grat_analysis",
-        "planning_objectives",
-        "recommendation",
-        "scenario_illustration"
+        "crat_analysis",
+        "comparison_recommendation"
       ],
       "topic": "gift_estate_tax_treatment"
     },
     {
       "source_id": "S006",
       "score": 0.87,
-      "text": "ation which is a member of the same controlled group of corporations (within the meaning of section 409(l)(4)) as such corporation. For purposes of the",
-      "citation_key": "[S58]",
+      "text": "ence - Federal Rules of Bankruptcy Procedure - U.C.C. - Law by jurisdiction - State law - Uniform laws - Federal law - World law",
+      "citation_key": "[S006]",
       "section_tags": [
-        "comparative_analysis",
-        "crat_analysis",
         "grat_analysis",
-        "planning_objectives",
-        "recommendation",
-        "scenario_illustration"
+        "crat_analysis",
+        "comparison_recommendation"
       ],
       "topic": "gift_estate_tax_treatment"
     },
     {
       "source_id": "S007",
-      "score": 0.95,
-      "text": "ansfers for which the valuation date is before June 1, 2023. See, however, \u00a7\u00a7 20.2031-7(d)(3) and 25.2512-5(d)(3) (transition rules) and 1.7520-3(b) (relating to exceptions to",
-      "citation_key": "[S66]",
+      "score": 0.85,
+      "text": "onary interest shall be determined— (1) under tables prescribed by the Secretary, and (2) by using an interest rate (rounded to the nearest 2/10ths of",
+      "citation_key": "[S007]",
       "section_tags": [
-        "client_overview",
-        "executive_summary",
         "grat_analysis",
-        "planning_objectives",
-        "scenario_illustration"
+        "crat_analysis",
+        "comparison_recommendation"
+      ],
+      "topic": "gift_estate_tax_treatment"
+    },
+    {
+      "source_id": "S009",
+      "score": 0.83,
+      "text": "apply and no deduction shall be allowed under subsection (a) for such contribution unless the taxpayer substantiates the contribution by a contemporaneous written acknowledgement of",
+      "citation_key": "[S009]",
+      "section_tags": [
+        "grat_analysis",
+        "crat_analysis",
+        "comparison_recommendation"
+      ],
+      "topic": "gift_estate_tax_treatment"
+    },
+    {
+      "source_id": "S010",
+      "score": 0.81,
+      "text": "Letter Penalties What&#039;s new — Estate and gift tax Related international topics Estate tax for nonresidents not citizens of the United States Frequently asked questions",
+      "citation_key": "[S010]",
+      "section_tags": [
+        "grat_analysis",
+        "crat_analysis",
+        "comparison_recommendation"
+      ],
+      "topic": "gift_estate_tax_treatment"
+    },
+    {
+      "source_id": "S010",
+      "score": 0.79,
+      "text": "$12,060,000 2023 $12,920,000 2024 $13,610,000 2025 $13,990,000 2026 $15,000,000 Beginning January 1, 2011, estates of decedents survived by a spouse may elect to pass any",
+      "citation_key": "[S010]",
+      "section_tags": [
+        "grat_analysis",
+        "crat_analysis",
+        "comparison_recommendation"
+      ],
+      "topic": "gift_estate_tax_treatment"
+    },
+    {
+      "source_id": "S009",
+      "score": 0.77,
+      "text": "2016.” Effective Date of 2015 Amendment Pub. L. 114–113, div. Q, title I, § 111(c), Dec. 18, 2015, 129 Stat. 3047, provided that: “(1) Extension.—",
+      "citation_key": "[S009]",
+      "section_tags": [
+        "grat_analysis",
+        "crat_analysis",
+        "comparison_recommendation"
+      ],
+      "topic": "gift_estate_tax_treatment"
+    },
+    {
+      "source_id": "S002",
+      "score": 0.95,
+      "text": "ue to the greater of the required annuity or unitrust payment plus interest computed under section 7520 of the Internal Revenue Code, or the fair",
+      "citation_key": "[S002]",
+      "section_tags": [
+        "grat_analysis",
+        "executive_summary"
+      ],
+      "topic": "section_7520_rate"
+    },
+    {
+      "source_id": "S004",
+      "score": 0.93,
+      "text": "ansfers for which the valuation date is before June 1, 2023. See, however, §§ 20.2031-7(d)(3) and 25.2512-5(d)(3) (transition rules) and 1.7520-3(b) (relating to exceptions to",
+      "citation_key": "[S004]",
+      "section_tags": [
+        "grat_analysis",
+        "executive_summary"
       ],
       "topic": "section_7520_rate"
     },
     {
       "source_id": "S007",
-      "score": 0.93,
+      "score": 0.91,
+      "text": "0 was renumbered section 7521 of this title. Amendments 2014—Subsec. (c)(2), (3). Pub. L. 113–295 redesignated par. (3) as (2), substituted “The Secretary” for “Not",
+      "citation_key": "[S007]",
+      "section_tags": [
+        "grat_analysis",
+        "executive_summary"
+      ],
+      "topic": "section_7520_rate"
+    },
+    {
+      "source_id": "S004",
+      "score": 0.89,
       "text": "onsidered one contribution. (c) Calculation of the fair market value of the remainder interest of a charitable remainder annuity trust. For purposes of sections 170,",
-      "citation_key": "[S66]",
+      "citation_key": "[S004]",
       "section_tags": [
-        "client_overview",
-        "executive_summary",
         "grat_analysis",
-        "planning_objectives",
-        "scenario_illustration"
-      ],
-      "topic": "section_7520_rate"
-    },
-    {
-      "source_id": "S007",
-      "score": 0.91,
-      "text": "0 was renumbered section 7521 of this title. Amendments 2014\u2014Subsec. (c)(2), (3). Pub. L. 113\u2013295 redesignated par. (3) as (2), substituted \u201cThe Secretary\u201d for \u201cNot",
-      "citation_key": "[S66]",
-      "section_tags": [
-        "client_overview",
-        "executive_summary",
-        "grat_analysis",
-        "planning_objectives",
-        "scenario_illustration"
-      ],
-      "topic": "section_7520_rate"
-    },
-    {
-      "source_id": "S007",
-      "score": 0.89,
-      "text": "neral The tables prescribed by the Secretary for purposes of subsection (a) shall contain valuation factors for a series of interest rate categories. (2) Revision",
-      "citation_key": "[S66]",
-      "section_tags": [
-        "client_overview",
-        "executive_summary",
-        "grat_analysis",
-        "planning_objectives",
-        "scenario_illustration"
+        "executive_summary"
       ],
       "topic": "section_7520_rate"
     },
     {
       "source_id": "S007",
       "score": 0.87,
-      "text": "onary interest shall be determined\u2014 (1) under tables prescribed by the Secretary, and (2) by using an interest rate (rounded to the nearest 2/10ths of",
-      "citation_key": "[S66]",
+      "text": "neral The tables prescribed by the Secretary for purposes of subsection (a) shall contain valuation factors for a series of interest rate categories. (2) Revision",
+      "citation_key": "[S007]",
       "section_tags": [
-        "client_overview",
-        "executive_summary",
         "grat_analysis",
-        "planning_objectives",
-        "scenario_illustration"
+        "executive_summary"
+      ],
+      "topic": "section_7520_rate"
+    },
+    {
+      "source_id": "S007",
+      "score": 0.85,
+      "text": "onary interest shall be determined— (1) under tables prescribed by the Secretary, and (2) by using an interest rate (rounded to the nearest 2/10ths of",
+      "citation_key": "[S007]",
+      "section_tags": [
+        "grat_analysis",
+        "executive_summary"
+      ],
+      "topic": "section_7520_rate"
+    },
+    {
+      "source_id": "S004",
+      "score": 0.83,
+      "text": "he valuation date for purposes of determining the interest rate and mortality tables. For purposes of section 2055 or 2106, the valuation date is the",
+      "citation_key": "[S004]",
+      "section_tags": [
+        "grat_analysis",
+        "executive_summary"
+      ],
+      "topic": "section_7520_rate"
+    },
+    {
+      "source_id": "S002",
+      "score": 0.81,
+      "text": "GIFTS MADE AFTER DECEMBER 31, 1954 - Special Valuation Rules - § 25.2702-3 Qualified interests. 26 CFR § 25.2702-3 - Qualified interests. - CFR -",
+      "citation_key": "[S002]",
+      "section_tags": [
+        "grat_analysis",
+        "executive_summary"
+      ],
+      "topic": "section_7520_rate"
+    },
+    {
+      "source_id": "S002",
+      "score": 0.79,
+      "text": "e annuity amount to be paid to or for the benefit of the holder of the qualified annuity interest. Nevertheless, the right to receive the",
+      "citation_key": "[S002]",
+      "section_tags": [
+        "grat_analysis",
+        "executive_summary"
+      ],
+      "topic": "section_7520_rate"
+    },
+    {
+      "source_id": "S002",
+      "score": 0.77,
+      "text": "tes and the trust corpus is payable to A's child. Because A has made a completed gift of the remainder interest, the transfer of property",
+      "citation_key": "[S002]",
+      "section_tags": [
+        "grat_analysis",
+        "executive_summary"
       ],
       "topic": "section_7520_rate"
     },
     {
       "source_id": "S003",
       "score": 0.95,
-      "text": "ansfers for which the valuation date is before June 1, 2023. See, however, \u00a7\u00a7 20.2031-7(d)(3) and 25.2512-5(d)(3) (transition rules) and 1.7520-3(b) (relating to exceptions to",
-      "citation_key": "[S31]",
-      "section_tags": [
-        "crat_analysis",
-        "scenario_illustration"
-      ],
-      "topic": "CRT_taxation_basics"
-    },
-    {
-      "source_id": "S009",
-      "score": 0.93,
       "text": "standing any other provision of this subchapter, the provisions of this section shall, in accordance with regulations prescribed by the Secretary, apply in the case",
-      "citation_key": "[S8]",
+      "citation_key": "[S003]",
       "section_tags": [
-        "crat_analysis",
-        "scenario_illustration"
+        "crat_analysis"
       ],
       "topic": "CRT_taxation_basics"
     },
     {
-      "source_id": "S003",
-      "score": 0.91,
-      "text": "time, the trust shall continue to be treated as a charitable remainder trust for all purposes, such as sections 664, 4947(a)(2), and 4947(b)(3)(B). Upon the",
-      "citation_key": "[S31]",
+      "source_id": "S004",
+      "score": 0.93,
+      "text": "ansfers for which the valuation date is before June 1, 2023. See, however, §§ 20.2031-7(d)(3) and 25.2512-5(d)(3) (transition rules) and 1.7520-3(b) (relating to exceptions to",
+      "citation_key": "[S004]",
       "section_tags": [
-        "crat_analysis",
-        "scenario_illustration"
+        "crat_analysis"
       ],
       "topic": "CRT_taxation_basics"
     },
     {
       "source_id": "S009",
-      "score": 0.89,
-      "text": "Credits - \u00a7 1.664-2 Charitable remainder annuity trust. 26 CFR \u00a7 1.664-2 - Charitable remainder annuity trust. - CFR prev | next \u00a7 1.664-2 Charitable",
-      "citation_key": "[S8]",
+      "score": 0.91,
+      "text": "utions in the year in which made. (iv) For purposes of this paragraph, the term “capital gain property” means, with respect to any contribution, any",
+      "citation_key": "[S009]",
       "section_tags": [
-        "crat_analysis",
-        "scenario_illustration"
+        "crat_analysis"
+      ],
+      "topic": "CRT_taxation_basics"
+    },
+    {
+      "source_id": "S004",
+      "score": 0.89,
+      "text": "time, the trust shall continue to be treated as a charitable remainder trust for all purposes, such as sections 664, 4947(a)(2), and 4947(b)(3)(B). Upon the",
+      "citation_key": "[S004]",
+      "section_tags": [
+        "crat_analysis"
+      ],
+      "topic": "CRT_taxation_basics"
+    },
+    {
+      "source_id": "S004",
+      "score": 0.87,
+      "text": "Credits - § 1.664-2 Charitable remainder annuity trust. 26 CFR § 1.664-2 - Charitable remainder annuity trust. - CFR prev | next § 1.664-2 Charitable",
+      "citation_key": "[S004]",
+      "section_tags": [
+        "crat_analysis"
       ],
       "topic": "CRT_taxation_basics"
     },
     {
       "source_id": "S003",
-      "score": 0.87,
-      "text": "utions in the year in which made. (iv) For purposes of this paragraph, the term \u201ccapital gain property\u201d means, with respect to any contribution, any",
-      "citation_key": "[S31]",
+      "score": 0.85,
+      "text": "ss of the amount required to be distributed under paragraph (2)(A), to the extent that (by reason of subparagraph (A)) the aggregate of the amounts",
+      "citation_key": "[S003]",
       "section_tags": [
-        "crat_analysis",
-        "scenario_illustration"
+        "crat_analysis"
+      ],
+      "topic": "CRT_taxation_basics"
+    },
+    {
+      "source_id": "S009",
+      "score": 0.83,
+      "text": "able contribution (to which subparagraph (A) or (G) does not apply) in each of the 5 succeeding taxable years in order of time. (C) Special",
+      "citation_key": "[S009]",
+      "section_tags": [
+        "crat_analysis"
+      ],
+      "topic": "CRT_taxation_basics"
+    },
+    {
+      "source_id": "S004",
+      "score": 0.81,
+      "text": "because the annuity amount is paid after the close of the taxable year if such payment is made within a reasonable time after the close",
+      "citation_key": "[S004]",
+      "section_tags": [
+        "crat_analysis"
+      ],
+      "topic": "CRT_taxation_basics"
+    },
+    {
+      "source_id": "S004",
+      "score": 0.79,
+      "text": "nd of Year 1, X has only $95 in the ordinary income category under section 664(b)(1) and no income in the capital gain or tax-exempt",
+      "citation_key": "[S004]",
+      "section_tags": [
+        "crat_analysis"
+      ],
+      "topic": "CRT_taxation_basics"
+    },
+    {
+      "source_id": "S003",
+      "score": 0.77,
+      "text": "years; (3) Third, as other income to the extent of such income of the trust for the year and such undistributed income of the trust",
+      "citation_key": "[S003]",
+      "section_tags": [
+        "crat_analysis"
       ],
       "topic": "CRT_taxation_basics"
     },
     {
       "source_id": "S001",
       "score": 0.95,
-      "text": "Letter Penalties What&#039;s new \u2014 Estate and gift tax Related international topics Estate tax for nonresidents not citizens of the United States Frequently asked questions",
-      "citation_key": "[S16]",
+      "text": "- Federal Rules of Bankruptcy Procedure - U.C.C. - Law by jurisdiction - State law - Uniform laws - Federal law - World law -",
+      "citation_key": "[S001]",
       "section_tags": [
-        "comparative_analysis",
-        "crat_analysis",
+        "comparison_recommendation",
         "grat_analysis",
-        "recommendation",
-        "risks_considerations",
-        "scenario_illustration"
+        "crat_analysis"
       ],
       "topic": "risks_limitations"
     },
     {
       "source_id": "S002",
       "score": 0.93,
-      "text": "$12,060,000 2023 $12,920,000 2024 $13,610,000 2025 $13,990,000 2026 $15,000,000 Beginning January 1, 2011, estates of decedents survived by a spouse may elect to pass any",
-      "citation_key": "[S1]",
+      "text": "10. S's entire retained interest is a qualified annuity interest. Example 4. R transfers property to an irrevocable trust retaining the right to receive annually",
+      "citation_key": "[S002]",
       "section_tags": [
-        "comparative_analysis",
-        "crat_analysis",
+        "comparison_recommendation",
         "grat_analysis",
-        "recommendation",
-        "risks_considerations",
-        "scenario_illustration"
+        "crat_analysis"
       ],
       "topic": "risks_limitations"
     },
     {
       "source_id": "S003",
       "score": 0.91,
-      "text": "10. S's entire retained interest is a qualified annuity interest. Example 4. R transfers property to an irrevocable trust retaining the right to receive annually",
-      "citation_key": "[S31]",
+      "text": "subparagraph (A) and other than qualified gratuitous transfers described in subparagraph (C) may be paid to or for the use of any person other than",
+      "citation_key": "[S003]",
       "section_tags": [
-        "comparative_analysis",
-        "crat_analysis",
+        "comparison_recommendation",
         "grat_analysis",
-        "recommendation",
-        "risks_considerations",
-        "scenario_illustration"
+        "crat_analysis"
       ],
       "topic": "risks_limitations"
     },
     {
       "source_id": "S004",
       "score": 0.89,
-      "text": "- - CHAPTER I\u2014INTERNAL REVENUE SERVICE, DEPARTMENT OF THE TREASURY > SUBCHAPTER B\u2014ESTATE AND GIFT TAXES > PART 25\u2014GIFT TAX; GIFTS MADE AFTER DECEMBER 31,",
-      "citation_key": "[S2]",
+      "text": "Such payments or re payments must be made within a reasonable period after the final determination of such value. Any payment due to a recipient",
+      "citation_key": "[S004]",
       "section_tags": [
-        "comparative_analysis",
-        "crat_analysis",
+        "comparison_recommendation",
         "grat_analysis",
-        "recommendation",
-        "risks_considerations",
-        "scenario_illustration"
+        "crat_analysis"
       ],
       "topic": "risks_limitations"
     },
     {
-      "source_id": "S001",
+      "source_id": "S009",
       "score": 0.87,
-      "text": "irements. An interest is a qualified remainder interest only if it meets all of the following requirements: (i) It is a qualified remainder interest in",
-      "citation_key": "[S16]",
+      "text": ", Oct. 22, 1986, 100 Stat. 2095, provided that: “For purposes of section 170 of the Internal Revenue Code of 1986 [formerly I.R.C. 1954] (relating",
+      "citation_key": "[S009]",
       "section_tags": [
-        "comparative_analysis",
-        "crat_analysis",
+        "comparison_recommendation",
         "grat_analysis",
-        "recommendation",
-        "risks_considerations",
-        "scenario_illustration"
+        "crat_analysis"
+      ],
+      "topic": "risks_limitations"
+    },
+    {
+      "source_id": "S010",
+      "score": 0.85,
+      "text": "Letter Penalties What&#039;s new — Estate and gift tax Related international topics Estate tax for nonresidents not citizens of the United States Frequently asked questions",
+      "citation_key": "[S010]",
+      "section_tags": [
+        "comparison_recommendation",
+        "grat_analysis",
+        "crat_analysis"
       ],
       "topic": "risks_limitations"
     },
     {
       "source_id": "S011",
+      "score": 0.83,
+      "text": "SERVICE - CFR prev | next - § 10.0 Scope of part. - Subpart A—Rules Governing Authority to Practice (§§ 10.1 - 10.9) - Subpart",
+      "citation_key": "[S011]",
+      "section_tags": [
+        "comparison_recommendation",
+        "grat_analysis",
+        "crat_analysis"
+      ],
+      "topic": "risks_limitations"
+    },
+    {
+      "source_id": "S010",
+      "score": 0.81,
+      "text": "$12,060,000 2023 $12,920,000 2024 $13,610,000 2025 $13,990,000 2026 $15,000,000 Beginning January 1, 2011, estates of decedents survived by a spouse may elect to pass any",
+      "citation_key": "[S010]",
+      "section_tags": [
+        "comparison_recommendation",
+        "grat_analysis",
+        "crat_analysis"
+      ],
+      "topic": "risks_limitations"
+    },
+    {
+      "source_id": "S002",
+      "score": 0.79,
+      "text": "- - CHAPTER I—INTERNAL REVENUE SERVICE, DEPARTMENT OF THE TREASURY > SUBCHAPTER B—ESTATE AND GIFT TAXES > PART 25—GIFT TAX; GIFTS MADE AFTER DECEMBER 31,",
+      "citation_key": "[S002]",
+      "section_tags": [
+        "comparison_recommendation",
+        "grat_analysis",
+        "crat_analysis"
+      ],
+      "topic": "risks_limitations"
+    },
+    {
+      "source_id": "S002",
+      "score": 0.77,
+      "text": "irements. An interest is a qualified remainder interest only if it meets all of the following requirements: (i) It is a qualified remainder interest in",
+      "citation_key": "[S002]",
+      "section_tags": [
+        "comparison_recommendation",
+        "grat_analysis",
+        "crat_analysis"
+      ],
+      "topic": "risks_limitations"
+    },
+    {
+      "source_id": "S002",
       "score": 0.95,
-      "text": "sFor purposes of subparagraph (A), an acknowledgement shall be considered to be contemporaneous if the donee organization provides it within 30 days of\u2014 (i) the",
-      "citation_key": "[S127]",
-      "section_tags": [
-        "next_steps",
-        "risks_considerations"
-      ],
-      "topic": "required_disclosures_limitations_language"
-    },
-    {
-      "source_id": "S011",
-      "score": 0.93,
       "text": "olding the term interest may receive distributions from the trust during the term. Example 8. A transfers property to an irrevocable trust, retaining the right",
-      "citation_key": "[S127]",
+      "citation_key": "[S002]",
       "section_tags": [
-        "next_steps",
-        "risks_considerations"
+        "citations_disclosures"
       ],
       "topic": "required_disclosures_limitations_language"
     },
     {
-      "source_id": "S011",
-      "score": 0.91,
-      "text": "sallowance of deductions for contributions to or for the use of communist controlled organizations, see section 11(a) of the Internal Security Act of 1950 (50",
-      "citation_key": "[S127]",
+      "source_id": "S009",
+      "score": 0.93,
+      "text": "sFor purposes of subparagraph (A), an acknowledgement shall be considered to be contemporaneous if the donee organization provides it within 30 days of— (i) the",
+      "citation_key": "[S009]",
       "section_tags": [
-        "next_steps",
-        "risks_considerations"
+        "citations_disclosures"
+      ],
+      "topic": "required_disclosures_limitations_language"
+    },
+    {
+      "source_id": "S010",
+      "score": 0.91,
+      "text": "rn - Form 1040 Instructions - Instructions for Form 1040 - Form W-9 - Request for Taxpayer Identification Number (TIN) and Certification - Form 4506-T",
+      "citation_key": "[S010]",
+      "section_tags": [
+        "citations_disclosures"
       ],
       "topic": "required_disclosures_limitations_language"
     },
     {
       "source_id": "S011",
       "score": 0.89,
-      "text": "rn - Form 1040 Instructions - Instructions for Form 1040 - Form W-9 - Request for Taxpayer Identification Number (TIN) and Certification - Form 4506-T",
-      "citation_key": "[S127]",
+      "text": "edure - Federal Rules of Criminal Procedure - Federal Rules of Evidence - Federal Rules of Bankruptcy Procedure - U.C.C. - Law by jurisdiction -",
+      "citation_key": "[S011]",
       "section_tags": [
-        "next_steps",
-        "risks_considerations"
+        "citations_disclosures"
+      ],
+      "topic": "required_disclosures_limitations_language"
+    },
+    {
+      "source_id": "S009",
+      "score": 0.87,
+      "text": "sallowance of deductions for contributions to or for the use of communist controlled organizations, see section 11(a) of the Internal Security Act of 1950 (50",
+      "citation_key": "[S009]",
+      "section_tags": [
+        "citations_disclosures"
+      ],
+      "topic": "required_disclosures_limitations_language"
+    },
+    {
+      "source_id": "S009",
+      "score": 0.85,
+      "text": "food. (v) Determination of fair market valueIn the case of any such contribution of apparently wholesome food which cannot or will not be sold solely",
+      "citation_key": "[S009]",
+      "section_tags": [
+        "citations_disclosures"
+      ],
+      "topic": "required_disclosures_limitations_language"
+    },
+    {
+      "source_id": "S010",
+      "score": 0.83,
+      "text": "t System (EFTPS) - POPULAR - Your Online Account - Tax Withholding Estimator - Estimated Taxes - Penalties Refunds - Overview - About refunds -",
+      "citation_key": "[S010]",
+      "section_tags": [
+        "citations_disclosures"
       ],
       "topic": "required_disclosures_limitations_language"
     },
     {
       "source_id": "S011",
-      "score": 0.87,
-      "text": "food. (v) Determination of fair market valueIn the case of any such contribution of apparently wholesome food which cannot or will not be sold solely",
-      "citation_key": "[S127]",
+      "score": 0.81,
+      "text": "- - Subtitle A—Office of the Secretary of the Treasury > PART 10—PRACTICE BEFORE THE INTERNAL REVENUE SERVICE\" /> 31 CFR Part 10 - PRACTICE",
+      "citation_key": "[S011]",
       "section_tags": [
-        "next_steps",
-        "risks_considerations"
+        "citations_disclosures"
+      ],
+      "topic": "required_disclosures_limitations_language"
+    },
+    {
+      "source_id": "S011",
+      "score": 0.79,
+      "text": "SERVICE - CFR prev | next - § 10.0 Scope of part. - Subpart A—Rules Governing Authority to Practice (§§ 10.1 - 10.9) - Subpart",
+      "citation_key": "[S011]",
+      "section_tags": [
+        "citations_disclosures"
+      ],
+      "topic": "required_disclosures_limitations_language"
+    },
+    {
+      "source_id": "S010",
+      "score": 0.77,
+      "text": "Footer Navigation - Our Agency - About IRS - Careers - Operations and Budget - Tax Statistics - Help - Find a Local Office -",
+      "citation_key": "[S010]",
+      "section_tags": [
+        "citations_disclosures"
       ],
       "topic": "required_disclosures_limitations_language"
     }

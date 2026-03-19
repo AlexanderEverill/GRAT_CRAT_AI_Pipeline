@@ -19,9 +19,9 @@ def test_assemble_draft_in_outline_order_with_toc_and_separators() -> None:
     assembled = assemble_draft(section_map, outline)
 
     assert assembled.startswith("## Table of Contents")
-    assert "- [2. Executive Summary](#2-executive-summary)" in assembled
-    assert "\n\n---\n\n## 2. Executive Summary\n\nContent for executive_summary." in assembled
-    assert "\n\n---\n\n## 4. Grantor Retained Annuity Trust (GRAT)\n\nContent for grat_analysis." in assembled
+    assert "- [Executive Summary](#executive-summary)" in assembled
+    assert "\n\n---\n\n## Executive Summary\n\nContent for executive_summary." in assembled
+    assert "\n\n---\n\n## GRAT Analysis\n\nContent for grat_analysis." in assembled
     assert assembled.endswith("\n")
 
 

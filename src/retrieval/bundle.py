@@ -4,7 +4,6 @@ from __future__ import annotations
 
 import json
 import re
-from dataclasses import dataclass
 from pathlib import Path
 from typing import Any, Dict, List, Tuple
 from urllib.parse import urlparse
@@ -28,6 +27,48 @@ def _load_meta(raw_dir: Path, source_id: str) -> Dict[str, Any]:
     return json.loads(meta_path.read_text(encoding="utf-8"))
 
 
+def _build_source_citation_map(
+    raw_dir: Path,
+    allow_domains: set,
+) -> Tuple[Dict[str, str], List[Dict[str, Any]]]:
+    """Build a 1:1 citation map: one cite key per source document.
+
+    Returns (source_id_to_cite_key, citations_list).
+    Scans all *.meta.json files in raw_dir and creates [S001]...[SNNN]
+    keyed by the source_id stored in each meta file.
+    """
+    source_to_cite: Dict[str, str] = {}
+    citations: List[Dict[str, Any]] = []
+
+    meta_files = sorted(raw_dir.glob("S*.meta.json"))
+    for meta_path in meta_files:
+        meta = json.loads(meta_path.read_text(encoding="utf-8"))
+        source_id = meta.get("source_id", "")
+        if not source_id:
+            continue
+
+        final_url = meta.get("final_url") or meta.get("url") or ""
+        host = normalize_host(
+            urlparse(final_url).hostname or meta.get("publisher_domain") or ""
+        )
+        if host and not any(host == d or host.endswith("." + d) for d in allow_domains):
+            continue
+
+        cite_key = f"[{source_id}]"
+        source_to_cite[source_id] = cite_key
+        citations.append({
+            "cite_key": cite_key,
+            "source_id": source_id,
+            "url": final_url,
+            "title": meta.get("title") or meta.get("page_title") or source_id,
+            "publisher_domain": host or "unknown",
+            "date_accessed": meta.get("date_accessed_utc") or meta.get("date_accessed") or "",
+            "loc": "html",
+        })
+
+    return source_to_cite, citations
+
+
 def build_bundle(
     plan_path: Path,
     index_path: Path,
@@ -39,17 +80,14 @@ def build_bundle(
 
     allow_domains = {normalize_host(d) for d in plan["allowlist"]["domains"]}
 
-    # --- Build Citation Manifest as we go ---
-    citations: List[Dict[str, Any]] = []
-    cite_key_counter = 1
+    # One cite key per source document (e.g. [S001], [S002], ...)
+    source_to_cite, citations = _build_source_citation_map(raw_dir, allow_domains)
 
     items: List[Dict[str, Any]] = []
 
     for topic in plan.get("topics", []):
         topic_id = topic["topic_id"]
-        topic_items: List[Dict[str, Any]] = []
 
-        # We will aggregate key points for this topic across query hits
         key_points: List[Dict[str, Any]] = []
 
         for qobj in topic.get("queries", []):
@@ -59,45 +97,25 @@ def build_bundle(
 
             for h in hits:
                 source_id = h["source_id"]
-                meta = _load_meta(raw_dir, source_id)
-
-                final_url = meta.get("final_url") or meta.get("url") or ""
-                title = meta.get("title") or meta.get("page_title") or f"{source_id}"
-                date_accessed = meta.get("date_accessed_utc") or meta.get("date_accessed") or ""
-
-                host = normalize_host(urlparse(final_url).hostname or meta.get("publisher_domain") or "")
-                if host and not any(host == d or host.endswith("." + d) for d in allow_domains):
-                    # should not happen if fetch allowlist worked, but fail-closed
+                if source_id not in source_to_cite:
                     continue
 
+                meta = _load_meta(raw_dir, source_id)
                 quote = _word_limit_quote(h.get("text", ""), 25)
                 loc = h.get("loc") or meta.get("loc") or "unknown"
 
-                cite_key = f"[S{cite_key_counter}]"
-                cite_key_counter += 1
+                key_points.append({
+                    "claim": f"Evidence for topic {topic_id} (query: {q})",
+                    "quote": quote,
+                    "loc": loc,
+                    "cite_key": source_to_cite[source_id],
+                    "source_id": source_id,
+                    "chunk_id": h.get("chunk_id"),
+                    "score": h.get("score"),
+                })
 
-                citations.append(
-                    {
-                        "cite_key": cite_key,
-                        "source_id": source_id,
-                        "url": final_url,
-                        "loc": loc,
-                    }
-                )
-
-                key_points.append(
-                    {
-                        "claim": f"Evidence for topic {topic_id} (query: {q})",
-                        "quote": quote,
-                        "loc": loc,
-                        "cite_key": cite_key,
-                        "chunk_id": h.get("chunk_id"),
-                        "score": h.get("score"),
-                    }
-                )
-
-        # De-duplicate key_points by (source_id, quote) to avoid repeats
-        seen = set()
+        # De-duplicate key_points by (chunk_id, quote)
+        seen: set = set()
         deduped: List[Dict[str, Any]] = []
         for kp in key_points:
             key = (kp.get("chunk_id"), kp.get("quote"))
@@ -107,10 +125,9 @@ def build_bundle(
             deduped.append(kp)
 
         # Choose publisher_domain/title/url from best available meta among hits
-        # (simple approach: first hit with meta)
-        chosen_meta = {}
+        chosen_meta: Dict[str, Any] = {}
         for kp in deduped:
-            sid = kp.get("chunk_id", "").split("_")[0] or kp.get("source_id", "")
+            sid = kp.get("source_id", "")
             if sid:
                 m = _load_meta(raw_dir, sid)
                 if m.get("final_url") or m.get("url"):
@@ -118,27 +135,29 @@ def build_bundle(
                     break
 
         chosen_url = chosen_meta.get("final_url") or chosen_meta.get("url") or ""
-        chosen_host = normalize_host(urlparse(chosen_url).hostname or chosen_meta.get("publisher_domain") or "")
-
-        items.append(
-            {
-                "source_id": topic_id,
-                "title": f"Topic bundle: {topic_id}",
-                "url": chosen_url,
-                "publisher_domain": chosen_host if chosen_host else "unknown",
-                "date_accessed": chosen_meta.get("date_accessed_utc") or "",
-                "relevance_tags": [topic_id],
-                "reliability_tier": "PRIMARY",
-                "key_points": [
-                    {
-                        "claim": kp["claim"],
-                        "quote": kp["quote"],
-                        "loc": kp["loc"],
-                    }
-                    for kp in deduped
-                ],
-            }
+        chosen_host = normalize_host(
+            urlparse(chosen_url).hostname or chosen_meta.get("publisher_domain") or ""
         )
+
+        items.append({
+            "source_id": topic_id,
+            "title": f"Topic bundle: {topic_id}",
+            "url": chosen_url,
+            "publisher_domain": chosen_host if chosen_host else "unknown",
+            "date_accessed": chosen_meta.get("date_accessed_utc") or "",
+            "relevance_tags": [topic_id],
+            "reliability_tier": "PRIMARY",
+            "key_points": [
+                {
+                    "claim": kp["claim"],
+                    "quote": kp["quote"],
+                    "loc": kp["loc"],
+                    "cite_key": kp["cite_key"],
+                    "source_id": kp["source_id"],
+                }
+                for kp in deduped
+            ],
+        })
 
     bundle = {
         "bundle_version": "1.0",

@@ -6,7 +6,8 @@ import re
 from typing import Any
 
 
-SRC_TAG_PATTERN = re.compile(r"\[SRC-(\d+)\]")
+# Matches direct source cite keys like [S001], [S002], ..., [S999]
+CITE_KEY_PATTERN = re.compile(r"\[S(\d{3})\]")
 
 
 def _normalize_manifest(citation_manifest: dict[str, Any]) -> list[dict[str, Any]]:
@@ -16,27 +17,22 @@ def _normalize_manifest(citation_manifest: dict[str, Any]) -> list[dict[str, Any
     return citations
 
 
-def _find_citation_entry(
-    citation_num: int,
+def _find_citation_by_key(
+    cite_key: str,
     citations: list[dict[str, Any]],
 ) -> dict[str, Any] | None:
-    tag = f"[SRC-{citation_num}]"
+    """Look up a citation entry by its cite_key field (e.g. '[S001]')."""
     for citation in citations:
         if not isinstance(citation, dict):
             continue
-        short_id = (
-            citation.get("short_id")
+        entry_key = (
+            citation.get("cite_key")
+            or citation.get("short_id")
             or citation.get("src_tag")
             or citation.get("src_id")
-            or citation.get("cite_key")
         )
-        if isinstance(short_id, str) and short_id.strip() == tag:
+        if isinstance(entry_key, str) and entry_key.strip() == cite_key:
             return citation
-
-    if 1 <= citation_num <= len(citations):
-        entry = citations[citation_num - 1]
-        if isinstance(entry, dict):
-            return entry
     return None
 
 
@@ -72,7 +68,7 @@ def append_global_references(
 
     ordered_unique_tags: list[str] = []
     seen: set[str] = set()
-    for match in SRC_TAG_PATTERN.finditer(assembled_markdown):
+    for match in CITE_KEY_PATTERN.finditer(assembled_markdown):
         tag = match.group(0)
         if tag not in seen:
             seen.add(tag)
@@ -83,8 +79,7 @@ def append_global_references(
         bibliography_lines.append("- No citations detected in assembled draft.")
     else:
         for tag in ordered_unique_tags:
-            citation_num = int(tag.removeprefix("[SRC-").removesuffix("]"))
-            citation_entry = _find_citation_entry(citation_num, citations)
+            citation_entry = _find_citation_by_key(tag, citations)
             if citation_entry is None:
                 raise ValueError(f"No citation manifest entry found for {tag}")
 

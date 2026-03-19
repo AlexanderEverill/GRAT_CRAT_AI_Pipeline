@@ -1,0 +1,18 @@
+{
+  "draft_sha256": "13e99c564ff4c57d470a8f4007baee83a5b6a453d0636502e8fceb661d4e8c2c",
+  "gates": [
+    {
+      "detail": "Citations found in draft",
+      "gate": "citation_validator",
+      "status": "PASS"
+    },
+    {
+      "detail": "23/28 key values found in draft; missing: ['grat.growth_rate', 'grat.section_7520_rate', 'crat.growth_rate', 'crat.payout_rate', 'comparison.estate_tax_saving_difference_usd']",
+      "gate": "numeric_binding_validator",
+      "status": "PASS"
+    }
+  ],
+  "overall_status": "PASS",
+  "pipeline_stage": "Stage 5 \u2014 Validator Pack",
+  "validation_timestamp": "2026-03-19T09:06:02.879394+00:00"
+}

@@ -14,7 +14,7 @@ def test_validate_section_output_passes_for_valid_markdown() -> None:
     )
     markdown = (
         "GRAT analysis indicates improved transfer efficiency (IRS, Notice 2024-01, 2024). "
-        "\n\n### References\n- [SRC-1] IRS. Notice 2024-01. (2024).\n"
+        "\n\n### References\n- [S001] IRS. Notice 2024-01. (2024).\n"
     )
 
     result = validate_section_output(markdown, section)
@@ -50,15 +50,15 @@ def test_validate_section_output_detects_dangling_citations() -> None:
         order=0,
     )
     markdown = (
-        "Supported statement [SRC-2].\n\n"
+        "Supported statement [S002].\n\n"
         "### References\n"
-        "- [SRC-1] IRS. Source One. (2024).\n"
+        "- [S001] IRS. Source One. (2024).\n"
     )
 
     result = validate_section_output(markdown, section)
 
     assert result.is_valid is False
-    assert "[SRC-2]" in result.dangling_citations
+    assert "[S002]" in result.dangling_citations
     assert any("Dangling citation" in err for err in result.errors)
 
 
@@ -77,3 +77,24 @@ def test_validate_section_output_enforces_length_bounds() -> None:
     assert result.is_valid is False
     assert result.measured_length is not None
     assert any("below minimum bound" in err for err in result.errors)
+
+
+def test_validate_section_output_detects_mismatched_citations() -> None:
+    section = OutlineSection(
+        section_id="summary",
+        title="Summary",
+        content_type="narrative",
+        order=0,
+    )
+    # Claims about Circular 230 should cite S011, not S001
+    markdown = (
+        "Under Circular 230 tax advice standards [S001] apply.\n\n"
+        "### References\n"
+        "- [S001] IRS. Source One. (2024).\n"
+    )
+
+    result = validate_section_output(markdown, section)
+
+    assert result.is_valid is True  # mismatches are warnings, not errors
+    assert len(result.mismatched_citations) > 0
+    assert len(result.warnings) > 0

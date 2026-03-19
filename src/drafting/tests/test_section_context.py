@@ -18,10 +18,10 @@ def test_build_section_context_maps_chunks_to_section_ids() -> None:
     section_context = build_section_context(outline, retrieval_bundle)
 
     assert "grat_analysis" in section_context
-    assert "comparative_analysis" in section_context
+    assert "comparison_recommendation" in section_context
     assert GENERAL_BUCKET_ID in section_context
     assert len(section_context["grat_analysis"]) >= 1
-    assert len(section_context["comparative_analysis"]) >= 1
+    assert len(section_context["comparison_recommendation"]) >= 1
 
 
 def test_build_section_context_routes_unknown_tags_to_general(tmp_path: Path) -> None:

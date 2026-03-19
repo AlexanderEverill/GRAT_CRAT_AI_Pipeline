@@ -10,12 +10,11 @@ Coordinates the complete financial model run:
 """
 
 import json
-import hashlib
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Optional, Dict, Any
 
-from src.run_pipeline import append_notes_log
+from src.run_pipeline import append_notes_log, sha256_file
 from src.model.schemas import TrustComparisonModel
 from src.model.io import (
     load_client_profile,
@@ -32,22 +31,6 @@ from src.model.compare import calculate_comparison
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
 CLIENT_PROFILE_PATH = BASE_DIR / "pipeline_artifacts" / "intake" / "ClientProfile_v1.json"
 MODEL_RUN_REPORT_PATH = BASE_DIR / "pipeline_artifacts" / "model_outputs" / "ModelRunReport.json"
-
-
-def _sha256_file(path: Path) -> str:
-    """Compute SHA-256 hash of a file.
-    
-    Args:
-        path: Path to file
-        
-    Returns:
-        str: Hexadecimal SHA-256 hash
-    """
-    h = hashlib.sha256()
-    with path.open("rb") as f:
-        for chunk in iter(lambda: f.read(8192), b""):
-            h.update(chunk)
-    return h.hexdigest()
 
 
 def _write_model_run_report(
@@ -144,7 +127,7 @@ def run_deterministic_model(
     try:
         # Load client profile
         client_profile = load_client_profile()
-        client_profile_hash = _sha256_file(CLIENT_PROFILE_PATH)
+        client_profile_hash = sha256_file(CLIENT_PROFILE_PATH)
         
         # Determine Section 7520 rate
         if section_7520_rate is None:
@@ -195,7 +178,7 @@ def run_deterministic_model(
         
         # Write to file
         output_path = write_model_output(model_dict)
-        trust_comparison_hash = _sha256_file(output_path)
+        trust_comparison_hash = sha256_file(output_path)
         
         # Write ModelRunReport.json (audit record)
         model_run_report_path = _write_model_run_report(
@@ -203,7 +186,7 @@ def run_deterministic_model(
             section_7520_rate=section_7520_rate,
             model_version="1.0",
         )
-        model_run_report_hash = _sha256_file(model_run_report_path)
+        model_run_report_hash = sha256_file(model_run_report_path)
         
         # ----- AUDIT LOG: After model run -----
         try:

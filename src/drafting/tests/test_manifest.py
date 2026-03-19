@@ -63,9 +63,9 @@ def test_build_draft_manifest_includes_sections_citations_numerics_and_tokens() 
     }
     section_markdown_map = {
         "executive_summary": (
-            "Summary text with support [SRC-1].\n\n"
+            "Summary text with support [S001].\n\n"
             "### References\n"
-            "- [SRC-1] Source Author. Source Title. (2026).\n"
+            "- [S001] Source Author. Source Title. (2026).\n"
         )
     }
     section_prompts = {"executive_summary": "Prompt with context and instructions."}
@@ -83,12 +83,12 @@ def test_build_draft_manifest_includes_sections_citations_numerics_and_tokens() 
     assert manifest["client"]["client_id"] == "client-1"
     assert manifest["summary"]["sections_written"] == 1
     assert manifest["summary"]["validation_warnings"] == 1
-    assert "[SRC-1]" in manifest["summary"]["src_tags_used"]
+    assert "[S001]" in manifest["summary"]["src_tags_used"]
     assert "[S1]" in manifest["summary"]["citation_keys_used"]
 
     section_payload = manifest["sections"][0]
     assert section_payload["written"] is True
-    assert section_payload["citations_used"]["src_tags"] == ["[SRC-1]"]
+    assert section_payload["citations_used"]["src_tags"] == ["[S001]"]
     assert section_payload["citations_used"]["citation_keys"] == ["[S1]"]
     assert section_payload["validation"]["warnings"]
     assert section_payload["token_usage"]["source"] == "estimated"

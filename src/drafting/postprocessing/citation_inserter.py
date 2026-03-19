@@ -6,7 +6,8 @@ import re
 from typing import Any
 
 
-SRC_TAG_PATTERN = re.compile(r"\[SRC-(\d+)\]")
+# Matches direct source cite keys like [S001], [S002], ..., [S999]
+CITE_KEY_PATTERN = re.compile(r"\[S(\d{3})\]")
 
 
 def _normalize_manifest(citation_manifest: dict[str, Any]) -> list[dict[str, Any]]:
@@ -16,23 +17,22 @@ def _normalize_manifest(citation_manifest: dict[str, Any]) -> list[dict[str, Any
     return citations
 
 
-def _find_citation_entry(
-    citation_num: int,
+def _find_citation_by_key(
+    cite_key: str,
     citations: list[dict[str, Any]],
 ) -> dict[str, Any] | None:
-    tag = f"[SRC-{citation_num}]"
-
+    """Look up a citation entry by its cite_key field (e.g. '[S001]')."""
     for citation in citations:
         if not isinstance(citation, dict):
             continue
-        short_id = citation.get("short_id") or citation.get("src_tag") or citation.get("src_id")
-        if isinstance(short_id, str) and short_id.strip() == tag:
+        entry_key = (
+            citation.get("cite_key")
+            or citation.get("short_id")
+            or citation.get("src_tag")
+            or citation.get("src_id")
+        )
+        if isinstance(entry_key, str) and entry_key.strip() == cite_key:
             return citation
-
-    if 1 <= citation_num <= len(citations):
-        entry = citations[citation_num - 1]
-        if isinstance(entry, dict):
-            return entry
     return None
 
 
@@ -56,39 +56,33 @@ def _extract_reference_fields(citation: dict[str, Any]) -> tuple[str, str, str]:
 
 
 def insert_citations(raw_section_markdown: str, citation_manifest: dict[str, Any]) -> str:
-    """Resolve [SRC-N] tags and append a per-section references list."""
+    """Resolve [SXXX] tags and append a per-section references list."""
     if not isinstance(raw_section_markdown, str) or not raw_section_markdown.strip():
         raise ValueError("raw_section_markdown must be a non-empty string")
 
     citations = _normalize_manifest(citation_manifest)
-    matches = list(SRC_TAG_PATTERN.finditer(raw_section_markdown))
+    matches = list(CITE_KEY_PATTERN.finditer(raw_section_markdown))
     if not matches:
         return raw_section_markdown
 
-    inline_by_tag: dict[str, str] = {}
     used_tags: list[str] = []
     for match in matches:
-        tag = match.group(0)
-        if tag in inline_by_tag:
+        tag = match.group(0)  # e.g. "[S001]"
+        if tag in used_tags:
             continue
 
-        citation_num = int(match.group(1))
-        citation_entry = _find_citation_entry(citation_num, citations)
+        citation_entry = _find_citation_by_key(tag, citations)
         if citation_entry is None:
             raise ValueError(f"No citation manifest entry found for {tag}")
 
-        author, title, year = _extract_reference_fields(citation_entry)
-        inline_by_tag[tag] = f"({author}, {title}, {year})"
         used_tags.append(tag)
 
+    # Keep [SXXX] tags inline — the PDF renderer converts them to footnotes.
     annotated_markdown = raw_section_markdown
-    for tag, inline_ref in inline_by_tag.items():
-        annotated_markdown = annotated_markdown.replace(tag, inline_ref)
 
     references_lines = ["### References"]
     for tag in used_tags:
-        citation_num = int(tag.removeprefix("[SRC-").removesuffix("]"))
-        citation_entry = _find_citation_entry(citation_num, citations)
+        citation_entry = _find_citation_by_key(tag, citations)
         if citation_entry is None:
             continue
         author, title, year = _extract_reference_fields(citation_entry)
