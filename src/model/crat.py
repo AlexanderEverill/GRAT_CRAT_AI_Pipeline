@@ -107,13 +107,14 @@ def calculate_crat(
     - Annual annuity is fixed percentage of initial corpus
     - Donor receives income stream during term (taxable to donor)
     - Under IRC §2036, grantor retains income interest → assets included in estate
+    - Under IRC §2055, estate receives charitable deduction for remainder interest
     - Estate reduction = only the charitable remainder interest (deduction value)
     - Remainder at end of term passes to designated charity
     - Provides income stream to donor for term
     
     NOTE: IRC §2036 inclusion means the full corpus enters the estate at grantor's
-    death, but the charitable deduction (PV of remainder) offsets the estate tax.
-    Net estate reduction = charitable deduction amount only.
+    death, but the charitable deduction under IRC §2055 (PV of remainder) offsets
+    the estate tax. Net estate reduction = charitable deduction amount only.
     
     Args:
         client: Client input data
@@ -149,9 +150,9 @@ def calculate_crat(
         deduction_growth_rate=assumptions.crat_deduction_growth_rate,
     )
     
-    # Estate reduction: Under IRC §2036, only the charitable remainder (deduction)
-    # escapes estate tax. The income interest is included at grantor's death.
-    # Net estate reduction = present value of charitable remainder only.
+    # Estate reduction: Under IRC §2036, only the charitable remainder (deduction
+    # per IRC §2055) escapes estate tax. The income interest is included at
+    # grantor's death. Net estate reduction = PV of charitable remainder only.
     estate_reduction = charitable_deduction
     
     # Estate tax saved on the charitable remainder amount only

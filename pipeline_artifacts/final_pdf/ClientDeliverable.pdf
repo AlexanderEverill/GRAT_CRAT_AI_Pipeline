@@ -4,7 +4,7 @@
 << /Type /Catalog /Pages 2 0 R >>
 endobj
 2 0 obj
-<< /Type /Pages /Kids [7 0 R 9 0 R 11 0 R 13 0 R 15 0 R 17 0 R 19 0 R 21 0 R 23 0 R 25 0 R] /Count 10 >>
+<< /Type /Pages /Kids [7 0 R 9 0 R 11 0 R 13 0 R 15 0 R 17 0 R 19 0 R 21 0 R 23 0 R 25 0 R 27 0 R] /Count 11 >>
 endobj
 3 0 obj
 << /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
@@ -191,7 +191,7 @@ endobj
 << /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 6 0 R >>
 endobj
 8 0 obj
-<< /Length 1563 >>
+<< /Length 1576 >>
 stream
 q
 1.00 w
@@ -264,13 +264,13 @@ BT
 /F2 12.00 Tf
 0.145 0.169 0.204 rg
 1 0 0 1 52.00 644.00 Tm
-(Trust Comparison Table) Tj
+(Comparison and Recommendation) Tj
 ET
 BT
 /F1 11.00 Tf
 0.376 0.427 0.494 rg
 1 0 0 1 536.84 644.00 Tm
-(7) Tj
+(8) Tj
 ET
 q
 0.60 w
@@ -281,13 +281,13 @@ BT
 /F2 12.00 Tf
 0.145 0.169 0.204 rg
 1 0 0 1 52.00 618.00 Tm
-(Supporting Citations) Tj
+(Citations and Disclosures) Tj
 ET
 BT
 /F1 11.00 Tf
 0.376 0.427 0.494 rg
-1 0 0 1 536.84 618.00 Tm
-(9) Tj
+1 0 0 1 530.68 618.00 Tm
+(10) Tj
 ET
 q
 0.60 w
@@ -317,7 +317,7 @@ endobj
 << /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 8 0 R >>
 endobj
 10 0 obj
-<< /Length 5463 >>
+<< /Length 5708 >>
 stream
 q
 1.00 w
@@ -345,19 +345,19 @@ BT
 /F1 10.50 Tf
 0.145 0.169 0.204 rg
 1 0 0 1 52.00 703.00 Tm
-(children, and support charitable goals, with a moderate risk tolerance and a 10-year investment) Tj
+(children, and support charitable goals. The estate is valued at $16,000,000, with a 40% federal) Tj
 ET
 BT
 /F1 10.50 Tf
 0.145 0.169 0.204 rg
 1 0 0 1 52.00 689.00 Tm
-(horizon. The strategies analyzed are a Grantor Retained Annuity Trust \(GRAT\) and a Charitable) Tj
+(estate tax rate applicable in 2015. Two strategies are analyzed: a Grantor Retained Annuity Trust) Tj
 ET
 BT
 /F1 10.50 Tf
 0.145 0.169 0.204 rg
 1 0 0 1 52.00 675.00 Tm
-(Remainder Annuity Trust \(CRAT\), each funded with $16,000,000.) Tj
+(\(GRAT\) and a Charitable Remainder Annuity Trust \(CRAT\).) Tj
 ET
 BT
 /F2 11.50 Tf
@@ -369,186 +369,192 @@ BT
 /F1 10.50 Tf
 0.145 0.169 0.204 rg
 1 0 0 1 52.00 630.00 Tm
-(The GRAT is structured with a 10-year term, providing annual annuity payments of $1,777,498.67.) Tj
+(The GRAT is funded with $16,000,000, designed to freeze the transferred value for transfer-tax) Tj
 ET
 BT
 /F1 10.50 Tf
 0.145 0.169 0.204 rg
 1 0 0 1 52.00 616.00 Tm
-(The §7520 rate, currently at 1.96% \(196 bps\), serves as the hurdle rate. The GRAT assumes a) Tj
+(purposes. The taxable gift is the remainder interest, valued at $0 due to the annuity structure [1].) Tj
 ET
 BT
 /F1 10.50 Tf
 0.145 0.169 0.204 rg
 1 0 0 1 52.00 602.00 Tm
-(growth rate of 5%, resulting in a projected remainder of $3,705,126.78 passing to the children, with) Tj
+(The GRAT pays an annual annuity of $1,777,498.67 over a 10-year term, totaling $17,774,986.70. The) Tj
 ET
 BT
 /F1 10.50 Tf
 0.145 0.169 0.204 rg
 1 0 0 1 52.00 588.00 Tm
-(no taxable gift at inception [1][2][3]. The estate tax savings from the GRAT are estimated at) Tj
+(projected remainder to children is $3,705,126.78, with estate tax savings of $1,482,050.71 [2].) Tj
 ET
 BT
 /F1 10.50 Tf
 0.145 0.169 0.204 rg
-1 0 0 1 52.00 574.00 Tm
-($1,482,050.71. However, if the client does not survive the term, the GRAT's assets revert to the) Tj
+1 0 0 1 52.00 566.00 Tm
+(The GRAT's performance depends on exceeding the §7520 hurdle rate of 1.96% \(196 bps\) with an) Tj
 ET
 BT
 /F1 10.50 Tf
 0.145 0.169 0.204 rg
-1 0 0 1 52.00 560.00 Tm
-(estate, negating the tax benefits [1].) Tj
+1 0 0 1 52.00 552.00 Tm
+(assumed growth rate of 5% [3]. Mortality risk exists; if the client dies during the term, the GRAT's) Tj
+ET
+BT
+/F1 10.50 Tf
+0.145 0.169 0.204 rg
+1 0 0 1 52.00 538.00 Tm
+(assets revert to the estate, potentially increasing estate tax liability [1].) Tj
 ET
 BT
 /F2 11.50 Tf
 0.169 0.349 0.639 rg
-1 0 0 1 52.00 538.00 Tm
+1 0 0 1 52.00 516.00 Tm
 (CRAT Analysis) Tj
 ET
 BT
 /F1 10.50 Tf
 0.145 0.169 0.204 rg
-1 0 0 1 52.00 515.00 Tm
-(The CRAT, with a 20-year term, pays a fixed annual annuity of $800,000, totaling $16,000,000 over) Tj
+1 0 0 1 52.00 493.00 Tm
+(The CRAT, also funded with $16,000,000, pays a fixed annual annuity of $800,000 over 20 years,) Tj
 ET
 BT
 /F1 10.50 Tf
 0.145 0.169 0.204 rg
-1 0 0 1 52.00 501.00 Tm
-(the term. The charitable remainder is valued at $16,000,000, with a charitable deduction of) Tj
+1 0 0 1 52.00 479.00 Tm
+(totaling $16,000,000. The charitable remainder is projected at $16,000,000, with a present-value) Tj
 ET
 BT
 /F1 10.50 Tf
 0.145 0.169 0.204 rg
-1 0 0 1 52.00 487.00 Tm
-($7,620,722.64, leading to estate tax savings of $3,048,289.06 [4][5]. The CRAT's payout rate is 5%,) Tj
+1 0 0 1 52.00 465.00 Tm
+(charitable deduction of $7,620,722.64, resulting in estate tax savings of $3,048,289.06 [4][5].) Tj
 ET
 BT
 /F1 10.50 Tf
 0.145 0.169 0.204 rg
-1 0 0 1 52.00 473.00 Tm
-(and it does not depend on investment performance for annuity payments. Unlike the GRAT, the CRAT) Tj
+1 0 0 1 52.00 443.00 Tm
+(The CRAT's annuity is fixed and does not adjust with performance. The trust must earn at least the) Tj
 ET
 BT
 /F1 10.50 Tf
 0.145 0.169 0.204 rg
-1 0 0 1 52.00 459.00 Tm
-(does not carry mortality risk; if the client dies during the term, the annuity payments cease, and the) Tj
+1 0 0 1 52.00 429.00 Tm
+(5% payout rate to preserve the charitable remainder. If the client dies during the term, the) Tj
 ET
 BT
 /F1 10.50 Tf
 0.145 0.169 0.204 rg
-1 0 0 1 52.00 445.00 Tm
-(remainder passes to charity [4][5].) Tj
+1 0 0 1 52.00 415.00 Tm
+(annuity may continue to a successor beneficiary or the estate, depending on the trust document [4].) Tj
 ET
 BT
 /F2 11.50 Tf
 0.169 0.349 0.639 rg
-1 0 0 1 52.00 423.00 Tm
+1 0 0 1 52.00 393.00 Tm
 (Estate Tax Implications) Tj
 ET
 BT
 /F1 10.50 Tf
 0.145 0.169 0.204 rg
-1 0 0 1 52.00 400.00 Tm
-(The client's marital status and combined exemption are crucial in assessing estate-tax exposure. The) Tj
+1 0 0 1 52.00 370.00 Tm
+(The client's marital status allows for a combined exemption, reducing taxable estate exposure. The) Tj
 ET
 BT
 /F1 10.50 Tf
 0.145 0.169 0.204 rg
-1 0 0 1 52.00 386.00 Tm
-(taxable estate after implementing the CRAT is reduced to $8,379,277.36, while the GRAT results in a) Tj
+1 0 0 1 52.00 356.00 Tm
+(taxable estate before strategies is $16,000,000. After implementing the GRAT, the taxable estate) Tj
 ET
 BT
 /F1 10.50 Tf
 0.145 0.169 0.204 rg
-1 0 0 1 52.00 372.00 Tm
-(taxable estate of $12,294,873.22. The CRAT offers greater estate tax savings due to the) Tj
+1 0 0 1 52.00 342.00 Tm
+(is reduced to $12,294,873.22, while the CRAT reduces it further to $8,379,277.36. The GRAT) Tj
 ET
 BT
 /F1 10.50 Tf
 0.145 0.169 0.204 rg
-1 0 0 1 52.00 358.00 Tm
-(charitable deduction [6].) Tj
+1 0 0 1 52.00 328.00 Tm
+(primarily transfers wealth to heirs, while the CRAT supports charitable goals and provides) Tj
+ET
+BT
+/F1 10.50 Tf
+0.145 0.169 0.204 rg
+1 0 0 1 52.00 314.00 Tm
+(significant estate tax savings.) Tj
 ET
 BT
 /F2 11.50 Tf
 0.169 0.349 0.639 rg
-1 0 0 1 52.00 336.00 Tm
+1 0 0 1 52.00 292.00 Tm
 (Recommendation) Tj
 ET
 BT
 /F1 10.50 Tf
 0.145 0.169 0.204 rg
-1 0 0 1 52.00 313.00 Tm
+1 0 0 1 52.00 269.00 Tm
 (Given the client's goals and constraints, the GRAT is recommended as the primary wealth-transfer) Tj
 ET
 BT
 /F1 10.50 Tf
 0.145 0.169 0.204 rg
-1 0 0 1 52.00 299.00 Tm
-(vehicle due to its potential to pass significant assets to heirs tax-efficiently. The CRAT serves a) Tj
+1 0 0 1 52.00 255.00 Tm
+(vehicle due to its potential to transfer $3,705,126.78 to children. The CRAT serves a complementary) Tj
 ET
 BT
 /F1 10.50 Tf
 0.145 0.169 0.204 rg
-1 0 0 1 52.00 285.00 Tm
-(complementary role, aligning with the client's philanthropic objectives and providing substantial) Tj
+1 0 0 1 52.00 241.00 Tm
+(role, maximizing charitable deductions and estate tax savings. Both strategies involve administrative) Tj
 ET
 BT
 /F1 10.50 Tf
 0.145 0.169 0.204 rg
-1 0 0 1 52.00 271.00 Tm
-(estate tax savings. This dual strategy balances wealth transfer to heirs with charitable giving,) Tj
+1 0 0 1 52.00 227.00 Tm
+(complexity and costs, but align with the client's objectives of minimizing estate taxes and supporting) Tj
 ET
 BT
 /F1 10.50 Tf
 0.145 0.169 0.204 rg
-1 0 0 1 52.00 257.00 Tm
-(optimizing tax benefits while maintaining liquidity and flexibility for future decisions.) Tj
+1 0 0 1 52.00 213.00 Tm
+(philanthropy.) Tj
 ET
 q
 0.50 w
 0.843 0.863 0.894 RG
-52.00 235.00 m 172.00 235.00 l S
+52.00 191.00 m 172.00 191.00 l S
 Q
 BT
 /F1 7.50 Tf
 0.376 0.427 0.494 rg
-1 0 0 1 52.00 229.00 Tm
+1 0 0 1 52.00 185.00 Tm
 ([1] IRC §2702 - Special valuation rules) Tj
 ET
 BT
 /F1 7.50 Tf
 0.376 0.427 0.494 rg
-1 0 0 1 52.00 218.00 Tm
+1 0 0 1 52.00 174.00 Tm
 ([2] 26 CFR 25.2702-3 - Special valuation rules for GRATs) Tj
 ET
 BT
 /F1 7.50 Tf
 0.376 0.427 0.494 rg
-1 0 0 1 52.00 207.00 Tm
+1 0 0 1 52.00 163.00 Tm
 ([3] IRC §7520 - Valuation tables) Tj
 ET
 BT
 /F1 7.50 Tf
 0.376 0.427 0.494 rg
-1 0 0 1 52.00 196.00 Tm
-([4] IRC §664 - Charitable remainder trusts) Tj
+1 0 0 1 52.00 152.00 Tm
+([4] 26 CFR 1.664-2 - Charitable remainder annuity trust) Tj
 ET
 BT
 /F1 7.50 Tf
 0.376 0.427 0.494 rg
-1 0 0 1 52.00 185.00 Tm
-([5] 26 CFR 1.664-2 - Charitable remainder annuity trust) Tj
-ET
-BT
-/F1 7.50 Tf
-0.376 0.427 0.494 rg
-1 0 0 1 52.00 174.00 Tm
-([6] IRC §170 - Charitable contributions deduction) Tj
+1 0 0 1 52.00 141.00 Tm
+([5] IRC §664 - Charitable remainder trusts) Tj
 ET
 q
 0.80 w
@@ -573,7 +579,7 @@ endobj
 << /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 10 0 R >>
 endobj
 12 0 obj
-<< /Length 5923 >>
+<< /Length 5788 >>
 stream
 q
 1.00 w
@@ -592,226 +598,226 @@ BT
 (GRAT Analysis) Tj
 ET
 BT
+/F2 11.50 Tf
+0.169 0.349 0.639 rg
+1 0 0 1 52.00 717.00 Tm
+(GRAT Analysis) Tj
+ET
+BT
 /F1 10.50 Tf
 0.145 0.169 0.204 rg
-1 0 0 1 52.00 717.00 Tm
+1 0 0 1 52.00 694.00 Tm
 (A Grantor Retained Annuity Trust \(GRAT\) is an irrevocable trust designed to minimize estate taxes) Tj
 ET
 BT
 /F1 10.50 Tf
 0.145 0.169 0.204 rg
-1 0 0 1 52.00 703.00 Tm
-(by transferring future appreciation to beneficiaries with minimal gift tax implications. The grantor) Tj
+1 0 0 1 52.00 680.00 Tm
+(by freezing the value of transferred assets for transfer-tax purposes. The grantor transfers) Tj
 ET
 BT
 /F1 10.50 Tf
 0.145 0.169 0.204 rg
-1 0 0 1 52.00 689.00 Tm
-(transfers assets into the trust and retains the right to receive fixed annuity payments for a) Tj
+1 0 0 1 52.00 666.00 Tm
+(assets into the trust and retains the right to receive fixed annuity payments for a specified term.) Tj
 ET
 BT
 /F1 10.50 Tf
 0.145 0.169 0.204 rg
-1 0 0 1 52.00 675.00 Tm
-(specified term. At the end of the term, any remaining assets pass to the beneficiaries, typically) Tj
+1 0 0 1 52.00 652.00 Tm
+(At the end of the term, any remaining assets pass to the beneficiaries, typically the grantor's) Tj
 ET
 BT
 /F1 10.50 Tf
 0.145 0.169 0.204 rg
-1 0 0 1 52.00 661.00 Tm
-(children, free of additional gift tax [1].) Tj
-ET
-BT
-/F2 11.50 Tf
-0.169 0.349 0.639 rg
-1 0 0 1 52.00 639.00 Tm
-(Funding and Transfer-Tax Implications) Tj
+1 0 0 1 52.00 638.00 Tm
+(children, without further gift tax implications [1].) Tj
 ET
 BT
 /F1 10.50 Tf
 0.145 0.169 0.204 rg
 1 0 0 1 52.00 616.00 Tm
-(The GRAT is funded with assets valued at $16,000,000. The transfer is irrevocable, removing the) Tj
+(#### Funding and Structure) Tj
 ET
 BT
 /F1 10.50 Tf
 0.145 0.169 0.204 rg
-1 0 0 1 52.00 602.00 Tm
-(assets from the grantor's estate. The taxable gift is calculated as the present value of the) Tj
+1 0 0 1 52.00 594.00 Tm
+(The GRAT is funded with assets valued at $16,000,000. The annuity payments are structured to) Tj
 ET
 BT
 /F1 10.50 Tf
 0.145 0.169 0.204 rg
-1 0 0 1 52.00 588.00 Tm
-(remainder interest, which can be structured to be zero, effectively minimizing the gift tax [2]. This) Tj
+1 0 0 1 52.00 580.00 Tm
+(zero out the gift, meaning the present value of the annuity payments equals the initial value of the) Tj
 ET
 BT
 /F1 10.50 Tf
 0.145 0.169 0.204 rg
-1 0 0 1 52.00 574.00 Tm
-(is achieved by setting the annuity payments to match the initial value of the transferred assets, a) Tj
+1 0 0 1 52.00 566.00 Tm
+(transferred assets, resulting in a taxable gift of $0 [2]. The annuity payment is fixed at) Tj
 ET
 BT
 /F1 10.50 Tf
 0.145 0.169 0.204 rg
-1 0 0 1 52.00 560.00 Tm
-(strategy known as "zeroing out.") Tj
-ET
-BT
-/F2 11.50 Tf
-0.169 0.349 0.639 rg
-1 0 0 1 52.00 538.00 Tm
-(§7520 Hurdle Rate and Performance) Tj
+1 0 0 1 52.00 552.00 Tm
+($1,777,498.67 annually, and the total annuity paid over the 10-year term is $17,774,986.70.) Tj
 ET
 BT
 /F1 10.50 Tf
 0.145 0.169 0.204 rg
-1 0 0 1 52.00 515.00 Tm
-(The §7520 rate, currently 1.96% \(196 basis points\), serves as the hurdle rate for the GRAT [3]. The) Tj
+1 0 0 1 52.00 530.00 Tm
+(#### §7520 Hurdle Rate) Tj
 ET
 BT
 /F1 10.50 Tf
 0.145 0.169 0.204 rg
-1 0 0 1 52.00 501.00 Tm
-(assumed growth rate of the trust assets is 5.00%. The spread between the growth rate and the) Tj
+1 0 0 1 52.00 508.00 Tm
+(The §7520 rate applicable in 2015 is 1.96% \(196 basis points\) [3]. The GRAT's success depends on) Tj
 ET
 BT
 /F1 10.50 Tf
 0.145 0.169 0.204 rg
-1 0 0 1 52.00 487.00 Tm
-(hurdle rate is 3.04%, indicating potential for significant remainder value to pass to beneficiaries if) Tj
+1 0 0 1 52.00 494.00 Tm
+(the trust's assets growing at a rate exceeding this hurdle. With an assumed growth rate of 5.00%,) Tj
 ET
 BT
 /F1 10.50 Tf
 0.145 0.169 0.204 rg
-1 0 0 1 52.00 473.00 Tm
-(the assets perform as expected.) Tj
-ET
-BT
-/F2 11.50 Tf
-0.169 0.349 0.639 rg
-1 0 0 1 52.00 451.00 Tm
-(Annuity Payment Structure) Tj
+1 0 0 1 52.00 480.00 Tm
+(the spread is 3.04%, which is favorable for transferring wealth to the beneficiaries [3].) Tj
 ET
 BT
 /F1 10.50 Tf
 0.145 0.169 0.204 rg
-1 0 0 1 52.00 428.00 Tm
-(The GRAT will pay an annual annuity of $1,777,498.67 over a 10-year term, totaling $17,774,986.70) Tj
+1 0 0 1 52.00 458.00 Tm
+(#### Mortality and Actuarial Risk) Tj
 ET
 BT
 /F1 10.50 Tf
 0.145 0.169 0.204 rg
-1 0 0 1 52.00 414.00 Tm
-([2]. Regulations permit annuity payments to increase by up to 20% annually, providing flexibility in) Tj
+1 0 0 1 52.00 436.00 Tm
+(The client, aged 62, must survive the 10-year term for the GRAT to be effective. If the client dies) Tj
 ET
 BT
 /F1 10.50 Tf
 0.145 0.169 0.204 rg
-1 0 0 1 52.00 400.00 Tm
-(structuring payments [2]. If the trust's returns do not exceed the hurdle rate, the remainder value) Tj
+1 0 0 1 52.00 422.00 Tm
+(during the term, the remaining trust assets are included in the estate under IRC §2033 [4]. Shorter) Tj
 ET
 BT
 /F1 10.50 Tf
 0.145 0.169 0.204 rg
-1 0 0 1 52.00 386.00 Tm
-(may be reduced, potentially leaving no assets for beneficiaries.) Tj
-ET
-BT
-/F2 11.50 Tf
-0.169 0.349 0.639 rg
-1 0 0 1 52.00 364.00 Tm
-(Income Tax Treatment) Tj
+1 0 0 1 52.00 408.00 Tm
+(rolling GRATs could mitigate mortality risk by resetting the term, while longer terms increase the) Tj
 ET
 BT
 /F1 10.50 Tf
 0.145 0.169 0.204 rg
-1 0 0 1 52.00 341.00 Tm
-(Under IRC §671, the GRAT is treated as a grantor trust for income tax purposes. The grantor is) Tj
+1 0 0 1 52.00 394.00 Tm
+(risk of estate inclusion.) Tj
 ET
 BT
 /F1 10.50 Tf
 0.145 0.169 0.204 rg
-1 0 0 1 52.00 327.00 Tm
-(responsible for paying taxes on the trust's income, allowing the trust assets to grow without the) Tj
+1 0 0 1 52.00 372.00 Tm
+(#### Annuity Payment Structure) Tj
 ET
 BT
 /F1 10.50 Tf
 0.145 0.169 0.204 rg
-1 0 0 1 52.00 313.00 Tm
-(burden of income tax, effectively enhancing the transfer to beneficiaries [1].) Tj
-ET
-BT
-/F2 11.50 Tf
-0.169 0.349 0.639 rg
-1 0 0 1 52.00 291.00 Tm
-(Mortality and Actuarial Risk) Tj
+1 0 0 1 52.00 350.00 Tm
+(The annuity payments may increase by up to 20% annually, providing some flexibility in structuring) Tj
 ET
 BT
 /F1 10.50 Tf
 0.145 0.169 0.204 rg
-1 0 0 1 52.00 268.00 Tm
-(The client, aged 62, must survive the 10-year term for the GRAT to be effective. If the grantor) Tj
+1 0 0 1 52.00 336.00 Tm
+(payments [2]. If the trust's returns fail to exceed the hurdle rate, the remainder passing to) Tj
 ET
 BT
 /F1 10.50 Tf
 0.145 0.169 0.204 rg
-1 0 0 1 52.00 254.00 Tm
-(dies during the term, the trust assets revert to the estate, potentially subjecting them to estate) Tj
+1 0 0 1 52.00 322.00 Tm
+(beneficiaries may be reduced or eliminated.) Tj
 ET
 BT
 /F1 10.50 Tf
 0.145 0.169 0.204 rg
-1 0 0 1 52.00 240.00 Tm
-(tax under IRC §2033 [4]. Shorter rolling GRATs could mitigate mortality risk but may reduce the) Tj
+1 0 0 1 52.00 300.00 Tm
+(#### Tax Treatment) Tj
 ET
 BT
 /F1 10.50 Tf
 0.145 0.169 0.204 rg
-1 0 0 1 52.00 226.00 Tm
-(potential remainder value. Longer terms increase risk but offer greater transfer potential.) Tj
-ET
-BT
-/F2 11.50 Tf
-0.169 0.349 0.639 rg
-1 0 0 1 52.00 204.00 Tm
-(Administrative Complexity) Tj
+1 0 0 1 52.00 278.00 Tm
+(Under IRC §671, the GRAT is treated as a grantor trust for income tax purposes, meaning the) Tj
 ET
 BT
 /F1 10.50 Tf
 0.145 0.169 0.204 rg
-1 0 0 1 52.00 181.00 Tm
-(Establishing and maintaining a GRAT involves administrative complexity, including valuation, compliance) Tj
+1 0 0 1 52.00 264.00 Tm
+(grantor pays taxes on the trust's income, preserving the trust's corpus for beneficiaries [2]. This) Tj
 ET
 BT
 /F1 10.50 Tf
 0.145 0.169 0.204 rg
-1 0 0 1 52.00 167.00 Tm
-(with annuity payment regulations, and ongoing management. These factors should be weighed against) Tj
+1 0 0 1 52.00 250.00 Tm
+(structure allows for efficient wealth transfer while minimizing immediate tax liabilities.) Tj
 ET
 BT
 /F1 10.50 Tf
 0.145 0.169 0.204 rg
-1 0 0 1 52.00 153.00 Tm
-(the potential estate tax savings of $1,482,050.71 [5].) Tj
+1 0 0 1 52.00 228.00 Tm
+(#### Irrevocability and Administrative Complexity) Tj
 ET
 BT
 /F1 10.50 Tf
 0.145 0.169 0.204 rg
-1 0 0 1 52.00 131.00 Tm
-(In conclusion, the GRAT aligns with the client's goals of minimizing estate tax exposure and) Tj
+1 0 0 1 52.00 206.00 Tm
+(The transfer to a GRAT is irrevocable, permanently removing the assets from the grantor's control.) Tj
 ET
 BT
 /F1 10.50 Tf
 0.145 0.169 0.204 rg
-1 0 0 1 52.00 117.00 Tm
-(transferring wealth to children, while maintaining liquidity and flexibility for future decisions.) Tj
+1 0 0 1 52.00 192.00 Tm
+(This lack of flexibility is a trade-off for the potential estate tax savings. The GRAT involves) Tj
 ET
 BT
 /F1 10.50 Tf
 0.145 0.169 0.204 rg
-1 0 0 1 52.00 103.00 Tm
-(However, careful consideration of mortality risk and administrative demands is essential.) Tj
+1 0 0 1 52.00 178.00 Tm
+(administrative complexity, including annual valuations and compliance with IRS regulations [2].) Tj
+ET
+BT
+/F1 10.50 Tf
+0.145 0.169 0.204 rg
+1 0 0 1 52.00 156.00 Tm
+(#### Conclusion) Tj
+ET
+BT
+/F1 10.50 Tf
+0.145 0.169 0.204 rg
+1 0 0 1 52.00 134.00 Tm
+(The GRAT aligns with the client's goals of minimizing estate tax exposure and transferring wealth to) Tj
+ET
+BT
+/F1 10.50 Tf
+0.145 0.169 0.204 rg
+1 0 0 1 52.00 120.00 Tm
+(children. However, it does not directly support charitable giving goals. The irrevocable nature and) Tj
+ET
+BT
+/F1 10.50 Tf
+0.145 0.169 0.204 rg
+1 0 0 1 52.00 106.00 Tm
+(administrative requirements should be carefully considered in light of the client's liquidity needs and) Tj
+ET
+BT
+/F1 10.50 Tf
+0.145 0.169 0.204 rg
+1 0 0 1 52.00 92.00 Tm
+(philanthropic flexibility.) Tj
 ET
 q
 0.80 w
@@ -836,7 +842,7 @@ endobj
 << /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 12 0 R >>
 endobj
 14 0 obj
-<< /Length 866 >>
+<< /Length 768 >>
 stream
 q
 0.50 w
@@ -854,6 +860,311 @@ BT
 0.376 0.427 0.494 rg
 1 0 0 1 52.00 771.00 Tm
 ([2] 26 CFR 25.2702-3 - Special valuation rules for GRATs) Tj
+ET
+BT
+/F1 7.50 Tf
+0.376 0.427 0.494 rg
+1 0 0 1 52.00 760.00 Tm
+([3] IRC §7520 - Valuation tables) Tj
+ET
+BT
+/F1 7.50 Tf
+0.376 0.427 0.494 rg
+1 0 0 1 52.00 749.00 Tm
+([4] IRC §2033 - Property in which decedent had an interest) Tj
+ET
+q
+0.80 w
+0.843 0.863 0.894 RG
+52.00 34.00 m 543.00 34.00 l S
+Q
+BT
+/F1 8.50 Tf
+0.376 0.427 0.494 rg
+1 0 0 1 52.00 22.00 Tm
+(Client Advisory Report - GRAT / CRAT) Tj
+ET
+BT
+/F1 8.50 Tf
+0.376 0.427 0.494 rg
+1 0 0 1 516.74 22.00 Tm
+(Page 5) Tj
+ET
+endstream
+endobj
+15 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 14 0 R >>
+endobj
+16 0 obj
+<< /Length 5610 >>
+stream
+q
+1.00 w
+0.961 0.969 0.984 rg
+0.00 756.00 595.00 86.00 re f
+Q
+q
+1.00 w
+0.773 0.631 0.298 rg
+52.00 772.00 72.00 6.00 re f
+Q
+BT
+/F2 22.00 Tf
+0.094 0.173 0.298 rg
+1 0 0 1 52.00 788.00 Tm
+(CRAT Analysis) Tj
+ET
+BT
+/F1 10.50 Tf
+0.145 0.169 0.204 rg
+1 0 0 1 52.00 717.00 Tm
+(A Charitable Remainder Annuity Trust \(CRAT\) is a trust structure that provides a fixed annuity to) Tj
+ET
+BT
+/F1 10.50 Tf
+0.145 0.169 0.204 rg
+1 0 0 1 52.00 703.00 Tm
+(one or more noncharitable beneficiaries, with the remainder interest passing to a designated charity.) Tj
+ET
+BT
+/F1 10.50 Tf
+0.145 0.169 0.204 rg
+1 0 0 1 52.00 689.00 Tm
+(The annuity is determined at the trust's inception based on the initial fair market value of the) Tj
+ET
+BT
+/F1 10.50 Tf
+0.145 0.169 0.204 rg
+1 0 0 1 52.00 675.00 Tm
+(assets and remains constant regardless of the trust's investment performance [1].) Tj
+ET
+BT
+/F2 11.50 Tf
+0.169 0.349 0.639 rg
+1 0 0 1 52.00 653.00 Tm
+(Structure and Funding) Tj
+ET
+BT
+/F1 10.50 Tf
+0.145 0.169 0.204 rg
+1 0 0 1 52.00 630.00 Tm
+(CRATs can be structured as either lifetime or term-of-years trusts, with a maximum term of 20) Tj
+ET
+BT
+/F1 10.50 Tf
+0.145 0.169 0.204 rg
+1 0 0 1 52.00 616.00 Tm
+(years as per 26 CFR §1.664-2 [2]. For this client, a 20-year term CRAT is considered, funded with) Tj
+ET
+BT
+/F1 10.50 Tf
+0.145 0.169 0.204 rg
+1 0 0 1 52.00 602.00 Tm
+($16,000,000. The annuity payout is set at $800,000 annually, representing a 5% payout rate [2]. The) Tj
+ET
+BT
+/F1 10.50 Tf
+0.145 0.169 0.204 rg
+1 0 0 1 52.00 588.00 Tm
+(transfer to the CRAT is irrevocable, permanently removing the assets from the client's control.) Tj
+ET
+BT
+/F2 11.50 Tf
+0.169 0.349 0.639 rg
+1 0 0 1 52.00 566.00 Tm
+(Charitable Deduction and Remainder) Tj
+ET
+BT
+/F1 10.50 Tf
+0.145 0.169 0.204 rg
+1 0 0 1 52.00 543.00 Tm
+(The CRAT must meet a 10% minimum charitable remainder requirement, which this trust satisfies. The) Tj
+ET
+BT
+/F1 10.50 Tf
+0.145 0.169 0.204 rg
+1 0 0 1 52.00 529.00 Tm
+(projected nominal remainder to charity at the end of the term is $16,000,000. However, the) Tj
+ET
+BT
+/F1 10.50 Tf
+0.145 0.169 0.204 rg
+1 0 0 1 52.00 515.00 Tm
+(present-value charitable deduction, calculated using the §7520 rate, is $7,620,722.64 [3]. This) Tj
+ET
+BT
+/F1 10.50 Tf
+0.145 0.169 0.204 rg
+1 0 0 1 52.00 501.00 Tm
+(deduction reflects the discounted value of the remainder interest passing to charity.) Tj
+ET
+BT
+/F2 11.50 Tf
+0.169 0.349 0.639 rg
+1 0 0 1 52.00 479.00 Tm
+(Taxation and Estate Treatment) Tj
+ET
+BT
+/F1 10.50 Tf
+0.145 0.169 0.204 rg
+1 0 0 1 52.00 456.00 Tm
+(Distributions from a CRAT are taxed under a four-tier system outlined in IRC §664, which includes) Tj
+ET
+BT
+/F1 10.50 Tf
+0.145 0.169 0.204 rg
+1 0 0 1 52.00 442.00 Tm
+(ordinary income, capital gains, other income, and return of principal [1]. For estate-tax purposes,) Tj
+ET
+BT
+/F1 10.50 Tf
+0.145 0.169 0.204 rg
+1 0 0 1 52.00 428.00 Tm
+(IRC §2036 includes the retained annuity interest in the estate, while IRC §2055 provides a) Tj
+ET
+BT
+/F1 10.50 Tf
+0.145 0.169 0.204 rg
+1 0 0 1 52.00 414.00 Tm
+(charitable deduction for the remainder interest passing to charity [4]. These provisions work) Tj
+ET
+BT
+/F1 10.50 Tf
+0.145 0.169 0.204 rg
+1 0 0 1 52.00 400.00 Tm
+(together to reduce the taxable estate by $3,048,289.06 [5].) Tj
+ET
+BT
+/F2 11.50 Tf
+0.169 0.349 0.639 rg
+1 0 0 1 52.00 378.00 Tm
+(Mortality and Successor Beneficiaries) Tj
+ET
+BT
+/F1 10.50 Tf
+0.145 0.169 0.204 rg
+1 0 0 1 52.00 355.00 Tm
+(In a term-of-years CRAT, if the income beneficiary dies during the term, the trust document may) Tj
+ET
+BT
+/F1 10.50 Tf
+0.145 0.169 0.204 rg
+1 0 0 1 52.00 341.00 Tm
+(specify a successor beneficiary or direct remaining payments to the estate. This nuance means the) Tj
+ET
+BT
+/F1 10.50 Tf
+0.145 0.169 0.204 rg
+1 0 0 1 52.00 327.00 Tm
+(CRAT does not entirely eliminate mortality risk [2].) Tj
+ET
+BT
+/F2 11.50 Tf
+0.169 0.349 0.639 rg
+1 0 0 1 52.00 305.00 Tm
+(Performance Dependence) Tj
+ET
+BT
+/F1 10.50 Tf
+0.145 0.169 0.204 rg
+1 0 0 1 52.00 282.00 Tm
+(The CRAT's fixed annuity is independent of investment performance, but the trust must earn at) Tj
+ET
+BT
+/F1 10.50 Tf
+0.145 0.169 0.204 rg
+1 0 0 1 52.00 268.00 Tm
+(least the payout rate to preserve the charitable remainder. In contrast, a GRAT's performance is) Tj
+ET
+BT
+/F1 10.50 Tf
+0.145 0.169 0.204 rg
+1 0 0 1 52.00 254.00 Tm
+(benchmarked against the §7520 rate, currently 1.96% [3]. The CRAT's 5% payout rate is higher,) Tj
+ET
+BT
+/F1 10.50 Tf
+0.145 0.169 0.204 rg
+1 0 0 1 52.00 240.00 Tm
+(indicating a greater performance requirement to maintain the remainder.) Tj
+ET
+BT
+/F2 11.50 Tf
+0.169 0.349 0.639 rg
+1 0 0 1 52.00 218.00 Tm
+(Considerations) Tj
+ET
+BT
+/F1 10.50 Tf
+0.145 0.169 0.204 rg
+1 0 0 1 52.00 195.00 Tm
+(The CRAT's irrevocable nature limits future flexibility, and administrative complexities are inherent.) Tj
+ET
+BT
+/F1 10.50 Tf
+0.145 0.169 0.204 rg
+1 0 0 1 52.00 181.00 Tm
+(Given the client's goals of minimizing estate tax and supporting charitable giving, a) Tj
+ET
+BT
+/F1 10.50 Tf
+0.145 0.169 0.204 rg
+1 0 0 1 52.00 167.00 Tm
+(wealth-replacement strategy for heirs should be considered, as the CRAT does not transfer wealth) Tj
+ET
+BT
+/F1 10.50 Tf
+0.145 0.169 0.204 rg
+1 0 0 1 52.00 153.00 Tm
+(to children [1]. This strategy aligns with the client's moderate risk tolerance and philanthropic) Tj
+ET
+BT
+/F1 10.50 Tf
+0.145 0.169 0.204 rg
+1 0 0 1 52.00 139.00 Tm
+(objectives.) Tj
+ET
+q
+0.80 w
+0.843 0.863 0.894 RG
+52.00 34.00 m 543.00 34.00 l S
+Q
+BT
+/F1 8.50 Tf
+0.376 0.427 0.494 rg
+1 0 0 1 52.00 22.00 Tm
+(Client Advisory Report - GRAT / CRAT) Tj
+ET
+BT
+/F1 8.50 Tf
+0.376 0.427 0.494 rg
+1 0 0 1 516.74 22.00 Tm
+(Page 6) Tj
+ET
+endstream
+endobj
+17 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 16 0 R >>
+endobj
+18 0 obj
+<< /Length 868 >>
+stream
+q
+0.50 w
+0.843 0.863 0.894 RG
+52.00 788.00 m 172.00 788.00 l S
+Q
+BT
+/F1 7.50 Tf
+0.376 0.427 0.494 rg
+1 0 0 1 52.00 782.00 Tm
+([1] IRC §664 - Charitable remainder trusts) Tj
+ET
+BT
+/F1 7.50 Tf
+0.376 0.427 0.494 rg
+1 0 0 1 52.00 771.00 Tm
+([2] 26 CFR 1.664-2 - Charitable remainder annuity trust) Tj
 ET
 BT
 /F1 7.50 Tf
@@ -888,15 +1199,15 @@ BT
 /F1 8.50 Tf
 0.376 0.427 0.494 rg
 1 0 0 1 516.74 22.00 Tm
-(Page 5) Tj
+(Page 7) Tj
 ET
 endstream
 endobj
-15 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 14 0 R >>
+19 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 18 0 R >>
 endobj
-16 0 obj
-<< /Length 6183 >>
+20 0 obj
+<< /Length 7042 >>
 stream
 q
 1.00 w
@@ -912,287 +1223,7 @@ BT
 /F2 22.00 Tf
 0.094 0.173 0.298 rg
 1 0 0 1 52.00 788.00 Tm
-(CRAT Analysis) Tj
-ET
-BT
-/F1 10.50 Tf
-0.145 0.169 0.204 rg
-1 0 0 1 52.00 717.00 Tm
-(A Charitable Remainder Annuity Trust \(CRAT\) is a trust that pays a fixed annuity to one or more) Tj
-ET
-BT
-/F1 10.50 Tf
-0.145 0.169 0.204 rg
-1 0 0 1 52.00 703.00 Tm
-(noncharitable beneficiaries, with the remainder passing to a designated charity. The annuity is) Tj
-ET
-BT
-/F1 10.50 Tf
-0.145 0.169 0.204 rg
-1 0 0 1 52.00 689.00 Tm
-(determined at the trust's inception based on the initial fair market value of the assets and remains) Tj
-ET
-BT
-/F1 10.50 Tf
-0.145 0.169 0.204 rg
-1 0 0 1 52.00 675.00 Tm
-(constant regardless of trust performance [1]. The CRAT can be structured for the lifetime of the) Tj
-ET
-BT
-/F1 10.50 Tf
-0.145 0.169 0.204 rg
-1 0 0 1 52.00 661.00 Tm
-(beneficiary or for a term of years, with a maximum term of 20 years as per 26 CFR §1.664-2 [1].) Tj
-ET
-BT
-/F2 11.50 Tf
-0.169 0.349 0.639 rg
-1 0 0 1 52.00 639.00 Tm
-(Funding and Charitable Deduction) Tj
-ET
-BT
-/F1 10.50 Tf
-0.145 0.169 0.204 rg
-1 0 0 1 52.00 616.00 Tm
-(The CRAT is funded with assets valued at $16,000,000. The transfer is irrevocable, permanently) Tj
-ET
-BT
-/F1 10.50 Tf
-0.145 0.169 0.204 rg
-1 0 0 1 52.00 602.00 Tm
-(removing these assets from the donor's estate. The charitable deduction, representing the present) Tj
-ET
-BT
-/F1 10.50 Tf
-0.145 0.169 0.204 rg
-1 0 0 1 52.00 588.00 Tm
-(value of the remainder interest, is calculated at $7,620,722.64 [2]. This deduction helps offset) Tj
-ET
-BT
-/F1 10.50 Tf
-0.145 0.169 0.204 rg
-1 0 0 1 52.00 574.00 Tm
-(estate taxes under IRC §2036, with an estimated estate tax savings of $3,048,289.06 [3].) Tj
-ET
-BT
-/F2 11.50 Tf
-0.169 0.349 0.639 rg
-1 0 0 1 52.00 552.00 Tm
-(Annuity and Performance Dependence) Tj
-ET
-BT
-/F1 10.50 Tf
-0.145 0.169 0.204 rg
-1 0 0 1 52.00 529.00 Tm
-(The CRAT pays an annual annuity of $800,000, which equates to a 5.00% payout rate. This rate is) Tj
-ET
-BT
-/F1 10.50 Tf
-0.145 0.169 0.204 rg
-1 0 0 1 52.00 515.00 Tm
-(fixed and does not adjust with investment performance [1]. To preserve the charitable remainder,) Tj
-ET
-BT
-/F1 10.50 Tf
-0.145 0.169 0.204 rg
-1 0 0 1 52.00 501.00 Tm
-(the trust must earn at least this payout rate. In contrast, a GRAT's performance is measured) Tj
-ET
-BT
-/F1 10.50 Tf
-0.145 0.169 0.204 rg
-1 0 0 1 52.00 487.00 Tm
-(against the §7520 rate, currently 1.96% \(196 bps\), requiring a growth rate above this hurdle to) Tj
-ET
-BT
-/F1 10.50 Tf
-0.145 0.169 0.204 rg
-1 0 0 1 52.00 473.00 Tm
-(benefit the remainder beneficiaries [4].) Tj
-ET
-BT
-/F2 11.50 Tf
-0.169 0.349 0.639 rg
-1 0 0 1 52.00 451.00 Tm
-(Tax Treatment) Tj
-ET
-BT
-/F1 10.50 Tf
-0.145 0.169 0.204 rg
-1 0 0 1 52.00 428.00 Tm
-(Distributions from a CRAT are taxed under a four-tier system outlined in IRC §664, which includes) Tj
-ET
-BT
-/F1 10.50 Tf
-0.145 0.169 0.204 rg
-1 0 0 1 52.00 414.00 Tm
-(ordinary income, capital gains, other income, and return of principal [5]. The CRAT must meet a 10%) Tj
-ET
-BT
-/F1 10.50 Tf
-0.145 0.169 0.204 rg
-1 0 0 1 52.00 400.00 Tm
-(minimum charitable remainder requirement, which this trust satisfies, ensuring compliance with) Tj
-ET
-BT
-/F1 10.50 Tf
-0.145 0.169 0.204 rg
-1 0 0 1 52.00 386.00 Tm
-(regulatory standards [1].) Tj
-ET
-BT
-/F2 11.50 Tf
-0.169 0.349 0.639 rg
-1 0 0 1 52.00 364.00 Tm
-(Estate Tax and Wealth Transfer) Tj
-ET
-BT
-/F1 10.50 Tf
-0.145 0.169 0.204 rg
-1 0 0 1 52.00 341.00 Tm
-(Under IRC §2036, the CRAT's assets are excluded from the estate, with the charitable deduction) Tj
-ET
-BT
-/F1 10.50 Tf
-0.145 0.169 0.204 rg
-1 0 0 1 52.00 327.00 Tm
-(offsetting potential estate taxes [3]. However, the CRAT does not transfer wealth to heirs, as the) Tj
-ET
-BT
-/F1 10.50 Tf
-0.145 0.169 0.204 rg
-1 0 0 1 52.00 313.00 Tm
-(remainder passes to charity. Given the client's goal to transfer wealth to children, a) Tj
-ET
-BT
-/F1 10.50 Tf
-0.145 0.169 0.204 rg
-1 0 0 1 52.00 299.00 Tm
-(wealth-replacement strategy, such as life insurance, may be advisable to compensate heirs [3].) Tj
-ET
-BT
-/F2 11.50 Tf
-0.169 0.349 0.639 rg
-1 0 0 1 52.00 277.00 Tm
-(Administrative Considerations) Tj
-ET
-BT
-/F1 10.50 Tf
-0.145 0.169 0.204 rg
-1 0 0 1 52.00 254.00 Tm
-(The CRAT involves administrative complexity, including annual valuations and compliance with) Tj
-ET
-BT
-/F1 10.50 Tf
-0.145 0.169 0.204 rg
-1 0 0 1 52.00 240.00 Tm
-(regulatory requirements. The irrevocable nature of the transfer limits flexibility, which may impact) Tj
-ET
-BT
-/F1 10.50 Tf
-0.145 0.169 0.204 rg
-1 0 0 1 52.00 226.00 Tm
-(the client's future philanthropic decisions. However, the CRAT aligns with the client's charitable) Tj
-ET
-BT
-/F1 10.50 Tf
-0.145 0.169 0.204 rg
-1 0 0 1 52.00 212.00 Tm
-(giving goals and provides significant estate tax benefits [1].) Tj
-ET
-BT
-/F1 10.50 Tf
-0.145 0.169 0.204 rg
-1 0 0 1 52.00 190.00 Tm
-(In summary, the CRAT offers a structured approach to charitable giving with tax advantages but) Tj
-ET
-BT
-/F1 10.50 Tf
-0.145 0.169 0.204 rg
-1 0 0 1 52.00 176.00 Tm
-(requires careful consideration of its impact on wealth transfer to heirs. A balanced strategy) Tj
-ET
-BT
-/F1 10.50 Tf
-0.145 0.169 0.204 rg
-1 0 0 1 52.00 162.00 Tm
-(incorporating both CRAT and GRAT structures may optimize the client's estate planning objectives.) Tj
-ET
-q
-0.50 w
-0.843 0.863 0.894 RG
-52.00 140.00 m 172.00 140.00 l S
-Q
-BT
-/F1 7.50 Tf
-0.376 0.427 0.494 rg
-1 0 0 1 52.00 134.00 Tm
-([1] 26 CFR 1.664-2 - Charitable remainder annuity trust) Tj
-ET
-BT
-/F1 7.50 Tf
-0.376 0.427 0.494 rg
-1 0 0 1 52.00 123.00 Tm
-([2] IRC §170 - Charitable contributions deduction) Tj
-ET
-BT
-/F1 7.50 Tf
-0.376 0.427 0.494 rg
-1 0 0 1 52.00 112.00 Tm
-([3] IRS - Estate tax overview) Tj
-ET
-BT
-/F1 7.50 Tf
-0.376 0.427 0.494 rg
-1 0 0 1 52.00 101.00 Tm
-([4] IRC §7520 - Valuation tables) Tj
-ET
-BT
-/F1 7.50 Tf
-0.376 0.427 0.494 rg
-1 0 0 1 52.00 90.00 Tm
-([5] IRC §664 - Charitable remainder trusts) Tj
-ET
-q
-0.80 w
-0.843 0.863 0.894 RG
-52.00 34.00 m 543.00 34.00 l S
-Q
-BT
-/F1 8.50 Tf
-0.376 0.427 0.494 rg
-1 0 0 1 52.00 22.00 Tm
-(Client Advisory Report - GRAT / CRAT) Tj
-ET
-BT
-/F1 8.50 Tf
-0.376 0.427 0.494 rg
-1 0 0 1 516.74 22.00 Tm
-(Page 6) Tj
-ET
-endstream
-endobj
-17 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 16 0 R >>
-endobj
-18 0 obj
-<< /Length 7132 >>
-stream
-q
-1.00 w
-0.961 0.969 0.984 rg
-0.00 756.00 595.00 86.00 re f
-Q
-q
-1.00 w
-0.773 0.631 0.298 rg
-52.00 772.00 72.00 6.00 re f
-Q
-BT
-/F2 22.00 Tf
-0.094 0.173 0.298 rg
-1 0 0 1 52.00 788.00 Tm
-(Trust Comparison Table) Tj
+(Comparison and Recommendation) Tj
 ET
 q
 1.00 w
@@ -1285,420 +1316,288 @@ ET
 q
 1.00 w
 0.965 0.957 0.933 rg
-52.00 607.00 491.00 20.00 re f
+52.00 595.00 491.00 32.00 re f
 Q
 BT
 /F1 9.00 Tf
 0.145 0.169 0.204 rg
-1 0 0 1 58.00 614.00 Tm
+1 0 0 1 58.00 608.00 Tm
 (Net Estate After Strategy) Tj
 ET
 BT
 /F1 9.00 Tf
 0.145 0.169 0.204 rg
 1 0 0 1 221.67 614.00 Tm
-($12,294,873.22 [S001]) Tj
+($12,294,873.22 taxable estate) Tj
 ET
 BT
 /F1 9.00 Tf
 0.145 0.169 0.204 rg
-1 0 0 1 385.33 614.00 Tm
-($8,379,277.36 [S003]) Tj
+1 0 0 1 221.67 602.00 Tm
+([S001]) Tj
 ET
 BT
 /F1 9.00 Tf
 0.145 0.169 0.204 rg
-1 0 0 1 58.00 588.00 Tm
+1 0 0 1 385.33 608.00 Tm
+($8,379,277.36 taxable estate [S003]) Tj
+ET
+BT
+/F1 9.00 Tf
+0.145 0.169 0.204 rg
+1 0 0 1 58.00 576.00 Tm
 (Performance Dependence) Tj
-ET
-BT
-/F1 9.00 Tf
-0.145 0.169 0.204 rg
-1 0 0 1 221.67 594.00 Tm
-(Must exceed 1.96% hurdle rate) Tj
 ET
 BT
 /F1 9.00 Tf
 0.145 0.169 0.204 rg
 1 0 0 1 221.67 582.00 Tm
+(Must exceed 1.96% §7520 rate) Tj
+ET
+BT
+/F1 9.00 Tf
+0.145 0.169 0.204 rg
+1 0 0 1 221.67 570.00 Tm
 ([S007]) Tj
 ET
 BT
 /F1 9.00 Tf
 0.145 0.169 0.204 rg
-1 0 0 1 385.33 594.00 Tm
+1 0 0 1 385.33 582.00 Tm
 (Fixed 5% annuity, independent of) Tj
 ET
 BT
 /F1 9.00 Tf
 0.145 0.169 0.204 rg
-1 0 0 1 385.33 582.00 Tm
+1 0 0 1 385.33 570.00 Tm
 (performance [S004]) Tj
 ET
 q
 1.00 w
 0.965 0.957 0.933 rg
-52.00 543.00 491.00 32.00 re f
+52.00 519.00 491.00 44.00 re f
 Q
 BT
 /F1 9.00 Tf
 0.145 0.169 0.204 rg
-1 0 0 1 58.00 556.00 Tm
+1 0 0 1 58.00 538.00 Tm
 (Mortality Risk) Tj
 ET
 BT
 /F1 9.00 Tf
 0.145 0.169 0.204 rg
-1 0 0 1 221.67 562.00 Tm
-(High if grantor dies during term) Tj
+1 0 0 1 221.67 544.00 Tm
+(Full inclusion if grantor dies during) Tj
 ET
 BT
 /F1 9.00 Tf
 0.145 0.169 0.204 rg
-1 0 0 1 221.67 550.00 Tm
-([S006]) Tj
-ET
-BT
-/F1 9.00 Tf
-0.145 0.169 0.204 rg
-1 0 0 1 385.33 562.00 Tm
-(Annuity ceases, remainder to) Tj
+1 0 0 1 221.67 532.00 Tm
+(term [S006]) Tj
 ET
 BT
 /F1 9.00 Tf
 0.145 0.169 0.204 rg
 1 0 0 1 385.33 550.00 Tm
-(charity [S003]) Tj
+(Annuity may continue to successor) Tj
+ET
+BT
+/F1 9.00 Tf
+0.145 0.169 0.204 rg
+1 0 0 1 385.33 538.00 Tm
+(or estate; remainder to charity) Tj
+ET
+BT
+/F1 9.00 Tf
+0.145 0.169 0.204 rg
+1 0 0 1 385.33 526.00 Tm
+([S003]) Tj
 ET
 BT
 /F2 11.50 Tf
 0.169 0.349 0.639 rg
-1 0 0 1 52.00 526.00 Tm
+1 0 0 1 52.00 502.00 Tm
 (Analysis) Tj
 ET
 BT
-/F2 11.50 Tf
-0.169 0.349 0.639 rg
-1 0 0 1 52.00 503.00 Tm
-(Estate Tax Savings) Tj
+/F1 10.50 Tf
+0.145 0.169 0.204 rg
+1 0 0 1 52.00 479.00 Tm
+(Performance Benchmarks:) Tj
 ET
 BT
 /F2 10.00 Tf
 0.169 0.349 0.639 rg
-1 0 0 1 52.00 485.00 Tm
+1 0 0 1 52.00 462.00 Tm
 (-) Tj
 ET
 BT
 /F1 10.00 Tf
 0.145 0.169 0.204 rg
-1 0 0 1 64.00 485.00 Tm
-(GRAT: Provides $1,482,050.71 in estate tax savings by freezing the value of transferred assets and) Tj
+1 0 0 1 64.00 462.00 Tm
+(GRAT: The GRAT requires the trust assets to grow at a rate exceeding the 1.96% §7520 rate to) Tj
 ET
 BT
 /F1 10.00 Tf
 0.145 0.169 0.204 rg
-1 0 0 1 64.00 472.00 Tm
-(leveraging the remainder interest as the taxable gift [1].) Tj
+1 0 0 1 64.00 449.00 Tm
+(achieve the projected remainder of $3,705,126.78 for the children [1]. This growth is necessary to) Tj
+ET
+BT
+/F1 10.00 Tf
+0.145 0.169 0.204 rg
+1 0 0 1 64.00 436.00 Tm
+(maximize wealth transfer and minimize estate taxes.) Tj
 ET
 BT
 /F2 10.00 Tf
 0.169 0.349 0.639 rg
-1 0 0 1 52.00 458.00 Tm
+1 0 0 1 52.00 422.00 Tm
 (-) Tj
 ET
 BT
 /F1 10.00 Tf
 0.145 0.169 0.204 rg
-1 0 0 1 64.00 458.00 Tm
-(CRAT: Offers greater estate tax savings of $3,048,289.06 due to the charitable deduction for the) Tj
+1 0 0 1 64.00 422.00 Tm
+(CRAT: The CRAT pays a fixed annuity of $800,000 annually, regardless of investment performance,) Tj
 ET
 BT
 /F1 10.00 Tf
 0.145 0.169 0.204 rg
-1 0 0 1 64.00 445.00 Tm
-(remainder interest [2].) Tj
-ET
-BT
-/F2 11.50 Tf
-0.169 0.349 0.639 rg
-1 0 0 1 52.00 425.00 Tm
-(Wealth Transfer to Children) Tj
-ET
-BT
-/F2 10.00 Tf
-0.169 0.349 0.639 rg
-1 0 0 1 52.00 407.00 Tm
-(-) Tj
+1 0 0 1 64.00 409.00 Tm
+(ensuring a charitable remainder of $16,000,000 [2]. The trust must earn at least the 5% payout rate) Tj
 ET
 BT
 /F1 10.00 Tf
 0.145 0.169 0.204 rg
-1 0 0 1 64.00 407.00 Tm
-(GRAT: Transfers $3,705,126.78 to heirs, aligning with the client's goal of wealth transfer [1].) Tj
+1 0 0 1 64.00 396.00 Tm
+(to preserve the charitable remainder.) Tj
 ET
-BT
-/F2 10.00 Tf
-0.169 0.349 0.639 rg
-1 0 0 1 52.00 393.00 Tm
-(-) Tj
-ET
-BT
-/F1 10.00 Tf
-0.145 0.169 0.204 rg
-1 0 0 1 64.00 393.00 Tm
-(CRAT: Does not transfer wealth to heirs, necessitating a wealth-replacement strategy if this is a) Tj
-ET
-BT
-/F1 10.00 Tf
-0.145 0.169 0.204 rg
-1 0 0 1 64.00 380.00 Tm
-(priority [2].) Tj
-ET
-BT
-/F2 11.50 Tf
-0.169 0.349 0.639 rg
-1 0 0 1 52.00 360.00 Tm
-(Charitable Component) Tj
-ET
-BT
-/F2 10.00 Tf
-0.169 0.349 0.639 rg
-1 0 0 1 52.00 342.00 Tm
-(-) Tj
-ET
-BT
-/F1 10.00 Tf
-0.145 0.169 0.204 rg
-1 0 0 1 64.00 342.00 Tm
-(GRAT: No direct charitable component.) Tj
-ET
-BT
-/F2 10.00 Tf
-0.169 0.349 0.639 rg
-1 0 0 1 52.00 328.00 Tm
-(-) Tj
-ET
-BT
-/F1 10.00 Tf
-0.145 0.169 0.204 rg
-1 0 0 1 64.00 328.00 Tm
-(CRAT: Aligns with philanthropic goals, transferring $16,000,000.00 to charity [2].) Tj
-ET
-BT
-/F2 11.50 Tf
-0.169 0.349 0.639 rg
-1 0 0 1 52.00 308.00 Tm
-(Performance Dependence) Tj
-ET
-BT
-/F2 10.00 Tf
-0.169 0.349 0.639 rg
-1 0 0 1 52.00 290.00 Tm
-(-) Tj
-ET
-BT
-/F1 10.00 Tf
-0.145 0.169 0.204 rg
-1 0 0 1 64.00 290.00 Tm
-(GRAT: Requires exceeding a 1.96% hurdle rate to benefit heirs, with a projected growth rate of 5%) Tj
-ET
-BT
-/F1 10.00 Tf
-0.145 0.169 0.204 rg
-1 0 0 1 64.00 277.00 Tm
-([3].) Tj
-ET
-BT
-/F2 10.00 Tf
-0.169 0.349 0.639 rg
-1 0 0 1 52.00 263.00 Tm
-(-) Tj
-ET
-BT
-/F1 10.00 Tf
-0.145 0.169 0.204 rg
-1 0 0 1 64.00 263.00 Tm
-(CRAT: Pays a fixed 5% annuity, independent of investment performance, ensuring predictable payouts) Tj
-ET
-BT
-/F1 10.00 Tf
-0.145 0.169 0.204 rg
-1 0 0 1 64.00 250.00 Tm
-([4].) Tj
-ET
-BT
-/F2 11.50 Tf
-0.169 0.349 0.639 rg
-1 0 0 1 52.00 230.00 Tm
-(Mortality Risk) Tj
-ET
-BT
-/F2 10.00 Tf
-0.169 0.349 0.639 rg
-1 0 0 1 52.00 212.00 Tm
-(-) Tj
-ET
-BT
-/F1 10.00 Tf
-0.145 0.169 0.204 rg
-1 0 0 1 64.00 212.00 Tm
-(GRAT: High risk if the grantor dies during the term, as assets revert to the estate [5].) Tj
-ET
-BT
-/F2 10.00 Tf
-0.169 0.349 0.639 rg
-1 0 0 1 52.00 198.00 Tm
-(-) Tj
-ET
-BT
-/F1 10.00 Tf
-0.145 0.169 0.204 rg
-1 0 0 1 64.00 198.00 Tm
-(CRAT: Annuity payments cease upon death, with the remainder passing to charity, reducing risk [2].) Tj
-ET
-BT
-/F2 11.50 Tf
-0.169 0.349 0.639 rg
-1 0 0 1 52.00 178.00 Tm
-(Client-Specific Considerations) Tj
-ET
-BT
-/F2 10.00 Tf
-0.169 0.349 0.639 rg
-1 0 0 1 52.00 160.00 Tm
-(-) Tj
-ET
-BT
-/F1 10.00 Tf
-0.145 0.169 0.204 rg
-1 0 0 1 64.00 160.00 Tm
-(Marital Status and Exemption: The client's marital status and combined exemption are crucial in) Tj
-ET
-BT
-/F1 10.00 Tf
-0.145 0.169 0.204 rg
-1 0 0 1 64.00 147.00 Tm
-(minimizing estate tax exposure [6].) Tj
-ET
-BT
-/F2 10.00 Tf
-0.169 0.349 0.639 rg
-1 0 0 1 52.00 133.00 Tm
-(-) Tj
-ET
-BT
-/F1 10.00 Tf
-0.145 0.169 0.204 rg
-1 0 0 1 64.00 133.00 Tm
-(Wealth Replacement: Consider life insurance or other strategies to replace wealth not transferred to) Tj
-ET
-BT
-/F1 10.00 Tf
-0.145 0.169 0.204 rg
-1 0 0 1 64.00 120.00 Tm
-(heirs via the CRAT.) Tj
-ET
-BT
-/F2 11.50 Tf
-0.169 0.349 0.639 rg
-1 0 0 1 52.00 100.00 Tm
-(Recommendation) Tj
-ET
-q
-0.80 w
-0.843 0.863 0.894 RG
-52.00 34.00 m 543.00 34.00 l S
-Q
-BT
-/F1 8.50 Tf
-0.376 0.427 0.494 rg
-1 0 0 1 52.00 22.00 Tm
-(Client Advisory Report - GRAT / CRAT) Tj
-ET
-BT
-/F1 8.50 Tf
-0.376 0.427 0.494 rg
-1 0 0 1 516.74 22.00 Tm
-(Page 7) Tj
-ET
-endstream
-endobj
-19 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 18 0 R >>
-endobj
-20 0 obj
-<< /Length 1803 >>
-stream
 BT
 /F1 10.50 Tf
 0.145 0.169 0.204 rg
-1 0 0 1 52.00 788.00 Tm
+1 0 0 1 52.00 376.00 Tm
+(Mortality Risk:) Tj
+ET
+BT
+/F2 10.00 Tf
+0.169 0.349 0.639 rg
+1 0 0 1 52.00 359.00 Tm
+(-) Tj
+ET
+BT
+/F1 10.00 Tf
+0.145 0.169 0.204 rg
+1 0 0 1 64.00 359.00 Tm
+(GRAT: At age 62, the client faces mortality risk, as the GRAT requires survival through the 10-year) Tj
+ET
+BT
+/F1 10.00 Tf
+0.145 0.169 0.204 rg
+1 0 0 1 64.00 346.00 Tm
+(term to avoid full estate inclusion [3].) Tj
+ET
+BT
+/F2 10.00 Tf
+0.169 0.349 0.639 rg
+1 0 0 1 52.00 332.00 Tm
+(-) Tj
+ET
+BT
+/F1 10.00 Tf
+0.145 0.169 0.204 rg
+1 0 0 1 64.00 332.00 Tm
+(CRAT: The CRAT's 20-year term allows for annuity continuation to a successor or the estate if the) Tj
+ET
+BT
+/F1 10.00 Tf
+0.145 0.169 0.204 rg
+1 0 0 1 64.00 319.00 Tm
+(client dies during the term, with the remainder passing to charity [4].) Tj
+ET
+BT
+/F1 10.50 Tf
+0.145 0.169 0.204 rg
+1 0 0 1 52.00 299.00 Tm
+(Estate Tax Considerations:) Tj
+ET
+BT
+/F2 10.00 Tf
+0.169 0.349 0.639 rg
+1 0 0 1 52.00 282.00 Tm
+(-) Tj
+ET
+BT
+/F1 10.00 Tf
+0.145 0.169 0.204 rg
+1 0 0 1 64.00 282.00 Tm
+(The client's marital status and combined exemption significantly impact estate-tax exposure. The GRAT) Tj
+ET
+BT
+/F1 10.00 Tf
+0.145 0.169 0.204 rg
+1 0 0 1 64.00 269.00 Tm
+(reduces the taxable estate to $12,294,873.22, while the CRAT further reduces it to $8,379,277.36 [5].) Tj
+ET
+BT
+/F1 10.50 Tf
+0.145 0.169 0.204 rg
+1 0 0 1 52.00 249.00 Tm
+(Wealth Replacement:) Tj
+ET
+BT
+/F2 10.00 Tf
+0.169 0.349 0.639 rg
+1 0 0 1 52.00 232.00 Tm
+(-) Tj
+ET
+BT
+/F1 10.00 Tf
+0.145 0.169 0.204 rg
+1 0 0 1 64.00 232.00 Tm
+(Since the CRAT does not transfer wealth to heirs, a wealth-replacement strategy may be necessary to) Tj
+ET
+BT
+/F1 10.00 Tf
+0.145 0.169 0.204 rg
+1 0 0 1 64.00 219.00 Tm
+(ensure the client's children receive comparable benefits.) Tj
+ET
+BT
+/F2 11.50 Tf
+0.169 0.349 0.639 rg
+1 0 0 1 52.00 199.00 Tm
+(Recommendation) Tj
+ET
+BT
+/F1 10.50 Tf
+0.145 0.169 0.204 rg
+1 0 0 1 52.00 176.00 Tm
 (Given the client's goals and constraints, the GRAT is recommended as the primary wealth-transfer) Tj
 ET
 BT
 /F1 10.50 Tf
 0.145 0.169 0.204 rg
-1 0 0 1 52.00 774.00 Tm
-(vehicle due to its potential to pass significant assets to heirs tax-efficiently. The CRAT serves a) Tj
+1 0 0 1 52.00 162.00 Tm
+(vehicle due to its potential to transfer $3,705,126.78 to children. The CRAT serves a complementary) Tj
 ET
 BT
 /F1 10.50 Tf
 0.145 0.169 0.204 rg
-1 0 0 1 52.00 760.00 Tm
-(complementary role, aligning with the client's philanthropic objectives and providing substantial) Tj
+1 0 0 1 52.00 148.00 Tm
+(role, maximizing charitable deductions and estate tax savings. Both strategies involve administrative) Tj
 ET
 BT
 /F1 10.50 Tf
 0.145 0.169 0.204 rg
-1 0 0 1 52.00 746.00 Tm
-(estate tax savings. This dual strategy balances wealth transfer to heirs with charitable giving,) Tj
+1 0 0 1 52.00 134.00 Tm
+(complexity and costs, but align with the client's objectives of minimizing estate taxes and supporting) Tj
 ET
 BT
 /F1 10.50 Tf
 0.145 0.169 0.204 rg
-1 0 0 1 52.00 732.00 Tm
-(optimizing tax benefits while maintaining liquidity and flexibility for future decisions.) Tj
-ET
-q
-0.50 w
-0.843 0.863 0.894 RG
-52.00 710.00 m 172.00 710.00 l S
-Q
-BT
-/F1 7.50 Tf
-0.376 0.427 0.494 rg
-1 0 0 1 52.00 704.00 Tm
-([1] IRC §2702 - Special valuation rules) Tj
-ET
-BT
-/F1 7.50 Tf
-0.376 0.427 0.494 rg
-1 0 0 1 52.00 693.00 Tm
-([2] IRC §664 - Charitable remainder trusts) Tj
-ET
-BT
-/F1 7.50 Tf
-0.376 0.427 0.494 rg
-1 0 0 1 52.00 682.00 Tm
-([3] IRC §7520 - Valuation tables) Tj
-ET
-BT
-/F1 7.50 Tf
-0.376 0.427 0.494 rg
-1 0 0 1 52.00 671.00 Tm
-([4] 26 CFR 1.664-2 - Charitable remainder annuity trust) Tj
-ET
-BT
-/F1 7.50 Tf
-0.376 0.427 0.494 rg
-1 0 0 1 52.00 660.00 Tm
-([5] IRC §2033 - Property in which decedent had an interest) Tj
-ET
-BT
-/F1 7.50 Tf
-0.376 0.427 0.494 rg
-1 0 0 1 52.00 649.00 Tm
-([6] IRS - Estate tax overview) Tj
+1 0 0 1 52.00 120.00 Tm
+(philanthropy.) Tj
 ET
 q
 0.80 w
@@ -1723,359 +1622,42 @@ endobj
 << /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 20 0 R >>
 endobj
 22 0 obj
-<< /Length 7472 >>
+<< /Length 868 >>
 stream
 q
-1.00 w
-0.961 0.969 0.984 rg
-0.00 756.00 595.00 86.00 re f
-Q
-q
-1.00 w
-0.773 0.631 0.298 rg
-52.00 772.00 72.00 6.00 re f
+0.50 w
+0.843 0.863 0.894 RG
+52.00 788.00 m 172.00 788.00 l S
 Q
 BT
-/F2 22.00 Tf
-0.094 0.173 0.298 rg
-1 0 0 1 52.00 788.00 Tm
-(Supporting Citations) Tj
+/F1 7.50 Tf
+0.376 0.427 0.494 rg
+1 0 0 1 52.00 782.00 Tm
+([1] IRC §7520 - Valuation tables) Tj
 ET
 BT
-/F2 10.00 Tf
-0.169 0.349 0.639 rg
-1 0 0 1 52.00 717.00 Tm
-(-) Tj
+/F1 7.50 Tf
+0.376 0.427 0.494 rg
+1 0 0 1 52.00 771.00 Tm
+([2] 26 CFR 1.664-2 - Charitable remainder annuity trust) Tj
 ET
 BT
-/F1 10.00 Tf
-0.145 0.169 0.204 rg
-1 0 0 1 64.00 717.00 Tm
-(GRAT Qualified Interest Regulations: The regulations governing Grantor Retained Annuity Trusts) Tj
+/F1 7.50 Tf
+0.376 0.427 0.494 rg
+1 0 0 1 52.00 760.00 Tm
+([3] IRC §2033 - Property in which decedent had an interest) Tj
 ET
 BT
-/F1 10.00 Tf
-0.145 0.169 0.204 rg
-1 0 0 1 64.00 704.00 Tm
-(\(GRATs\) are detailed in 26 CFR §25.2702-3. These regulations specify the requirements for a qualified) Tj
+/F1 7.50 Tf
+0.376 0.427 0.494 rg
+1 0 0 1 52.00 749.00 Tm
+([4] IRC §664 - Charitable remainder trusts) Tj
 ET
 BT
-/F1 10.00 Tf
-0.145 0.169 0.204 rg
-1 0 0 1 64.00 691.00 Tm
-(interest, including the annuity payment structure and the irrevocable nature of the trust [1].) Tj
-ET
-BT
-/F2 10.00 Tf
-0.169 0.349 0.639 rg
-1 0 0 1 52.00 671.00 Tm
-(-) Tj
-ET
-BT
-/F1 10.00 Tf
-0.145 0.169 0.204 rg
-1 0 0 1 64.00 671.00 Tm
-(Charitable Income Tax Deduction: The rules for claiming a charitable income tax deduction are outlined) Tj
-ET
-BT
-/F1 10.00 Tf
-0.145 0.169 0.204 rg
-1 0 0 1 64.00 658.00 Tm
-(in IRC §170. This section provides guidance on the valuation of charitable contributions and the) Tj
-ET
-BT
-/F1 10.00 Tf
-0.145 0.169 0.204 rg
-1 0 0 1 64.00 645.00 Tm
-(requirements for obtaining a deduction [2].) Tj
-ET
-BT
-/F2 10.00 Tf
-0.169 0.349 0.639 rg
-1 0 0 1 52.00 625.00 Tm
-(-) Tj
-ET
-BT
-/F1 10.00 Tf
-0.145 0.169 0.204 rg
-1 0 0 1 64.00 625.00 Tm
-(Estate Tax Exemptions and Rates: Information on estate tax exemptions and rates is available) Tj
-ET
-BT
-/F1 10.00 Tf
-0.145 0.169 0.204 rg
-1 0 0 1 64.00 612.00 Tm
-(through IRS guidelines. These details are crucial for understanding the potential estate tax savings) Tj
-ET
-BT
-/F1 10.00 Tf
-0.145 0.169 0.204 rg
-1 0 0 1 64.00 599.00 Tm
-(associated with different trust structures [3].) Tj
-ET
-BT
-/F2 10.00 Tf
-0.169 0.349 0.639 rg
-1 0 0 1 52.00 579.00 Tm
-(-) Tj
-ET
-BT
-/F1 10.00 Tf
-0.145 0.169 0.204 rg
-1 0 0 1 64.00 579.00 Tm
-(Circular 230 Disclosure Standards: The practice standards for tax professionals, including disclosure) Tj
-ET
-BT
-/F1 10.00 Tf
-0.145 0.169 0.204 rg
-1 0 0 1 64.00 566.00 Tm
-(requirements, are found in 31 CFR Part 10. This section ensures compliance with ethical standards in) Tj
-ET
-BT
-/F1 10.00 Tf
-0.145 0.169 0.204 rg
-1 0 0 1 64.00 553.00 Tm
-(tax practice [4].) Tj
-ET
-BT
-/F2 11.50 Tf
-0.169 0.349 0.639 rg
-1 0 0 1 52.00 533.00 Tm
-(Assumptions, Limitations, and Uncertainties) Tj
-ET
-BT
-/F2 10.00 Tf
-0.169 0.349 0.639 rg
-1 0 0 1 52.00 510.00 Tm
-(-) Tj
-ET
-BT
-/F1 10.00 Tf
-0.145 0.169 0.204 rg
-1 0 0 1 64.00 510.00 Tm
-(Assumptions: The analysis assumes a consistent growth rate of 5.00% for the GRAT and a §7520 rate) Tj
-ET
-BT
-/F1 10.00 Tf
-0.145 0.169 0.204 rg
-1 0 0 1 64.00 497.00 Tm
-(of 196 basis points. These assumptions are critical for projecting the potential remainder interest) Tj
-ET
-BT
-/F1 10.00 Tf
-0.145 0.169 0.204 rg
-1 0 0 1 64.00 484.00 Tm
-(and tax implications.) Tj
-ET
-BT
-/F2 10.00 Tf
-0.169 0.349 0.639 rg
-1 0 0 1 52.00 464.00 Tm
-(-) Tj
-ET
-BT
-/F1 10.00 Tf
-0.145 0.169 0.204 rg
-1 0 0 1 64.00 464.00 Tm
-(Limitations: The projections are based on current tax laws and rates, which are subject to change.) Tj
-ET
-BT
-/F1 10.00 Tf
-0.145 0.169 0.204 rg
-1 0 0 1 64.00 451.00 Tm
-(Any legislative changes could impact the effectiveness of the recommended strategies.) Tj
-ET
-BT
-/F2 10.00 Tf
-0.169 0.349 0.639 rg
-1 0 0 1 52.00 431.00 Tm
-(-) Tj
-ET
-BT
-/F1 10.00 Tf
-0.145 0.169 0.204 rg
-1 0 0 1 64.00 431.00 Tm
-(Uncertainties: The client's mortality risk is a significant factor in the success of the GRAT. The) Tj
-ET
-BT
-/F1 10.00 Tf
-0.145 0.169 0.204 rg
-1 0 0 1 64.00 418.00 Tm
-(analysis uses actuarial tables to estimate this risk, but actual outcomes may vary. Additionally,) Tj
-ET
-BT
-/F1 10.00 Tf
-0.145 0.169 0.204 rg
-1 0 0 1 64.00 405.00 Tm
-(investment performance can affect the remainder interest in both GRAT and CRAT structures.) Tj
-ET
-BT
-/F2 11.50 Tf
-0.169 0.349 0.639 rg
-1 0 0 1 52.00 385.00 Tm
-(Circular 230 Disclosure) Tj
-ET
-BT
-/F1 10.50 Tf
-0.145 0.169 0.204 rg
-1 0 0 1 52.00 362.00 Tm
-(In compliance with Circular 230, this communication is not intended or written to be used, and cannot) Tj
-ET
-BT
-/F1 10.50 Tf
-0.145 0.169 0.204 rg
-1 0 0 1 52.00 348.00 Tm
-(be used, by any taxpayer for the purpose of avoiding penalties that may be imposed under the) Tj
-ET
-BT
-/F1 10.50 Tf
-0.145 0.169 0.204 rg
-1 0 0 1 52.00 334.00 Tm
-(Internal Revenue Code. This document is intended to provide general information and should not be) Tj
-ET
-BT
-/F1 10.50 Tf
-0.145 0.169 0.204 rg
-1 0 0 1 52.00 320.00 Tm
-(construed as legal or tax advice. Clients should consult their own tax advisors for specific guidance) Tj
-ET
-BT
-/F1 10.50 Tf
-0.145 0.169 0.204 rg
-1 0 0 1 52.00 306.00 Tm
-(tailored to their individual circumstances [4].) Tj
-ET
-BT
-/F2 11.50 Tf
-0.169 0.349 0.639 rg
-1 0 0 1 52.00 284.00 Tm
-(Global References) Tj
-ET
-BT
-/F2 10.00 Tf
-0.169 0.349 0.639 rg
-1 0 0 1 52.00 266.00 Tm
-(-) Tj
-ET
-BT
-/F1 10.00 Tf
-0.145 0.169 0.204 rg
-1 0 0 1 64.00 266.00 Tm
-([5] S001. IRC §2702 - Special Valuation Rules \(GRAT Core Statute\). \(2026\).) Tj
-ET
-BT
-/F1 10.00 Tf
-0.145 0.169 0.204 rg
-1 0 0 1 64.00 253.00 Tm
-(https://www.law.cornell.edu/uscode/text/26/2702) Tj
-ET
-BT
-/F2 10.00 Tf
-0.169 0.349 0.639 rg
-1 0 0 1 52.00 239.00 Tm
-(-) Tj
-ET
-BT
-/F1 10.00 Tf
-0.145 0.169 0.204 rg
-1 0 0 1 64.00 239.00 Tm
-([1] S002. 26 CFR §25.2702-3 - Qualified Interests \(GRAT Regulations\). \(2026\).) Tj
-ET
-BT
-/F1 10.00 Tf
-0.145 0.169 0.204 rg
-1 0 0 1 64.00 226.00 Tm
-(https://www.law.cornell.edu/cfr/text/26/25.2702-3) Tj
-ET
-BT
-/F2 10.00 Tf
-0.169 0.349 0.639 rg
-1 0 0 1 52.00 212.00 Tm
-(-) Tj
-ET
-BT
-/F1 10.00 Tf
-0.145 0.169 0.204 rg
-1 0 0 1 64.00 212.00 Tm
-([6] S007. IRC §7520 - Valuation Tables \(Section 7520 Hurdle Rate\). \(2026\).) Tj
-ET
-BT
-/F1 10.00 Tf
-0.145 0.169 0.204 rg
-1 0 0 1 64.00 199.00 Tm
-(https://www.law.cornell.edu/uscode/text/26/7520) Tj
-ET
-BT
-/F2 10.00 Tf
-0.169 0.349 0.639 rg
-1 0 0 1 52.00 185.00 Tm
-(-) Tj
-ET
-BT
-/F1 10.00 Tf
-0.145 0.169 0.204 rg
-1 0 0 1 64.00 185.00 Tm
-([7] S003. IRC §664 - Charitable Remainder Trusts \(CRAT Core Statute\). \(2026\).) Tj
-ET
-BT
-/F1 10.00 Tf
-0.145 0.169 0.204 rg
-1 0 0 1 64.00 172.00 Tm
-(https://www.law.cornell.edu/uscode/text/26/664) Tj
-ET
-BT
-/F2 10.00 Tf
-0.169 0.349 0.639 rg
-1 0 0 1 52.00 158.00 Tm
-(-) Tj
-ET
-BT
-/F1 10.00 Tf
-0.145 0.169 0.204 rg
-1 0 0 1 64.00 158.00 Tm
-([8] S004. 26 CFR §1.664-2 - Charitable Remainder Annuity Trust Regulations. \(2026\).) Tj
-ET
-BT
-/F1 10.00 Tf
-0.145 0.169 0.204 rg
-1 0 0 1 64.00 145.00 Tm
-(https://www.law.cornell.edu/cfr/text/26/1.664-2) Tj
-ET
-BT
-/F2 10.00 Tf
-0.169 0.349 0.639 rg
-1 0 0 1 52.00 131.00 Tm
-(-) Tj
-ET
-BT
-/F1 10.00 Tf
-0.145 0.169 0.204 rg
-1 0 0 1 64.00 131.00 Tm
-([2] S009. IRC §170 - Charitable Contributions and Gifts \(Income Tax Deduction\). \(2026\).) Tj
-ET
-BT
-/F1 10.00 Tf
-0.145 0.169 0.204 rg
-1 0 0 1 64.00 118.00 Tm
-(https://www.law.cornell.edu/uscode/text/26/170) Tj
-ET
-BT
-/F2 10.00 Tf
-0.169 0.349 0.639 rg
-1 0 0 1 52.00 104.00 Tm
-(-) Tj
-ET
-BT
-/F1 10.00 Tf
-0.145 0.169 0.204 rg
-1 0 0 1 64.00 104.00 Tm
-([9] S006. IRC §2033 - Property Included in Gross Estate. \(2026\).) Tj
-ET
-BT
-/F1 10.00 Tf
-0.145 0.169 0.204 rg
-1 0 0 1 64.00 91.00 Tm
-(https://www.law.cornell.edu/uscode/text/26/2033) Tj
+/F1 7.50 Tf
+0.376 0.427 0.494 rg
+1 0 0 1 52.00 738.00 Tm
+([5] IRS - Estate tax overview) Tj
 ET
 q
 0.80 w
@@ -2100,102 +1682,377 @@ endobj
 << /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 22 0 R >>
 endobj
 24 0 obj
-<< /Length 2040 >>
+<< /Length 7281 >>
 stream
-BT
-/F2 10.00 Tf
-0.169 0.349 0.639 rg
-1 0 0 1 52.00 788.00 Tm
-(-) Tj
-ET
-BT
-/F1 10.00 Tf
-0.145 0.169 0.204 rg
-1 0 0 1 64.00 788.00 Tm
-([3] S010. IRS Estate Tax - Exemptions, Rates, and Filing Requirements. \(2026\).) Tj
-ET
-BT
-/F1 10.00 Tf
-0.145 0.169 0.204 rg
-1 0 0 1 64.00 775.00 Tm
-(https://www.irs.gov/businesses/small-businesses-self-employed/estate-tax) Tj
-ET
-BT
-/F2 10.00 Tf
-0.169 0.349 0.639 rg
-1 0 0 1 52.00 761.00 Tm
-(-) Tj
-ET
-BT
-/F1 10.00 Tf
-0.145 0.169 0.204 rg
-1 0 0 1 64.00 761.00 Tm
-([4] S011. 31 CFR Part 10 - Treasury Department Circular 230 \(Tax Practice Standards\). \(2026\).) Tj
-ET
-BT
-/F1 10.00 Tf
-0.145 0.169 0.204 rg
-1 0 0 1 64.00 748.00 Tm
-(https://www.law.cornell.edu/cfr/text/31/part-10) Tj
-ET
 q
-0.50 w
-0.843 0.863 0.894 RG
-52.00 723.00 m 172.00 723.00 l S
+1.00 w
+0.961 0.969 0.984 rg
+0.00 756.00 595.00 86.00 re f
+Q
+q
+1.00 w
+0.773 0.631 0.298 rg
+52.00 772.00 72.00 6.00 re f
 Q
 BT
-/F1 7.50 Tf
-0.376 0.427 0.494 rg
+/F2 22.00 Tf
+0.094 0.173 0.298 rg
+1 0 0 1 52.00 788.00 Tm
+(Citations and Disclosures) Tj
+ET
+BT
+/F2 11.50 Tf
+0.169 0.349 0.639 rg
 1 0 0 1 52.00 717.00 Tm
-([1] 26 CFR 25.2702-3 - Special valuation rules for GRATs) Tj
+(Citations and Disclosures) Tj
 ET
 BT
-/F1 7.50 Tf
-0.376 0.427 0.494 rg
-1 0 0 1 52.00 706.00 Tm
-([2] IRC §170 - Charitable contributions deduction) Tj
+/F1 10.50 Tf
+0.145 0.169 0.204 rg
+1 0 0 1 52.00 694.00 Tm
+(#### Supporting Citations) Tj
 ET
 BT
-/F1 7.50 Tf
-0.376 0.427 0.494 rg
-1 0 0 1 52.00 695.00 Tm
-([3] IRS - Estate tax overview) Tj
+/F2 10.00 Tf
+0.169 0.349 0.639 rg
+1 0 0 1 52.00 672.00 Tm
+(-) Tj
 ET
 BT
-/F1 7.50 Tf
-0.376 0.427 0.494 rg
-1 0 0 1 52.00 684.00 Tm
-([4] 31 CFR Part 10 - Circular 230) Tj
+/F1 10.00 Tf
+0.145 0.169 0.204 rg
+1 0 0 1 64.00 672.00 Tm
+(GRAT Qualified Interest Regulations: The regulations governing GRATs are detailed in 26 CFR) Tj
 ET
 BT
-/F1 7.50 Tf
-0.376 0.427 0.494 rg
-1 0 0 1 52.00 673.00 Tm
-([5] IRC §2702 - Special valuation rules) Tj
+/F1 10.00 Tf
+0.145 0.169 0.204 rg
+1 0 0 1 64.00 659.00 Tm
+(§25.2702-3, which outlines the requirements for a qualified interest and the implications for estate) Tj
 ET
 BT
-/F1 7.50 Tf
-0.376 0.427 0.494 rg
-1 0 0 1 52.00 662.00 Tm
-([6] IRC §7520 - Valuation tables) Tj
+/F1 10.00 Tf
+0.145 0.169 0.204 rg
+1 0 0 1 64.00 646.00 Tm
+(and gift tax purposes [1].) Tj
 ET
 BT
-/F1 7.50 Tf
-0.376 0.427 0.494 rg
-1 0 0 1 52.00 651.00 Tm
-([7] IRC §664 - Charitable remainder trusts) Tj
+/F2 10.00 Tf
+0.169 0.349 0.639 rg
+1 0 0 1 52.00 626.00 Tm
+(-) Tj
 ET
 BT
-/F1 7.50 Tf
-0.376 0.427 0.494 rg
-1 0 0 1 52.00 640.00 Tm
-([8] 26 CFR 1.664-2 - Charitable remainder annuity trust) Tj
+/F1 10.00 Tf
+0.145 0.169 0.204 rg
+1 0 0 1 64.00 626.00 Tm
+(Charitable Income Tax Deduction: IRC §170 provides the framework for charitable income tax) Tj
 ET
 BT
-/F1 7.50 Tf
-0.376 0.427 0.494 rg
-1 0 0 1 52.00 629.00 Tm
-([9] IRC §2033 - Property in which decedent had an interest) Tj
+/F1 10.00 Tf
+0.145 0.169 0.204 rg
+1 0 0 1 64.00 613.00 Tm
+(deductions, relevant to the CRAT's charitable remainder interest [2].) Tj
+ET
+BT
+/F2 10.00 Tf
+0.169 0.349 0.639 rg
+1 0 0 1 52.00 593.00 Tm
+(-) Tj
+ET
+BT
+/F1 10.00 Tf
+0.145 0.169 0.204 rg
+1 0 0 1 64.00 593.00 Tm
+(Estate Tax Exemptions and Rates: The IRS estate tax guidelines, including exemptions and rates) Tj
+ET
+BT
+/F1 10.00 Tf
+0.145 0.169 0.204 rg
+1 0 0 1 64.00 580.00 Tm
+(applicable in 2015, are essential for understanding the estate tax implications of both GRAT and CRAT) Tj
+ET
+BT
+/F1 10.00 Tf
+0.145 0.169 0.204 rg
+1 0 0 1 64.00 567.00 Tm
+(strategies [3].) Tj
+ET
+BT
+/F2 10.00 Tf
+0.169 0.349 0.639 rg
+1 0 0 1 52.00 547.00 Tm
+(-) Tj
+ET
+BT
+/F1 10.00 Tf
+0.145 0.169 0.204 rg
+1 0 0 1 64.00 547.00 Tm
+(Circular 230 Disclosure Standards: Compliance with Circular 230, as outlined in 31 CFR Part 10, is) Tj
+ET
+BT
+/F1 10.00 Tf
+0.145 0.169 0.204 rg
+1 0 0 1 64.00 534.00 Tm
+(necessary for all tax-related advice provided in this memo [4].) Tj
+ET
+BT
+/F1 10.50 Tf
+0.145 0.169 0.204 rg
+1 0 0 1 52.00 514.00 Tm
+(#### Assumptions and Limitations) Tj
+ET
+BT
+/F2 10.00 Tf
+0.169 0.349 0.639 rg
+1 0 0 1 52.00 492.00 Tm
+(-) Tj
+ET
+BT
+/F1 10.00 Tf
+0.145 0.169 0.204 rg
+1 0 0 1 64.00 492.00 Tm
+(Assumptions:) Tj
+ET
+BT
+/F2 10.00 Tf
+0.169 0.349 0.639 rg
+1 0 0 1 52.00 478.00 Tm
+(-) Tj
+ET
+BT
+/F1 10.00 Tf
+0.145 0.169 0.204 rg
+1 0 0 1 64.00 478.00 Tm
+(The client is assumed to have a moderate risk tolerance and a 10-year investment horizon.) Tj
+ET
+BT
+/F2 10.00 Tf
+0.169 0.349 0.639 rg
+1 0 0 1 52.00 464.00 Tm
+(-) Tj
+ET
+BT
+/F1 10.00 Tf
+0.145 0.169 0.204 rg
+1 0 0 1 64.00 464.00 Tm
+(The GRAT and CRAT are funded with $16,000,000 each, reflecting the client's allocation preferences) Tj
+ET
+BT
+/F1 10.00 Tf
+0.145 0.169 0.204 rg
+1 0 0 1 64.00 451.00 Tm
+(\(60% GRAT, 40% CRAT\).) Tj
+ET
+BT
+/F2 10.00 Tf
+0.169 0.349 0.639 rg
+1 0 0 1 52.00 437.00 Tm
+(-) Tj
+ET
+BT
+/F1 10.00 Tf
+0.145 0.169 0.204 rg
+1 0 0 1 64.00 437.00 Tm
+(The GRAT assumes a growth rate of 5.00%, with a §7520 rate of 1.96% \(196 bps\), creating a spread) Tj
+ET
+BT
+/F1 10.00 Tf
+0.145 0.169 0.204 rg
+1 0 0 1 64.00 424.00 Tm
+(that influences the projected remainder [1].) Tj
+ET
+BT
+/F2 10.00 Tf
+0.169 0.349 0.639 rg
+1 0 0 1 52.00 410.00 Tm
+(-) Tj
+ET
+BT
+/F1 10.00 Tf
+0.145 0.169 0.204 rg
+1 0 0 1 64.00 410.00 Tm
+(The CRAT's annuity is fixed at $800,000 annually, with a payout rate of 5.00% [2].) Tj
+ET
+BT
+/F2 10.00 Tf
+0.169 0.349 0.639 rg
+1 0 0 1 52.00 390.00 Tm
+(-) Tj
+ET
+BT
+/F1 10.00 Tf
+0.145 0.169 0.204 rg
+1 0 0 1 64.00 390.00 Tm
+(Limitations:) Tj
+ET
+BT
+/F2 10.00 Tf
+0.169 0.349 0.639 rg
+1 0 0 1 52.00 376.00 Tm
+(-) Tj
+ET
+BT
+/F1 10.00 Tf
+0.145 0.169 0.204 rg
+1 0 0 1 64.00 376.00 Tm
+(The analysis is based on 2015 tax laws and rates, which may differ from current values.) Tj
+ET
+BT
+/F2 10.00 Tf
+0.169 0.349 0.639 rg
+1 0 0 1 52.00 362.00 Tm
+(-) Tj
+ET
+BT
+/F1 10.00 Tf
+0.145 0.169 0.204 rg
+1 0 0 1 64.00 362.00 Tm
+(The projections do not account for potential changes in tax legislation or economic conditions.) Tj
+ET
+BT
+/F2 10.00 Tf
+0.169 0.349 0.639 rg
+1 0 0 1 52.00 348.00 Tm
+(-) Tj
+ET
+BT
+/F1 10.00 Tf
+0.145 0.169 0.204 rg
+1 0 0 1 64.00 348.00 Tm
+(The CRAT's charitable deduction and estate tax savings are contingent on the trust's performance) Tj
+ET
+BT
+/F1 10.00 Tf
+0.145 0.169 0.204 rg
+1 0 0 1 64.00 335.00 Tm
+(and adherence to IRC §170 requirements [2].) Tj
+ET
+BT
+/F1 10.50 Tf
+0.145 0.169 0.204 rg
+1 0 0 1 52.00 315.00 Tm
+(#### Uncertainties) Tj
+ET
+BT
+/F2 10.00 Tf
+0.169 0.349 0.639 rg
+1 0 0 1 52.00 293.00 Tm
+(-) Tj
+ET
+BT
+/F1 10.00 Tf
+0.145 0.169 0.204 rg
+1 0 0 1 64.00 293.00 Tm
+(The client's actual lifespan and market performance are uncertain, affecting the GRAT's remainder) Tj
+ET
+BT
+/F1 10.00 Tf
+0.145 0.169 0.204 rg
+1 0 0 1 64.00 280.00 Tm
+(and the CRAT's charitable remainder.) Tj
+ET
+BT
+/F2 10.00 Tf
+0.169 0.349 0.639 rg
+1 0 0 1 52.00 266.00 Tm
+(-) Tj
+ET
+BT
+/F1 10.00 Tf
+0.145 0.169 0.204 rg
+1 0 0 1 64.00 266.00 Tm
+(The potential for legislative changes impacting estate and gift tax laws remains a risk factor.) Tj
+ET
+BT
+/F1 10.50 Tf
+0.145 0.169 0.204 rg
+1 0 0 1 52.00 246.00 Tm
+(#### Circular 230 Disclosure) Tj
+ET
+BT
+/F1 10.50 Tf
+0.145 0.169 0.204 rg
+1 0 0 1 52.00 224.00 Tm
+(Pursuant to Circular 230, this communication is not intended to be used, and cannot be used, for the) Tj
+ET
+BT
+/F1 10.50 Tf
+0.145 0.169 0.204 rg
+1 0 0 1 52.00 210.00 Tm
+(purpose of avoiding penalties under the Internal Revenue Code. It is intended to provide general) Tj
+ET
+BT
+/F1 10.50 Tf
+0.145 0.169 0.204 rg
+1 0 0 1 52.00 196.00 Tm
+(information on the topics covered and should not be construed as legal or tax advice. Clients should) Tj
+ET
+BT
+/F1 10.50 Tf
+0.145 0.169 0.204 rg
+1 0 0 1 52.00 182.00 Tm
+(consult their own tax advisors for specific guidance tailored to their individual circumstances [4].) Tj
+ET
+BT
+/F2 11.50 Tf
+0.169 0.349 0.639 rg
+1 0 0 1 52.00 160.00 Tm
+(Global References) Tj
+ET
+BT
+/F2 10.00 Tf
+0.169 0.349 0.639 rg
+1 0 0 1 52.00 142.00 Tm
+(-) Tj
+ET
+BT
+/F1 10.00 Tf
+0.145 0.169 0.204 rg
+1 0 0 1 64.00 142.00 Tm
+([5] S001. IRC §2702 - Special Valuation Rules \(GRAT Core Statute\). \(2026\).) Tj
+ET
+BT
+/F1 10.00 Tf
+0.145 0.169 0.204 rg
+1 0 0 1 64.00 129.00 Tm
+(https://www.law.cornell.edu/uscode/text/26/2702) Tj
+ET
+BT
+/F2 10.00 Tf
+0.169 0.349 0.639 rg
+1 0 0 1 52.00 115.00 Tm
+(-) Tj
+ET
+BT
+/F1 10.00 Tf
+0.145 0.169 0.204 rg
+1 0 0 1 64.00 115.00 Tm
+([1] S002. 26 CFR §25.2702-3 - Qualified Interests \(GRAT Regulations\). \(2026\).) Tj
+ET
+BT
+/F1 10.00 Tf
+0.145 0.169 0.204 rg
+1 0 0 1 64.00 102.00 Tm
+(https://www.law.cornell.edu/cfr/text/26/25.2702-3) Tj
+ET
+BT
+/F2 10.00 Tf
+0.169 0.349 0.639 rg
+1 0 0 1 52.00 88.00 Tm
+(-) Tj
+ET
+BT
+/F1 10.00 Tf
+0.145 0.169 0.204 rg
+1 0 0 1 64.00 88.00 Tm
+([6] S007. IRC §7520 - Valuation Tables \(Section 7520 Hurdle Rate\). \(2026\).) Tj
+ET
+BT
+/F1 10.00 Tf
+0.145 0.169 0.204 rg
+1 0 0 1 64.00 75.00 Tm
+(https://www.law.cornell.edu/uscode/text/26/7520) Tj
 ET
 q
 0.80 w
@@ -2219,36 +2076,230 @@ endobj
 25 0 obj
 << /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 24 0 R >>
 endobj
+26 0 obj
+<< /Length 3393 >>
+stream
+BT
+/F2 10.00 Tf
+0.169 0.349 0.639 rg
+1 0 0 1 52.00 788.00 Tm
+(-) Tj
+ET
+BT
+/F1 10.00 Tf
+0.145 0.169 0.204 rg
+1 0 0 1 64.00 788.00 Tm
+([7] S004. 26 CFR §1.664-2 - Charitable Remainder Annuity Trust Regulations. \(2026\).) Tj
+ET
+BT
+/F1 10.00 Tf
+0.145 0.169 0.204 rg
+1 0 0 1 64.00 775.00 Tm
+(https://www.law.cornell.edu/cfr/text/26/1.664-2) Tj
+ET
+BT
+/F2 10.00 Tf
+0.169 0.349 0.639 rg
+1 0 0 1 52.00 761.00 Tm
+(-) Tj
+ET
+BT
+/F1 10.00 Tf
+0.145 0.169 0.204 rg
+1 0 0 1 64.00 761.00 Tm
+([8] S003. IRC §664 - Charitable Remainder Trusts \(CRAT Core Statute\). \(2026\).) Tj
+ET
+BT
+/F1 10.00 Tf
+0.145 0.169 0.204 rg
+1 0 0 1 64.00 748.00 Tm
+(https://www.law.cornell.edu/uscode/text/26/664) Tj
+ET
+BT
+/F2 10.00 Tf
+0.169 0.349 0.639 rg
+1 0 0 1 52.00 734.00 Tm
+(-) Tj
+ET
+BT
+/F1 10.00 Tf
+0.145 0.169 0.204 rg
+1 0 0 1 64.00 734.00 Tm
+([9] S006. IRC §2033 - Property Included in Gross Estate. \(2026\).) Tj
+ET
+BT
+/F1 10.00 Tf
+0.145 0.169 0.204 rg
+1 0 0 1 64.00 721.00 Tm
+(https://www.law.cornell.edu/uscode/text/26/2033) Tj
+ET
+BT
+/F2 10.00 Tf
+0.169 0.349 0.639 rg
+1 0 0 1 52.00 707.00 Tm
+(-) Tj
+ET
+BT
+/F1 10.00 Tf
+0.145 0.169 0.204 rg
+1 0 0 1 64.00 707.00 Tm
+([3] S010. IRS Estate Tax - Exemptions, Rates, and Filing Requirements. \(2026\).) Tj
+ET
+BT
+/F1 10.00 Tf
+0.145 0.169 0.204 rg
+1 0 0 1 64.00 694.00 Tm
+(https://www.irs.gov/businesses/small-businesses-self-employed/estate-tax) Tj
+ET
+BT
+/F2 10.00 Tf
+0.169 0.349 0.639 rg
+1 0 0 1 52.00 680.00 Tm
+(-) Tj
+ET
+BT
+/F1 10.00 Tf
+0.145 0.169 0.204 rg
+1 0 0 1 64.00 680.00 Tm
+([2] S009. IRC §170 - Charitable Contributions and Gifts \(Income Tax Deduction\). \(2026\).) Tj
+ET
+BT
+/F1 10.00 Tf
+0.145 0.169 0.204 rg
+1 0 0 1 64.00 667.00 Tm
+(https://www.law.cornell.edu/uscode/text/26/170) Tj
+ET
+BT
+/F2 10.00 Tf
+0.169 0.349 0.639 rg
+1 0 0 1 52.00 653.00 Tm
+(-) Tj
+ET
+BT
+/F1 10.00 Tf
+0.145 0.169 0.204 rg
+1 0 0 1 64.00 653.00 Tm
+([4] S011. 31 CFR Part 10 - Treasury Department Circular 230 \(Tax Practice Standards\). \(2026\).) Tj
+ET
+BT
+/F1 10.00 Tf
+0.145 0.169 0.204 rg
+1 0 0 1 64.00 640.00 Tm
+(https://www.law.cornell.edu/cfr/text/31/part-10) Tj
+ET
+q
+0.50 w
+0.843 0.863 0.894 RG
+52.00 615.00 m 172.00 615.00 l S
+Q
+BT
+/F1 7.50 Tf
+0.376 0.427 0.494 rg
+1 0 0 1 52.00 609.00 Tm
+([1] 26 CFR 25.2702-3 - Special valuation rules for GRATs) Tj
+ET
+BT
+/F1 7.50 Tf
+0.376 0.427 0.494 rg
+1 0 0 1 52.00 598.00 Tm
+([2] IRC §170 - Charitable contributions deduction) Tj
+ET
+BT
+/F1 7.50 Tf
+0.376 0.427 0.494 rg
+1 0 0 1 52.00 587.00 Tm
+([3] IRS - Estate tax overview) Tj
+ET
+BT
+/F1 7.50 Tf
+0.376 0.427 0.494 rg
+1 0 0 1 52.00 576.00 Tm
+([4] 31 CFR Part 10 - Circular 230) Tj
+ET
+BT
+/F1 7.50 Tf
+0.376 0.427 0.494 rg
+1 0 0 1 52.00 565.00 Tm
+([5] IRC §2702 - Special valuation rules) Tj
+ET
+BT
+/F1 7.50 Tf
+0.376 0.427 0.494 rg
+1 0 0 1 52.00 554.00 Tm
+([6] IRC §7520 - Valuation tables) Tj
+ET
+BT
+/F1 7.50 Tf
+0.376 0.427 0.494 rg
+1 0 0 1 52.00 543.00 Tm
+([7] 26 CFR 1.664-2 - Charitable remainder annuity trust) Tj
+ET
+BT
+/F1 7.50 Tf
+0.376 0.427 0.494 rg
+1 0 0 1 52.00 532.00 Tm
+([8] IRC §664 - Charitable remainder trusts) Tj
+ET
+BT
+/F1 7.50 Tf
+0.376 0.427 0.494 rg
+1 0 0 1 52.00 521.00 Tm
+([9] IRC §2033 - Property in which decedent had an interest) Tj
+ET
+q
+0.80 w
+0.843 0.863 0.894 RG
+52.00 34.00 m 543.00 34.00 l S
+Q
+BT
+/F1 8.50 Tf
+0.376 0.427 0.494 rg
+1 0 0 1 52.00 22.00 Tm
+(Client Advisory Report - GRAT / CRAT) Tj
+ET
+BT
+/F1 8.50 Tf
+0.376 0.427 0.494 rg
+1 0 0 1 511.98 22.00 Tm
+(Page 11) Tj
+ET
+endstream
+endobj
+27 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 26 0 R >>
+endobj
 xref
-0 26
+0 28
 0000000000 65535 f 
 0000000015 00000 n 
 0000000064 00000 n 
-0000000184 00000 n 
-0000000281 00000 n 
-0000000383 00000 n 
-0000000461 00000 n 
-0000003299 00000 n 
-0000003445 00000 n 
-0000005059 00000 n 
-0000005205 00000 n 
-0000010720 00000 n 
-0000010868 00000 n 
-0000016843 00000 n 
-0000016991 00000 n 
-0000017908 00000 n 
-0000018056 00000 n 
-0000024291 00000 n 
-0000024439 00000 n 
-0000031623 00000 n 
-0000031771 00000 n 
-0000033626 00000 n 
-0000033774 00000 n 
-0000041298 00000 n 
-0000041446 00000 n 
-0000043538 00000 n 
+0000000191 00000 n 
+0000000288 00000 n 
+0000000390 00000 n 
+0000000468 00000 n 
+0000003306 00000 n 
+0000003452 00000 n 
+0000005079 00000 n 
+0000005225 00000 n 
+0000010985 00000 n 
+0000011133 00000 n 
+0000016973 00000 n 
+0000017121 00000 n 
+0000017940 00000 n 
+0000018088 00000 n 
+0000023750 00000 n 
+0000023898 00000 n 
+0000024817 00000 n 
+0000024965 00000 n 
+0000032059 00000 n 
+0000032207 00000 n 
+0000033126 00000 n 
+0000033274 00000 n 
+0000040607 00000 n 
+0000040755 00000 n 
+0000044200 00000 n 
 trailer
-<< /Size 26 /Root 1 0 R >>
+<< /Size 28 /Root 1 0 R >>
 startxref
-43686
+44348
 %%EOF

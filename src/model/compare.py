@@ -36,8 +36,8 @@ def calculate_comparison(
         taxable_estate_before - grat.estate_reduction_usd, 2
     )
     
-    # Estate after CRAT: Only charitable remainder (deduction) removes value from estate
-    # (Under IRC §2036, income interest is included in grantor's estate at death)
+    # Estate after CRAT: Only charitable remainder (deduction under §2055) removes value
+    # from estate. (Under IRC §2036, income interest is included in grantor's estate at death)
     taxable_estate_after_crat = round(
         taxable_estate_before - crat.estate_reduction_usd, 2
     )

@@ -1,6 +1,6 @@
 {
   "manifest_version": "v1",
-  "generated_at_utc": "2026-03-19T09:06:02Z",
+  "generated_at_utc": "2026-03-19T09:52:33Z",
   "client": {
     "client_id": "CLIENT-2015-001",
     "risk_tolerance": "moderate",
@@ -31,8 +31,7 @@
           "[S002]",
           "[S003]",
           "[S004]",
-          "[S007]",
-          "[S009]"
+          "[S007]"
         ],
         "citation_keys": [
           "[S001]",
@@ -118,20 +117,20 @@
       "validation": {
         "is_valid": false,
         "warnings": [
-          "Citation relevance: Claim 'The charitable remainder is valued at $16,000,000, with a charitable deduction of $7,620,722.64, leading to estate tax s...' cites [S004] but expected one of ['S003', 'S009']"
+          "Citation relevance: Claim 'The charitable remainder is projected at $16,000,000, with a present-value charitable deduction of $7,620,722.64, result...' cites [S004] but expected one of ['S002', 'S003', 'S007', 'S009']"
         ],
         "unresolved_placeholders": [],
         "dangling_citations": [],
-        "measured_length": 458,
+        "measured_length": 483,
         "min_length": null,
         "max_length": null,
         "length_unit": "words"
       },
       "token_usage": {
         "source": "estimated",
-        "input_tokens": 1521,
-        "output_tokens": 711,
-        "total_tokens": 2232
+        "input_tokens": 1531,
+        "output_tokens": 743,
+        "total_tokens": 2274
       }
     },
     {
@@ -144,8 +143,7 @@
           "[S001]",
           "[S002]",
           "[S006]",
-          "[S007]",
-          "[S010]"
+          "[S007]"
         ],
         "citation_keys": [
           "[S001]",
@@ -235,11 +233,11 @@
       "validation": {
         "is_valid": false,
         "warnings": [
-          "Citation relevance: Claim 'The taxable gift is calculated as the present value of the remainder interest, which can be structured to be zero, effec...' cites [S002] but expected one of ['S001', 'S005']"
+          "Citation relevance: Claim 'Under IRC \u00a7671, the GRAT is treated as a grantor trust for income tax purposes, meaning the grantor pays taxes on the tr...' cites [S002] but expected one of ['S001', 'S008']"
         ],
         "unresolved_placeholders": [],
         "dangling_citations": [],
-        "measured_length": 523,
+        "measured_length": 492,
         "min_length": null,
         "max_length": null,
         "length_unit": "words"
@@ -247,8 +245,8 @@
       "token_usage": {
         "source": "estimated",
         "input_tokens": 1584,
-        "output_tokens": 851,
-        "total_tokens": 2435
+        "output_tokens": 789,
+        "total_tokens": 2373
       }
     },
     {
@@ -260,8 +258,8 @@
         "src_tags": [
           "[S003]",
           "[S004]",
+          "[S006]",
           "[S007]",
-          "[S009]",
           "[S010]"
         ],
         "citation_keys": [
@@ -342,20 +340,20 @@
       "validation": {
         "is_valid": false,
         "warnings": [
-          "Citation relevance: Claim 'Under IRC \u00a72036, the CRAT's assets are excluded from the estate, with the charitable deduction offsetting potential esta...' cites [S010] but expected one of ['S003', 'S009']"
+          "Citation relevance: Claim 'For estate-tax purposes, IRC \u00a72036 includes the retained annuity interest in the estate, while IRC \u00a72055 provides a char...' cites [S006] but expected one of ['S003', 'S009']"
         ],
         "unresolved_placeholders": [],
         "dangling_citations": [],
-        "measured_length": 502,
+        "measured_length": 499,
         "min_length": null,
         "max_length": null,
         "length_unit": "words"
       },
       "token_usage": {
         "source": "estimated",
-        "input_tokens": 1569,
-        "output_tokens": 823,
-        "total_tokens": 2392
+        "input_tokens": 1596,
+        "output_tokens": 811,
+        "total_tokens": 2407
       }
     },
     {
@@ -503,22 +501,11 @@
         }
       ],
       "validation": {
-        "is_valid": false,
-        "warnings": [
-          "Citation relevance: Claim '| Dimension                  | GRAT                                           | CRAT                                    ...' cites [S001] but expected one of ['S002', 'S007']",
-          "Citation relevance: Claim '| Dimension                  | GRAT                                           | CRAT                                    ...' cites [S003] but expected one of ['S002', 'S007']",
-          "Citation relevance: Claim '| Dimension                  | GRAT                                           | CRAT                                    ...' cites [S001] but expected one of ['S002', 'S007']",
-          "Citation relevance: Claim '| Dimension                  | GRAT                                           | CRAT                                    ...' cites [S003] but expected one of ['S002', 'S007']",
-          "Citation relevance: Claim '| Dimension                  | GRAT                                           | CRAT                                    ...' cites [S003] but expected one of ['S002', 'S007']",
-          "Citation relevance: Claim '| Dimension                  | GRAT                                           | CRAT                                    ...' cites [S001] but expected one of ['S002', 'S007']",
-          "Citation relevance: Claim '| Dimension                  | GRAT                                           | CRAT                                    ...' cites [S003] but expected one of ['S002', 'S007']",
-          "Citation relevance: Claim '| Dimension                  | GRAT                                           | CRAT                                    ...' cites [S004] but expected one of ['S002', 'S007']",
-          "Citation relevance: Claim '| Dimension                  | GRAT                                           | CRAT                                    ...' cites [S006] but expected one of ['S002', 'S007']",
-          "Citation relevance: Claim '| Dimension                  | GRAT                                           | CRAT                                    ...' cites [S003] but expected one of ['S002', 'S007']"
-        ],
+        "is_valid": true,
+        "warnings": [],
         "unresolved_placeholders": [],
         "dangling_citations": [],
-        "measured_length": 453,
+        "measured_length": 441,
         "min_length": null,
         "max_length": null,
         "length_unit": "words"
@@ -526,8 +513,8 @@
       "token_usage": {
         "source": "estimated",
         "input_tokens": 1598,
-        "output_tokens": 914,
-        "total_tokens": 2512
+        "output_tokens": 941,
+        "total_tokens": 2539
       }
     },
     {
@@ -555,7 +542,7 @@
         "warnings": [],
         "unresolved_placeholders": [],
         "dangling_citations": [],
-        "measured_length": 382,
+        "measured_length": 415,
         "min_length": null,
         "max_length": null,
         "length_unit": "words"
@@ -563,8 +550,8 @@
       "token_usage": {
         "source": "estimated",
         "input_tokens": 1167,
-        "output_tokens": 676,
-        "total_tokens": 1843
+        "output_tokens": 699,
+        "total_tokens": 1866
       }
     }
   ],
@@ -597,11 +584,11 @@
       "total": 63,
       "bound": 63
     },
-    "validation_warnings": 13,
+    "validation_warnings": 3,
     "token_usage_totals": {
-      "input_tokens": 7439,
-      "output_tokens": 3975,
-      "total_tokens": 11414
+      "input_tokens": 7476,
+      "output_tokens": 3983,
+      "total_tokens": 11459
     }
   }
 }
